@@ -1,3 +1,7 @@
-# portfolio
+# My Portfolio
 <h2>Nexon America</h2>
-<a href="https://sergiusmuzzz.github.io/portfolio/maplestory2/">Maplestory 2</a>
+<ul>
+  <li>
+    <a href="https://sergiusmuzzz.github.io/portfolio/maplestory2/" target="_blank">Maplestory 2</a>
+  </li>
+</ul>
