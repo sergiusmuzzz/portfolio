@@ -1,0 +1,28 @@
+body{
+  font-family: $family-primary;
+}
+
+a{
+  transition: color .3s;
+  color: $link-color;
+  &:hover{
+    color: $link-color-hover;
+  }
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+html{
+  box-sizing: border-box;
+}
+
+*{
+  box-sizing: inherit;
+  &:before,
+  &:after {
+    box-sizing: inherit
+  }
+}

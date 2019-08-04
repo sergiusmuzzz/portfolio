@@ -1,0 +1,52 @@
+extends ./../layouts/global.jade
+
+block modal
+    //- modals
+    .m-modal.play(data-m-modal="play")
+        .m-modal__close-icon.f-icon.f-icon-close
+        .m-modal__container.center
+            .play__title(data-i18n='site.modal.title')
+
+            a.button-2nd-wrapper.button--wide.play-steam(style="margin-bottom: 3.0em;", href="http://store.steampowered.com/app/369200/", target="_blank")
+                .button-2nd-wrapper2
+                    .button-2nd.button--scale-xxl.button--wide
+                        span(data-i18n='site.modal.play-on-steam')
+                        .button-2nd__deco
+                            .button-2nd__deco-col
+                                img(src='img/btn_decoration.png', alt='')
+            .clearfix
+
+            a.button-2nd-wrapper.button--wide.hide-for-mobile.play-nexon-launcher
+                .button-2nd-wrapper2
+                    .button-2nd.button--scale-xxl.button--wide
+                        span(data-i18n='site.modal.play-on-nexon-launcher')
+                        .button-2nd__deco
+                            .button-2nd__deco-col
+                                img(src='img/btn_decoration.png', alt='')
+
+            //- .font-title-6.show-for-mobile
+            //-   | Nexon Launcher is also available to download for none mobile devices.
+
+    .m-modal.menu(data-m-modal="menu")
+        .m-modal__close-icon.f-icon.f-icon-close
+        .m-modal__container.center
+
+            a.menu__title(target="_blank", data-i18n='[href]site.mobile-menu.link1_url')
+                span(data-i18n='site.mobile-menu.link1_text')
+
+            .menu__devide-lines
+                .menu__devide-lines_
+                .menu__devide-lines__2
+                .menu__devide-lines__1
+
+            ul
+                li
+                    a.header__select-lan__text(href='javascript:void(0)', data-lang="en") English
+                li
+                    a.header__select-lan__text(href='javascript:void(0)', data-lang="de") Deutsch
+                li
+                    a.header__select-lan__text(href='javascript:void(0)', data-lang="fr") Français
+                li
+                    a.header__select-lan__text(href='javascript:void(0)', data-lang="es") Español (LA)
+//- block bottom
+

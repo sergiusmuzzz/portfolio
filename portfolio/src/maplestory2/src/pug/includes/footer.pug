@@ -1,0 +1,59 @@
+block css-page
+
+footer
+    
+    .row-flex
+        //-a.go-to-main-site(href="/" title="Go To Main Site")
+            span.icon-right-arrow.nav-status go to main site 
+
+        .follow-us
+            span.follow(data-i18n="site.footer.follow") #{seed.site.footer.follow}
+            a(href="https://twitter.com/playmaple2" class="tw-link")
+                img(src="/img/social/tw.png")
+            a(href="https://www.instagram.com/playmaple2" class="instagram-link")
+                img(src="/img/social/instagram.png")
+            a(href="https://www.facebook.com/playmaple2" class="fb-link")
+                img(src="/img/social/fb.png")
+            a(href="https://www.youtube.com/channel/UCotdSGO0MwNTyx4eWrZwBgw" class="yt-link")
+                img(src="/img/social/yt.png")
+
+        include ./language-selector
+
+    .copyright
+        a.logo-footer
+            img(src="/img/logo/logo.jpg")
+        span.legal(data-i18n="site.footer.legal", data-i18n-options='{"year": "2018"}') #{seed.site.footer.legal}
+
+    .footer-links
+        a.account(data-i18n="site.footer.account", href="http://www.nexon.net/account/account-settings/") #{seed.site.footer.account}
+        a.support(data-i18n="site.footer.support", href="https://support-maplestory2.zendesk.com") #{seed.site.footer.support}
+        a.privacy(data-i18n="site.footer.privacy", href="http://www.nexon.net/legal/privacy-policy/") #{seed.site.footer.privacy}
+        a.terms(data-i18n="site.footer.terms", href="http://www.nexon.net/en/legal/terms-of-use/") #{seed.site.footer.terms}
+        a.ugc(data-i18n="site.footer.ugc", href="http://www.nexon.net/en/legal/user-generated-content-policy/") #{seed.site.footer.ugc}
+        a.about(data-i18n="site.footer.about", href="http://www.nexon.net/corporate/about-nexon/") #{seed.site.footer.about}
+
+
+
+//-footer
+    a.logo-footer
+        img(src="/img/logo/nexon.png")
+
+    .copyright
+        span.legal © 2018 NEXON Korea Corporation and NEXON America Inc. All Rights Reserved
+        a.account(href="http://www.nexon.net/account/account-settings/") Your Account
+        a.support(href="https://support-maplestory2.zendesk.com") Get Support
+        a.privacy(href="http://www.nexon.net/legal/privacy-policy/") Privacy Policy
+        a.terms(href="http://www.nexon.net/en/legal/terms-of-use/") Terms of Use
+        a.ugc(href="http://www.nexon.net/en/legal/user-generated-content-policy/") UGC Policy
+        a.about(href="http://www.nexon.net/corporate/about-nexon/") About Nexon
+
+    .follow-us
+        span Follow Us:
+        a(href="https://twitter.com/playmaple2" class="tw-link")
+            img(src="/img/social/tw.png")
+        a(href="https://www.instagram.com/playmaple2" class="instagram-link")
+            img(src="/img/social/instagram.png")
+        a(href="https://www.facebook.com/playmaple2" class="fb-link")
+            img(src="/img/social/fb.png")
+        a(href="https://www.youtube.com/channel/UCotdSGO0MwNTyx4eWrZwBgw" class="yt-link")
+            img(src="/img/social/yt.png")

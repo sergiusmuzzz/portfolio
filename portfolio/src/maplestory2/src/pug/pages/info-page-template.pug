@@ -1,0 +1,105 @@
+extends ./../layouts/master
+
+block css-page
+    //-link(href='/css/pages/news/article.css', rel='stylesheet')
+
+block vars
+    - var bodyClass = 'border-box'
+    - var pageClass = 'info-page'
+    - var Title = seed.site.name + ' - ' + seed.site.title
+    - var Url = seed.site.url
+    - var Section = "News"
+    - var page = "info-page"
+
+block main
+    main
+        //-.header(style="background-image: url('../img/article/banner.jpg')")
+        .content
+            .content-inner
+                .content-header.header-text
+                    h1 ((DO NOT PUBLISH)) HTML Stylings
+                .content-body
+                    h1 This is H1 Text!
+                    h2 This is H2 Text!
+                    h3 This is H3 Text!
+                    h4 This is H4 Text!
+                    p
+                        strong This is bolded normal text!
+                        |  Along with some non-bolded text.
+                    ul
+                        li Bullet lists?
+                        li
+                            | I like bullet lists
+                            ul
+                                li
+                                    | Of course you do, you're in one
+                                    ul
+                                        li
+                                            | Level 3!
+                                            ul
+                                                li Level 4!
+                                li Sigh.
+                        li Buuulleeeeet
+                        li Moar bullets!
+                    hr
+                    p
+                        | And some normal text under an hr, but with <span style='color: #009f0f;'> some of it highlighted</span>, because highlights are fun! <strong style='color: #009f0f;'> Bolded Highlights</strong> are even more fun! I wonder if the
+                        span.notice Notice Class
+                        |  does anything...
+                    ol
+                        li What about ordered lists?
+                        li Bit more limited in usage
+                        li
+                            | Also clumsy
+                            ol
+                                li You're clumsy!
+                                li What does that even mean?
+                                li Shut up!
+                        li Still, should have them, just in case.
+                        li You never know.
+                    p
+                        | Hey, do you know about <a href='http://www.google.com'>Google</a>? I just heard about that website!
+                    table(border='0')
+                        tbody
+                            tr
+                                th Header Row!
+                                th More header!
+                                th Beware of zombies.
+                                th Get it, cause heads?
+                                th ...look, this is just to fill space, don't expect high comedy
+                            tr
+                                td This is a table
+                                td Totally default in every way
+                                td(rowspan='3')
+                                    | Well, except for this cell, which has a rowspan of 3. They're useful for grouping things up!
+                                td More stuff
+                                td Still more
+                            tr
+                                td Important thing is to look at borders
+                                td Borders and data placement
+                                td Look, there's 25 cells to fill
+                                td They can't all be masterpieces
+                            tr
+                                td Tables don't look good on tablets/phones, not always
+                                td So it's a good idea not to overuse them.
+                                td You're a masterpiece!
+                                td Still doesn't mean anything.
+                            tr
+                                td And I'm running out of things to say
+                                td Not much to say.
+                                td Go Giants, I guess?
+                                td And Sharks
+                                td Dodgers and Kings are baaaaaad.
+                            tr
+                                td Stiiiiiill not much.
+                                td(colspan='3') This cell also stretches three, but in a colspan fashion! Streeeeetch!
+                                td Remember to use Inspect in google to muck with table-wide formatting!
+                    p
+                    p Here's a 582x751 px image!
+                    figure
+                        img(src='http://nxcache.nexon.net/cms/2018/1082/prize-wheel.png', alt='')
+                    p SUUUUURVEY!
+                    div(style='position: relative; padding: 20.5%; /*! overflow: hidden;')
+                        iframe(src='https://www.surveymonkey.com/r/6VMV57R', allowfullscreen='', style='position: absolute; top: 10%; left: 10%; width: 80%; height: 100%;', frameborder='0')
+                    p(style='font-size: 21px; color: #7dc9ff; padding-left: 5%; padding-right: 5%;') �
+                .content-footer

@@ -1,0 +1,120 @@
+
+// ----------------------------------------- Icon Sprites -----------------------------------------
+
+//$icon-spacing: 10px; doesnt work if layout is smart
+$icon-layout: smart;
+$icon-sprite-dimensions: true; // get img width and height.
+//@import "icon/*.png"; //  grab all png files and create sprite img
+//@include all-icon-sprites; // add each class (file-name) and put dimention and background position
+//.icon-sprite { @include inline-block(); }
+
+
+
+// ----------------------------------------- Animation Keyframe -----------------------------------------
+
+
+// Animation keyframes (not-using)
+
+ /*exmaple @include keyframes(ANIMATIONNAME) {
+    0% { property:value }
+    100% { property:value }
+  }*/
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+
+@mixin animation($animate...) {
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max {
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max {
+            $animations: #{$animations + ", "};
+        }
+    }
+    -webkit-animation: $animations;
+    -moz-animation:    $animations;
+    -o-animation:      $animations;
+    animation:         $animations;
+}
+
+
+ 
+
+// ----------------------------------------- Position -----------------------------------------
+
+/* Usage
+  @include absolute(top 0 left 1em);
+*/
+
+@mixin position($position, $args) {
+  @each $o in top right bottom left {
+        $i: index($args, $o);
+ 
+    @if $i and $i + 1 <= length($args) and type-of(nth($args, $i + 1)) == number  {
+          #{$o}: nth($args, $i + 1);
+    }
+  }
+ 
+  position: $position;
+}
+ 
+@mixin absolute($args) {
+        @include position( absolute, $args);
+}
+ 
+@mixin fixed($args) {
+        @include position( fixed, $args);
+}
+ 
+@mixin relative($args) {
+        @include position( relative, $args);
+}
+
+// ----------------------------------------- Image Background -----------------------------------------
+
+// use img as background 
+/*
+@include: image("path/to/image");
+ automatically detect width and height*/
+
+@mixin image($image) {
+  
+    background: image-url($image) no-repeat;
+    width: image-width($image); height: image-height($image); 
+    
+}
+
+
+
+//----------------------------------------------------
+
+//Example
+
+// template custom mixin with default-value | default value will be used if there is no argument assigned.
+// @include example1; or example1(50px);
+
+//@mixin example1($variable: default-value) {
+//  width: $variable;
+//  background: image-url("#{$variable}.#{$variable-2}");   // to escape syntax. 
+//}
+
+//@mixin example2($variable) {
+//  width: $variable;   
+  
+//}

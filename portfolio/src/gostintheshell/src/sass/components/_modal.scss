@@ -1,0 +1,25 @@
+.m-lightbox{
+  z-index: 100;
+}
+
+.container-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 95%;
+  .container{
+	//width: 100%;
+  }
+}
+
+
+
+.ui_close-icon{
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  font-size: 3.8em;
+  color: $yellow;
+  cursor: pointer;
+}

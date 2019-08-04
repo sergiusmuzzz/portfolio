@@ -1,0 +1,183 @@
+
+// hiding gnt top bar
+#gnt_bar {
+    top: -70px;
+    height: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Download game button after facebook signup */
+.fb_create .game_dl_btn { background: transparent url(//nxcache.nexon.net/all/img/ms/download_btn.png) 0 0 no-repeat; }
+
+
+// Fix for gnt border box
+#gnt_bar *:before
+,#gnt_bar *:after {
+    box-sizing: content-box !important;
+}
+
+/*body.border-box {
+  #gnt_popup *, #gnt_popup *:before, #gnt_popup *:after {
+    box-sizing: content-box !important;
+  }
+}*/
+
+// Adding Fixed position to Gnt popups
+#gnt_popup {
+    padding: 0;
+    margin: 0 !important;
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate( -50% , -50% );
+
+    border-radius: 0 !important;
+    .modal-launcher{
+        font-family: $family-secondary !important;
+        background: #ffaa00;
+        border: 1px solid #744f00;
+        height: 390px;
+    }
+
+    .gnt_goto,
+    .modal-launcher-title,
+    .modal-launcher-button,
+    .modal-launcher-button-ghost{
+        color: #000 !important;
+    }
+
+    .gnt_goto{
+        background-image: url("../img/gnt/gnp_close.gif") !important;
+    }
+
+    .modal-launcher-info,
+    .modal-launcher-instructions,
+    .modal-launcher-button,
+    .modal-launcher-button-ghost{
+        color: #fff;
+    }
+
+    .modal-launcher-button,
+    .modal-launcher-button-ghost{
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+
+    .modal-launcher-title{
+        margin-bottom: 5px;
+    }
+
+    .modal-launcher-button{
+        background: #f9e200;
+        border-color: #f9e200;
+        &:hover{
+            background: transparent;
+        }
+    }
+
+    .modal-launcher-button-ghost{
+        background: transparent;
+        border-color: #f9e200;
+        &:hover{
+            background: #f9e200;
+        }
+    }
+}
+
+#gnt_screen{
+    background: rgba(0,0,0,0.75);
+}
+
+// Fix for Gnt on mobile, better responsiveness
+#gnt_center {
+    max-width: 100%;
+}
+
+// Custom Gnt Login Popup
+body.border-box {
+    #gnt_popup.promo_login *, #gnt_popup.promo_login *:before, #gnt_popup.promo_login *:after {
+        box-sizing: border-box !important;
+    }
+}
+
+#gnt_popup.promo_login {
+    max-width: 100%;
+    width: 430px;
+    padding: 0;
+    border-radius: 0;
+    background: none;
+    border: 5px solid rgba(0,0,0,0.5);
+
+
+    margin: 0 !important;
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate( -50% , -50% );
+
+
+    #gnt_popup_center {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .gnt_input {
+        height: auto;
+        input {
+            max-width: 100%;
+            width: 100%;
+        }
+        label {
+            width: 100%;
+        }
+    }
+    #gnt_popup_close {
+        background: url(../img/btn_close.png) no-repeat center center;
+        background-size: 16px 16px;
+        padding: 16px;
+        display: inline-block;
+        top: 8px;
+        right: 8px;
+    }
+    a {
+        color: #615794;
+    }
+    .gnt_top {
+        border-radius: 0;
+        padding: 27px 33px 2px;
+        width: 100%;
+        max-width: 100%;
+        .gnt_title {
+            color: #091e6d;
+            font-weight: 600;
+            padding-bottom: 10px;
+        }
+        .gnt_mtm {
+            display: none;
+        }
+        #gnt_popup_eula_changed { display: block; }
+    }
+    .gnt_bot {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0;
+        padding: 10px 32px 25px;
+        text-align: center;
+        .gnt_button {
+            border: 1px solid #33266e;
+            span {
+                background: #403182;
+                text-transform: uppercase;
+                //padding: 9px 34px 7px;
+            }
+        }
+    }
+    .gnt_problems.gnt_goto {
+        display: none;
+    }
+}
+
+/* Promo load hack*/
+#loader { z-index: 11; }

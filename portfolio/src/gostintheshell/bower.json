@@ -1,0 +1,12 @@
+{
+  "name": "ghost-in-the-shell-renewal",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "i18next": "~1.10.2",
+    "jquery_lazyload": "jquery.lazyload#~1.9.7",
+    "slick-carousel": "~1.5.9",
+    "jquery-jsonp": "~2.4.0"
+  },
+  "devDependencies": {}
+}

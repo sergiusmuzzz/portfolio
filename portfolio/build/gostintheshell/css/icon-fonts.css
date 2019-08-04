@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?ej3mif');
+    src:    url('../fonts/icomoon.eot?ej3mif#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?ej3mif') format('truetype'),
+        url('../fonts/icomoon.woff?ej3mif') format('woff'),
+        url('../fonts/icomoon.svg?ej3mif#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="f-icon-"], [class*=" f-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.f-icon-pagi-arrow-first:before {
+    content: "\e900";
+}
+.f-icon-pagi-arrow-last:before {
+    content: "\e901";
+}
+.f-icon-pagi-arrow-next:before {
+    content: "\e902";
+}
+.f-icon-pagi-arrow-prev:before {
+    content: "\e903";
+}
+.f-icon-arrow-left:before {
+    content: "\e602";
+}
+.f-icon-arrow-right:before {
+    content: "\e60d";
+}
+.f-icon-arrow-down:before {
+    content: "\e90e";
+}
+.f-icon-close:before {
+    content: "\e609";
+}
+.f-icon-dropdown:before {
+    content: "\e60a";
+}
+.f-icon-hamburger:before {
+    content: "\e60e";
+}
+.f-icon-facebook:before {
+    content: "\e904";
+}
+.f-icon-twitter:before {
+    content: "\e905";
+}
+.f-icon-youtube:before {
+    content: "\e906";
+}
+.f-icon-twitch:before {
+    content: "\e907";
+}
+.f-icon-polygon:before {
+    content: "\e908";
+}
+.f-icon-video-play:before {
+    content: "\e909";
+}
+.f-icon-video-play-outlined:before {
+    content: "\e90d";
+}
+.f-icon-globe:before {
+    content: "\e90f";
+}
+.f-icon-logo:before {
+    content: "\e90a";
+}
+.f-icon-btn-deco:before {
+    content: "\e90b";
+}
+.f-icon-indicator:before {
+    content: "\e90c";
+}
+.f-icon-facebook2:before {
+    content: "\e60b";
+}
+.f-icon-twitter2:before {
+    content: "\e610";
+}
+.f-icon-youtube2:before {
+    content: "\e611";
+}
+

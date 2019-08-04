@@ -1,0 +1,111 @@
+// ----------------------------------------- Global Design assets -----------------------------------------
+
+ 
+// overide global style from GITS
+#gnt { z-index: 100; color: black;
+  a:hover { text-shadow: none }
+  p { color: black; } 
+}
+#gnt_screen{
+  background-color: rgba(0,0,0,.99);
+}
+
+
+#gnt {
+  
+ 
+  // only overide launcher pop up.
+  .gs_launcher_popup { 
+font-family: $family-primary;
+    color: white;
+    p { color: white; } 
+    border-radius: 0;
+
+    /* centering old */
+    // margin: 0 !important;
+    // position: fixed;
+    // top: 50% !important;
+    // left: 50% !important;
+    // @include transform(translate3d( -50% , -50%, 0 ));
+    // width: 678px;
+    
+    /* centering blurry fix for edge and chrome */
+    // transform x makes elements blurry on these browsers. 
+    margin: 0 auto 0 !important;
+    position: fixed;
+    top: 50% !important;
+    left: 0 !important;
+    right: 0 !important;
+    @include transform(translateY(-50%));
+    width: 678px;
+    
+
+    #gnt_popup_close {
+      background-image: url("http://nxcache.nexon.net/all/img/mb/gnp_close_white.png");
+      background-color: transparent;
+      z-index: 99999;
+      top: 30px;
+      right: 30px;
+    }
+    
+    .modal-launcher { background: rgba(0,0,0,0.8); }
+    .modal-launcher-title { color: $link-color-hover; font-weight: bold; }
+    .modal-launcher-info {  color: #fff;  font-family: Roboto,sans-serif !important;}
+
+    .modal-launcher-instructions { color: #fff; opacity: 0.6; }
+
+    // left button in launcher modal box 
+    .modal-launcher-button {
+      border: 1px solid white;
+      background: white;
+      border-radius: 0 !important;
+      color: #151E2A;
+      font-weight: normal !important;
+      @include transition( box-shadow 0.2s );
+      &:hover {
+        border: 1px solid white;
+        background: white;
+        text-shadow:none;
+        @include box-shadow(0 0 30px rgba(0,224,216,0.4) !important );
+      }
+
+    }
+    .modal-launcher-buttons {
+        line-height: 20px;
+      font-family: Roboto,sans-serif !important;
+    }
+
+    // right button in launcher modal box 
+    .modal-launcher-button-ghost {
+      border: 1px solid white !important;
+      border-radius: 0 !important;
+      color: white !important;
+      font-weight: normal !important;
+      @include transition( box-shadow 0.2s );
+      &:hover {
+        color: white !important;
+        @include transition( box-shadow 0.2s );
+        @include box-shadow(0 0 30px rgba(0,224,216,0.4) !important );
+      }
+
+    }
+    .modal-launcher-instructions { padding-left: 15px; padding-right: 15px; font-family: Roboto,sans-serif !important;}
+
+    #protocol, #hiddenIframe, #hiddenLink { display: none; }
+
+  }
+}
+
+
+/*3 line text fix in the launcher button on certain languages */
+/* 
+  Ghost & Icarus has static position on the button. 
+*/
+// .lang-fr, .lang-de, .lang-it {
+
+//   #gnt .gs_launcher_popup .modal-launcher-button { padding: 22px 0 23px !important; }
+
+// }
+
+
+ 

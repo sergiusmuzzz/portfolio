@@ -1,0 +1,131 @@
+extends ./../layouts/global.jade
+
+block main
+    .main
+        include ./../includes/header.jade
+        .content-wrapper
+            .content
+                section.section-1#section-1
+                    img.headline(src="img/section-1/headline.png", data-src="img/section-1/headline")
+                section.section-2#section-2
+                    .left-block
+                        video.play-on-load(poster="video/poster-strike.jpg" loop="" muted="")
+                            source(src="video/skill_final_strike.mp4" type="video/mp4")
+
+                    .right-block
+                        .title
+                            small New <br>Combat <br class="is-hidden-desktop">Skill
+                            strong.is-hidden-touch Final <br>Strike
+                        .info-block
+                            .quote A finishing move that pushes<br class="is-hidden-desktop"> the limits of your fighting spirit
+                            h2 Final Strike
+                            .subtitle Teleport and strike consecutive powerful blows at your enemies. <br class="is-hidden-touch">You can unleash a near-limitless flow of attacks while the skill <br class="is-hidden-touch">is active.
+                            ul
+                                li You'll deal more damage when you attack with a two-handed sword, a two-handed axe, or a two-handed blunt weapon.
+                                li The more you attack or are attacked, the faster you can deliver the next set of attacks.
+                                li You can ignore enemy Heavy Stander auto defense. <span>(You cannot ignore the permanent damage reduction from Heavy Stander.)</span>
+
+
+                section.section-3#section-3
+                    .left-block
+                        video.play-on-load(poster="video/poster-stampede.jpg" loop="" muted="")
+                            source(src="video/skill_stampede.mp4" type="video/mp4")
+                    .right-block
+                        .title
+                            small New <br>Combat <br class="is-hidden-desktop">Skill
+                            strong.is-hidden-touch Stampede
+                        .info-block
+                            .quote An area attack where you charge<br class="is-hidden-desktop"> towards enemies and gather them
+                            h2 Stampede
+                            .subtitle Stampede is useful in situations where you're surrounded. <br class="is-hidden-touch">It first allows you to charge toward enemies, and then amplifies <br class="is-hidden-touch">your following Close Combat attack.
+                            ul
+                                li You won't get stunned or knocked down during your sweeps.
+                                li After the sweep, any 1 Close Combat skill you use will be greatly amplified.
+                section.section-4#section-4
+                    .headline
+                        img(src="img/section-4/headline.png", data-src="img/section-4/headline")
+                        .subtitle.is-hidden-touch The ultimate equipment of honorable Giant warriors
+                    ul.tabs
+                        li(data-tab="tab-1")
+                        li.is-active(data-tab="tab-2")
+                        li(data-tab="tab-3")
+                    .tabs-content
+                        .tab-content.side-characters-container
+                            .tab-1
+                                img(src="img/section-4/tab-content-1.png", data-src="img/section-4/tab-content-1")
+                            .tab-2.is-active
+                                img(src="img/section-4/tab-content-2.png", data-src="img/section-4/tab-content-2")
+                            .tab-3
+                                img(src="img/section-4/tab-content-3.png", data-src="img/section-4/tab-content-3")
+                section.section-5#section-5
+                    .headline
+                        img(src="img/section-5/headline.png", data-src="img/section-5/headline")
+                        .subtitle For a more dynamic and organic battle! <br>
+                            | We revamped combat inconveniences for Giants.
+                    ul.skill-list
+                        li
+                            div
+                                h3
+                                    img(src="img/section-5/01.png" alt="")
+                                    | Giant Full Swing
+                                p Stamina consumption is reduced. Giant Full Swing Damage Reforging  effect is applied<br class="is-hidden-touch"> to all targets.
+                        li
+                            div
+                                h3
+                                    img(src="img/section-5/02.png" alt="")
+                                    | Throwing Attack
+                                p When using the skill, the character's current Balance and Injury Rate are reflected.
+                        li
+                            div
+                                h3
+                                    img(src="img/section-5/03.png" alt="")
+                                    | Wind Guard
+                                p If you use a Close Combat skill while using the Wind Guard skill, it will not be canceled, even when you are attacked.
+                        li
+                            div
+                                h3
+                                    img(src="img/section-5/01.png" alt="")
+                                    | Stomp
+                                p Fixed the issue where the damage is not applied if you use the skill close to a wall.
+                section#section-6.section-6
+                    .headline
+                        img(src="img/section-6/headline.png", data-src="img/section-6/headline")
+                        .subtitle Outfits you could only admire.<br>
+                            | Now, you can wear them yourself!
+                    .info-block
+                        img.chars.is-hidden-touch(src="img/section-6/chars.png")
+                        ul
+                            li
+                                .title
+                                    span Renewed Outfits (F)
+                                p Maid Dress Set<br>Scathach Outfit Set<br> Witch Scathach Outfit Set
+                            li
+                                .title
+                                    span Renewed Outfits (M)
+                                p Butler Outfit <span>(For Male Partners)</span><br> Bassanio Costume Set
+
+
+
+            .video-bg.is-hidden-touch
+                video.play-on-load(loop="loop" muted="")
+                    source(src="video/background_stampede.mp4" type="video/mp4")
+        include ./../includes/footer.jade
+
+
+block bottom
+    // build:js js/app.js
+    script(type='text/javascript' src='js/modules/mod.owl.carousel.min.js')
+    script(type='text/javascript' src='js/modules/mod.redirect.js')
+    script(type='text/javascript' src='js/modules/mod.lightbox.js')
+    script(type='text/javascript' src='js/modules/mod.tooltip.js')
+    script(type='text/javascript' src='js/modules/event.js')
+    script(type='text/javascript' src='js/modules/google-analytics-tracking.js')
+    script(type='text/javascript' src='js/modules/share.js')
+    script(type='text/javascript' src='js/modules/mod.nav.js')
+    script(type='text/javascript' src='js/modules/mod.redirect.js')
+    script(type='text/javascript' src='js/modules/main.js')
+    script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js")
+    script(type="text/javascript" src="https://nxcache.nexon.net/library/animations/js/animations.min.js")
+    script(src="http://nxcache.nexon.net/library/animations/js/initialize.min.js")
+    script(src="https://js.gleam.io/e.js")
+    // endbuild

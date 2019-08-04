@@ -1,0 +1,77 @@
+.share {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #980000;
+    font-family: $family-primary;
+    font-weight: 600;
+    text-transform: uppercase;
+    vertical-align: top;
+    &:before{
+      color: #980000;
+    }
+    &:hover{
+      color: #f7b317;
+      &:before{
+        color: #f7b317;
+      }
+    }
+    &:before{
+      margin-top: -.3rem;
+      @include desktop {
+        font-size: 2rem;
+      }
+      @include touch {
+        font-size: 4rem;
+      }
+
+    }
+    &.tweet{
+      margin: 0 0 0 .84em;
+    }
+    span{
+      margin-left: .4em;
+    }
+  }
+  @include touch {
+    margin-bottom: 2.5em;
+  }
+  .button {
+    span {
+      display: inline-block;
+      vertical-align: top;
+      @include desktop{
+        margin-bottom: .25rem;
+      }
+    }
+  }
+
+  @include desktop{
+    a{
+      border: .2rem solid #980000;
+      width: 17rem;
+      font-size: 2.4rem;
+      padding: .65rem 0 .45rem;
+      &:hover{
+        border-color: #f7b317;
+      }
+    }
+  }
+
+  @include touch{
+    margin-bottom: 4em;
+    a{
+      border: .4rem solid #980000;
+      padding: 2rem 0;
+      font-size: 3.6rem;
+      width: 29.6rem;
+    }
+  }
+
+}

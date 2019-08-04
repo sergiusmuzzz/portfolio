@@ -1,0 +1,63 @@
+extends ./../layouts/master
+
+block css-page
+    //-link(href='/css/pages/news/article.css', rel='stylesheet')
+
+block vars
+    - var bodyClass = 'border-box'
+    - var pageClass = 'info-page'
+    - var Title = seed.site.name + ' - ' + seed.site.title
+    - var Url = seed.site.url
+    - var Section = "News"
+    - var page = "info-page"
+
+block main
+    main
+        //-.header(style="background-image: url('../img/article/banner.jpg')")
+        .content
+            .content-inner
+                .content-header.header-text
+                    h1 Title Text
+                .content-body
+                    p
+                        img#__mcenew5(src='http://nxcache.nexon.net/cms/2018/4138/numbers-01.png', alt='', rel='36260')
+                    h2 Create a Nexon Account
+                    p.full-width
+                        span(style='text-align: center;')
+                            img#__mcenew6(src='http://nxcache.nexon.net/cms/2018/4145/account-creation.png', alt='', rel='36267')
+                    p
+                        | MapleStory 2 requires a Nexon America account to play. If you don't have a Nexon America account, you can <a href='https://www.nexon.com/account/en/create'>create one for free here</a>!
+                    p
+                        img#__mcenew7(src='http://nxcache.nexon.net/cms/2018/4139/numbers-02.png', alt='', rel='36262')
+                    h2 Download and Login to the Nexon Launcher
+                    p
+                        span(style='text-align: center;')
+                            a(href='http://download.nxfs.nexon.com/download-launcher?file=NexonLauncherSetup.exe&client-id=747473515.1536693349')
+                                img#__mcenew(src='http://nxcache.nexon.net/cms/2018/4144/download-the-launcher.png', alt='', rel='36264')
+                    p
+                        | MapleStory 2 can be downloaded and played via the Nexon Launcher. The Nexon Launcher will help manage your Nexon games, allowing for easy login and updating. Once you've&nbsp;
+                        a(href='http://download.nxfs.nexon.com/download-launcher?file=NexonLauncherSetup.exe&client-id=747473515.1536693349') downloaded the Nexon Launcher
+                        | , you can login with your Nexon account to get started.
+                    p
+                        img#__mcenew8(src='http://nxcache.nexon.net/cms/2018/4140/numbers-03.png', alt='', rel='36261')
+                    h2 Download MapleStory 2
+                    p
+                        img#__mcenew2(src='http://nxcache.nexon.net/cms/2018/4141/select-ms2.png', alt='', rel='36265')
+                    p
+                        | Once you're logged into the Launcher, you can find MapleStory 2 (and many other Nexon games) on the "All Games" page. Click on MapleStory 2 and then "Play Now" to add MapleStory 2 to your games and begin to download the game!
+                    p
+                        img#__mcenew8(src='http://nxcache.nexon.net/cms/2018/4132/numbers-04.png', alt='', rel='36259')
+                    h2 Choose your Region
+                    p
+                        img#__mcenew3(src='http://nxcache.nexon.net/cms/2018/4143/server-select.png', alt='', rel='36268')
+                    p
+                        | When you launch MapleStory 2 for the first time, you'll be prompted to pick a region to play in. Please note: characters cannot be transferred between regions and you will get a better performance by selecting the server closest to you, so choose carefully.
+                    p
+                        img#__mcenew8(src='http://nxcache.nexon.net/cms/2018/4135/numbers-05.png', alt='', rel='36257')
+                    h2 Create your first Character!
+                    p
+                        img#__mcenew4(src='http://nxcache.nexon.net/cms/2018/4142/character-creation.jpg', alt='', rel='36266')
+                    p
+                        | And now all you need to do is make your first character! Select your preferred class and then customize your character, including their gender, hairstyle, face, cosmetics, skin tone and default outfit! Once you've customized your character just the way you like them, hit Create, pick your name and enjoy your first steps into Maple World!
+
+                .content-footer

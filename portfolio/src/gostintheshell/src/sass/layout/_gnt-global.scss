@@ -1,0 +1,128 @@
+// ----------------------------------------- Global Design assets -----------------------------------------
+
+
+#gnt_center {
+  display: none;
+}
+ 
+// overide global style from GITS
+#gnt {
+  z-index: 100;
+  color: black;
+  a:hover {
+    text-shadow: none
+  }
+  p {
+    color: black;
+  }
+}
+
+
+
+
+
+#gnt {
+
+  // only overide launcher pop up.
+  .gs_launcher_popup { 
+
+    color: white;
+    p { color: white; } 
+    border-radius: 0;
+
+    /* centering */
+    margin: 0 !important;
+    position: fixed;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate( -50% , -50% );
+    
+    @include tablet-only{
+      visibility: hidden !important;
+      display: none !important;
+    }
+    @include mobile {
+      visibility: hidden !important;
+      display: none !important;
+    }
+    
+
+    #gnt_popup_close {
+      background-image: url("http://nxcache.nexon.net/all/img/mb/gnp_close_white.png");
+      background-color: transparent;
+      z-index: 99999;
+      top: 30px;
+      right: 30px;
+    }
+    
+    .modal-launcher {
+      background: rgba(0,0,0,0.8);
+    }
+    .modal-launcher-title {
+      color: rgba(255, 207, 64, 1);
+      font-weight: bold;
+    }
+    .modal-launcher-info {
+      color: #fff;
+    }
+
+    .modal-launcher-instructions {
+      color: #fff;
+      opacity: 0.6;
+    }
+
+    // left button in launcher modal box 
+    .modal-launcher-button {
+      border: 1px solid white;
+      background: white;
+      border-radius: 0 !important;
+      color: #151E2A;
+      font-size: 16px !important;
+      display: inline-block;
+      padding: 13px 0!important;
+      height: auto;
+
+      transition: box-shadow 0.2s;
+      &:hover {
+        border: 1px solid white;
+        background: white;
+        text-shadow:none;
+        box-shadow: 0 0 30px rgba(0,224,216,0.4) !important;
+      }
+      span {
+        position: static;
+      }
+    }
+    .modal-launcher-buttons {
+        line-height: 20px;
+    }
+
+    // right button in launcher modal box 
+    .modal-launcher-button-ghost {
+      border: 1px solid white !important;
+      border-radius: 0 !important;
+      color: white !important;
+      padding: 13px 0!important;
+      height: auto;
+      transition: box-shadow 0.2s;
+      &:hover {
+        color: white !important;
+        transition: box-shadow 0.2s;
+        box-shadow: 0 0 30px rgba(0,224,216,0.4) !important;
+      }
+
+      span {
+        position: static;
+      }
+    }
+    .modal-launcher-instructions {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    #protocol, #hiddenIframe, #hiddenLink {
+      display: none;
+    }
+
+  }
+}

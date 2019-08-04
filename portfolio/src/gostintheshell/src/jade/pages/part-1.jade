@@ -1,0 +1,183 @@
+extends ./../layouts/global.jade
+
+block page
+    section.renewal(data-ga="main-video")
+        .feature-video-mobile
+            img(src="video/main-video-cover.jpg")
+            a.is-video-popup(href="https://www.youtube.com/embed/zwVV2LgtnEg?autoplay=1" data-rel="video" data-i18n='[html]site.section-3.playButton')
+                +play-button
+        .feature-video-desktop
+            video.main-video(autoplay="" loop="" muted class="ui-unique-box__media-video")
+                source(src="http://test-nxcache.nexon.net/firstassault/microsite/renewal/video/feature-video.mp4" type="video/mp4")
+                source(src="http://test-nxcache.nexon.net/firstassault/microsite/renewal/video/feature-video.mp4" type="video/webm")
+            .controllers
+                .mute-icon.is-active
+                    .mute
+                .play-icon
+                    a.is-video-popup(href="https://www.youtube.com/embed/zwVV2LgtnEg?autoplay=1" data-rel="video" data-i18n='[html]site.section-3.playButton')
+            img.big-logo(src="img/logo-big.png")
+        //.main-video
+        //    a.play-button.is-video-popup(data-ga="Play Main Video" href="http://www.youtube.com/embed/MYKYHJIm8oY?autoplay=1")
+        //        +play-button
+    section(data-ga="district-ruins").full-screen
+            .inner-flex
+                .content
+                    h1(data-i18n='[html]site.section-4.title') THE FUTURE IS NOW: RENEWAL
+                    .carousel
+                        a.is-lightbox(href="img/carousel/1.jpg" data-rel="artwork" data-caption="<h4>MODE UPDATES</h4> <p>Utilize teamwork and tactical gameplay with the updated Terminal Conquest mode. Try out - the all-new Elimination mode and take on your enemies with only one life.</p>")
+                            img(src="img/carousel/thumbnail-1.jpg")
+                        a.is-lightbox(href="img/carousel/2.jpg" data-rel="artwork" data-caption="<h4>New Operatives and Skill Revamp</h4> <p>All Tier 1 and Tier 2 skills have been updated to maximize the Operative’s abilities.  Sitara, Azuma and Reiko join the ranks of Section 9.</p>")
+                            img(src="img/carousel/thumbnail-2.jpg")
+                        a.is-lightbox(href="img/carousel/3.jpg" data-rel="artwork" data-caption="<h4>Dynamic Movement</h4> <p>Utilize teamwork and tactical gameplay with the updated Terminal Conquest mode. Try out - the all-new Elimination mode and take on your enemies with only one life.</p>")
+                            img(src="img/carousel/thumbnail-3.jpg")
+                        a.is-lightbox(href="img/carousel/4.jpg" data-rel="artwork" data-caption="<h4>Electronics Center</h4> <p>Check out the new Demolition and Elimination map, Electronics Center.</p>")
+                            img(src="img/carousel/thumbnail-4.jpg")
+                    .content-inner
+                        p(data-i18n='[html]site.section-4.p') The Districts Ruins have been the seedier part of the Niihama Refugee Residential District. Long before the war. Gun Smuggling, Human Trafficking, Illegal Cybernetic Modifying, its all here. The hacker group has hidden their plans and the crates here...FIND THEM and destroy the enemy.
+    section.recruits(data-ga="recruits")
+        .content
+            h1(data-i18n='[html]site.section-3.title') RECRUITS
+            ul.tabs
+                li.current(data-tab="tab-1")
+                    img(src="/img/tab-1.jpg")
+                li(data-tab="tab-2")
+                    img(src="/img/tab-2.jpg")
+                li(data-tab="tab-3")
+                    img(src="/img/tab-3.jpg")
+            ul.mobile-tabs
+                li.prev-tab
+                li.next-tab
+            .tabs-content
+                .tab.tab-1
+                    h2(data-i18n='[html]site.section-3.character-1') Reiko
+                    p(data-i18n='[html]site.section-3.p1') "KILL CONFIRMED"
+                    a.tab-thumbnail.is-video-popup(href="https://www.youtube.com/embed/zwVV2LgtnEg?autoplay=1" data-rel="video" data-i18n='[html]site.section-3.playButton')
+                        video(autoplay="" loop="" muted class="tab-video")
+                            source(src="http://test-nxcache.nexon.net/firstassault/microsite/renewal/video/reiko.mp4" type="video/mp4")
+                            source(src="http://test-nxcache.nexon.net/firstassault/microsite/renewal/video/reiko.webm" type="video/webm")
+                        +play-button
+
+                .tab.tab-2
+                    h2(data-i18n='[html]site.section-3.character-2') SITARA
+                    p(data-i18n='[html]site.section-3.p2') "BLA bla bla"
+                    a.tab-thumbnail.is-video-popup(href="https://www.youtube.com/embed/zwVV2LgtnEg?autoplay=1" data-rel="video" data-i18n='[html]site.section-3.playButton')
+                        video(autoplay="" loop="" muted class="tab-video")
+                            source(src="http://test-nxcache.nexon.net/firstassault/microsite/renewal/video/sitara.mp4" type="video/mp4")
+                            source(src="http://test-nxcache.nexon.net/firstassault/microsite/renewal/video/sitara.webm" type="video/webm")
+                        +play-button
+                .tab.tab-3
+                    h2(data-i18n='[html]site.section-3.character-3') Third Character
+                    p(data-i18n='[html]site.section-3.p3') "bla BLA bla"
+                    a.tab-thumbnail.is-video-popup(href="https://www.youtube.com/embed/zwVV2LgtnEg?autoplay=1" data-rel="video" data-i18n='[html]site.section-3.playButton')
+                        video(autoplay="" loop="" muted class="tab-video")
+                            source(src="http://test-nxcache.nexon.net/firstassault/microsite/renewal/video/azuma.mp4" type="video/mp4")
+                            source(src="http://test-nxcache.nexon.net/firstassault/microsite/renewal/video/azuma.webm" type="video/webm")
+                        +play-button
+            .tab-1.tab-img
+            .tab-2.tab-img
+            .tab-3.tab-img
+
+            .carousel-recruits
+                .slide-1.slide(data-rel="artwork")
+                    img.slide-char(src="img/tab-1-bg-mobile.jpg")
+                    h2 Reiko
+                    h3 “You were outplayed”
+                    a.tab-thumbnail.is-video-popup(href="https://www.youtube.com/embed/zwVV2LgtnEg?autoplay=1" data-rel="video" data-i18n='[html]site.section-3.playButton')
+                        img(src="/video/preview-reiko.jpg" class="tab-video")
+                        +play-button
+                .slide-2.slide(data-rel="artwork")
+                    img.slide-char(src="img/tab-2-bg-mobile.jpg")
+                    h2 SITARA
+                    h3 “KILL CONFIRMED”
+                    a.tab-thumbnail.is-video-popup(href="https://www.youtube.com/embed/zwVV2LgtnEg?autoplay=1" data-rel="video" data-i18n='[html]site.section-3.playButton')
+                        img(src="/video/preview-sitara.jpg" class="tab-video")
+                        +play-button
+                .slide-3.slide(data-rel="artwork")
+                    img.slide-char(src="img/tab-3-bg-mobile.jpg")
+                    h2 Azuma
+                    h3 “You were outplayed”
+                    a.tab-thumbnail.is-video-popup(href="https://www.youtube.com/embed/zwVV2LgtnEg?autoplay=1" data-rel="video" data-i18n='[html]site.section-3.playButton')
+                        img(src="/video/preview-azuma.jpg" class="tab-video")
+                        +play-button
+    section.gear(data-ga="cyber-case")
+        .inner-flex
+            .content
+                .content-inner
+                    img(src="img/all-chars.png")
+                    h1(data-i18n='[html]site.section-2.title')
+                    p(data-i18n='[html]site.section-2.p') With the renewal of First Assault, comes all new outfits, weapon skins, and more content available through the Cyber Gate. Make sure to collect your favorites, suit up, and eliminate your enemies in style.
+
+                .buttons
+                    a.button.primary(href="#" data-ga="Buy Now CTA" data-i18n='[html]site.section-2.buyButton') Buy gear
+    section.classes(data-ga="classes-case")
+        .inner-flex
+            .content
+                .content-inner
+                    //img(src="img/all-chars.png")
+                    h1(data-i18n='[html]site.classes.title') Classes
+                    .class.infiltrator
+                        .right
+                            img(src="img/icon-infiltrator.png")
+                            h2(data-i18n='[html]site.classes.class1title') INFILTRATOR
+                            p(data-i18n='[html]site.classes.class1p') Highly cyberized and heavy damage make these Operatives dangerous in the hands of skilled players. Use speed, stealth or any other means to go deep behind enemy lines before they even know you are there. But be careful though, with lower health, if you are spotted the tides can turn quickly.
+                            dl
+                                dt(data-i18n='[html]site.classes.class1dt1') Operatives
+                                dd(data-i18n='[html]site.classes.class1dd1') Motoko, Paz, Kuro, Maven, Reiko
+                                dt(data-i18n='[html]site.classes.class1dt2') Weapons
+                                dd(data-i18n='[html]site.classes.class1dd2') Sub Machine Gun / Shotgun
+                                dt(data-i18n='[html]site.classes.class1dt3') Dynamic Movement:
+                                dd(data-i18n='[html]site.classes.class1dd3') Slide
+                    .class.specialist
+                        .left
+                            img(src="img/icon-specialist.png")
+                            h2(data-i18n='[html]site.classes.class2title') SPECIALIST
+                            p(data-i18n='[html]site.classes.class2p') These operatives are balanced in speed and defense and employ abilities to track down enemies.  Specialist operatives provide much needed backup from the rear and flank.
+                            dl
+                                dt(data-i18n='[html]site.classes.class2dt1') Operatives
+                                dd(data-i18n='[html]site.classes.class2dd2') Saito, Togusa, Sitara
+                                dt(data-i18n='[html]site.classes.class2dt2') Weapons
+                                dd(data-i18n='[html]site.classes.class2dd2') Sniper Rifle / Personal Defense Weapon
+                                dt(data-i18n='[html]site.classes.class2dt3') Dynamic Movement:
+                                dd(data-i18n='[html]site.classes.class2dd3') Double Jump
+                    .class.assault
+                        .right
+                            img(src="img/icon-assault.png")
+                            h2(data-i18n='[html]site.classes.class3title') ASSAULT
+                            p(data-i18n='[html]site.classes.class3p') Establishing the front line is key to any type of warfare.  The Assault class specializes on being there when the fight breaks out. With high health and defense capabilities, these Operatives can take heavy damage and quickly become the focal point of any opposing team. Be sure to keep the action in front of you though as their slower movements make them vulnerable from behind.
+                            dl
+                                dt(data-i18n='[html]site.classes.class3dt1') Operatives
+                                dd(data-i18n='[html]site.classes.class3dd1') Batou, Borma, Ishikawa, Azuma
+                                dt(data-i18n='[html]site.classes.class3dt2') Weapons
+                                dd(data-i18n='[html]site.classes.class3dd2') Assault Rifle / Machine Gun
+                                dt(data-i18n='[html]site.classes.class3dt3') Dynamic Movement:
+                                dd(data-i18n='[html]site.classes.class3dd3') None
+    section(data-ga="updates").updates
+        .content
+            h1(data-i18n='[html]site.section-5.title') Patch Notes
+            p Welcome to First Connection – Persona! In this update, we’ve revamped District Ruins, added the Cyber Case system, and two new weapons!
+            section
+                h2(data-i18n="[html]site.section-5.section1Title") SYSTEMS
+                ul
+                    li
+                        h3(data-i18n="[html]site.section-5.section1Subtitle1") Cyber Crate System
+                        p(data-i18n="[html]site.section-5.section1p1") The Cyber Crates are random reward boxes that can be purchased with NX or earned through events. With hundreds of items to help customize your operative and weapons, you will be able to enhance your persona with new and never before seen cosmetics. Cyber Crates reward cosmetics such as weapon skins, operative skins, paints, stickers, name cards, emblems, and more.
+                    li
+                        h3(data-i18n="[html]site.section-5.section1Subtitle2") Memory Cell (MC) Shop
+                        p(data-i18n="[html]site.section-5.section1p2") With the Cyber Crate system, we’re introducing the Memory Cell (MC) Shop. MC is currency that you can receive through events or through duplicated items that are received in Cyber Crates. Head to the MC shop today to view the items that are available for purchase!
+            section
+                h2(data-i18n="[html]site.section-5.section2Title") MAP
+                ul
+                    li
+                        h3(data-i18n="[html]site.section-5.section2Subtitle1") District Ruins – Terminal Conquest
+                        p(data-i18n="[html]site.section-5.section2p1") We’ve heard our community’s feedback about wanting our maps to feel more in tune with the Ghost in the Shell universe. We’re starting with a well-loved map, one of First Assault’s oldest and most played maps of all time – welcome to the revamped District Ruins. We’ve updated the entire map to feel grittier, with more ruins and inspiration taken from the anime series. Dive in and let us know what you think of the new District Ruins.
+
+            section
+                h2(data-i18n="[html]site.section-5.section3Title") WEAPON
+                ul.list
+                    li
+                        h3(data-i18n="[html]site.section-5.section3Subtitle1") SMG: KAC-PDW
+                        p(data-i18n="[html]site.section-5.section3p1") Chambered for 6x35mm rounds, this weapon features superior penetration and reliability thanks to its extended barrel.
+                    li
+                        h3(data-i18n="[html]site.section-5.section3Subtitle2") AR: KHX-160
+                        p(data-i18n="[html]site.section-5.section3p2") A redesign of a larger rifle, the KHX-160  offers the damage and accuracy of a rifle contained in a smaller, more versitile package.
+            a.read-more(data-ga="Read More CTA" href="en/news/21332/fc-part-i-persona" data-i18n="[href]site.section-5.readMoreUrl [html]site.section-5.readMore") Read more

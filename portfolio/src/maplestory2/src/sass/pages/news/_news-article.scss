@@ -1,0 +1,334 @@
+
+.article-page {
+    @include desktop{
+        .show-desktop-only{
+            display: block;
+        }
+
+        .hide-desktop-only{
+            display: none;
+        }
+    }
+    @include touch{
+        .show-mobile-only{
+            display: block;
+        }
+
+        .hide-mobile-only{
+            display: none;
+        }
+    }
+    .publishing-info{
+        font-weight: bold;
+        time{
+            color: black;
+        }
+        @include desktop{
+            font-size: 2rem;
+        }
+        @include touch{
+            font-size: 3rem;
+        }
+    }
+    main{
+        background-color: #EBEFF2;
+        padding-top: 10rem;
+        @include desktop{
+            //background: url($bg-article) #f4e98d no-repeat center 63.5rem / contain;
+            background: url($bg-article) #EBEFF2 no-repeat center top / 100% auto;
+        }
+        @include touch{
+            background-image: none;
+        }
+    }
+    .header {
+        background: center / cover no-repeat;
+        margin-bottom: 6rem;
+        //height: 63.5rem;
+        height: 63.5rem;
+    }
+    .info-line {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include desktop{
+            margin-bottom: 3rem;
+        }
+        @include touch{
+            //flex-flow: column;
+            //align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+    }
+    hr {
+        clear: both;
+        border-bottom: 2px dotted #e8e8e9;
+    }
+    .related-content {
+        h4 {
+            text-transform: uppercase;
+            font-family: $family-secondary;
+            font-weight: bold;
+            font-size: 4rem;
+            text-align: center;
+            color: #2f2b25;
+        }
+        .publishing-info{
+            time{
+                color: $white;
+            }
+        }
+    }
+
+    main {
+        position: relative;
+        @include touch {
+            margin-bottom: 0;
+        }
+        .content {
+            line-height: 1.3;
+            position: relative;
+            font-size: 1rem;
+            min-height: 87vh;
+            @include desktop-only{
+                font-size: 1.5rem;
+            }
+            @include touch{
+                padding: 0 5rem;
+            }
+            iframe{
+                width: 100%;
+                @include desktop {
+                    height: 56rem;
+                }
+
+                @include tablet-only {
+                    height: 44rem;
+                }
+
+                @include mobile {
+                    height: 30rem;
+                }
+            }
+            .content-inner {
+                position: relative;
+                z-index: 2;
+            }
+            h1, h2, h3, h4, h5 {
+                color: $header-color;
+                font-weight: normal;
+                letter-spacing: normal;
+            }
+            h1 {
+                font-size: 5em;
+                margin: 0 0 2rem;
+                @include mobile {
+                    padding: 0;
+                }
+            }
+            h2 {
+                font-size: 3.6em;
+                margin: 0 0 2.5rem;
+                @include mobile {
+                    font-size: 3.5rem;
+                }
+            }
+            h3 {
+                font-size: 2.8em;
+                margin: 0 0 2.3rem;
+                @include mobile {
+                    font-size: 3rem;
+                }
+            }
+
+            h4 {
+                font-weight: bold;
+                font-size: 2em;
+            }
+
+            p{
+                @include desktop{
+                    font-size: 1.8em;
+                }
+                @include touch{
+                    font-size: 3em;
+                }
+                margin-bottom: 2rem;
+            }
+
+            ul, ol {
+                padding-left: 4rem;
+                margin-bottom: 2rem;
+                ul, ol{
+                    margin-bottom: 0;
+                }
+                & > li{
+                    font-size: 1.8em;
+                    @include touch{
+                        font-size: 2.6em;
+                    }
+                    li{
+                        font-size: 1em;
+                    }
+                }
+            }
+
+            ul {
+                list-style: disc;
+            }
+
+            .content-body {
+                a {
+                    color: $link-article;
+                    &:hover {
+                        color: $link-article-hover;
+                    }
+                    text-decoration: underline;
+                }
+            }
+            img {
+                margin: auto;
+                width: auto;
+                @include desktop {
+                    &.left {
+                        float: left;
+                        padding: 0 3rem 4.5rem 0;
+                        max-width: 50%;
+                    }
+                    &.right {
+                        float: right;
+                        padding: 0 0 4.5rem 3rem;
+                        max-width: 50%;
+                    }
+                }
+                @include until($desktop) {
+                    width: 100%;
+                }
+            }
+
+            .notice{
+                color: #dd2c00;
+            }
+
+            .content-footer {
+                padding-bottom: 5rem;
+                .news-tags {
+                    font-weight: bold;
+                    span{
+                        font-size: 1.6em;
+                    }
+                    @include mobile {
+                        font-size: 2.4em;
+                    }
+                }
+                .news-tags, ul {
+                    display: flex;
+                }
+                .news-tags a {
+                    text-transform: uppercase;
+                    color: $white;
+                    background-color: $red-brighter;
+                    padding: .3em .45em .1em;
+                    font-weight: normal;
+                    opacity: 1;
+                    transition: opacity .2s;
+                    &:hover {
+                        opacity: .8;
+                    }
+                }
+                ul {
+                    list-style: none;
+                    li:not(:last-child) {
+                        margin-right: .9em;
+                    }
+                }
+
+                @include mobile {
+                    margin-top: 6em;
+                    padding-bottom: 4em;
+                }
+            }
+
+            @include desktop {
+                width: 91.5em;
+                line-height: 1.6;
+            }
+        }
+    }
+
+    .social-sharing {
+        display: flex;
+        justify-content: flex-end;
+        @include touch{
+            //order: -1;
+            //margin-bottom: 3.5rem;
+        }
+        a {
+            flex-flow: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: black;
+            background: url(../img/share.png) no-repeat left center / 100% auto;
+            width: 12rem;
+            height: 5rem;
+            @include until($desktop){
+                //font-size: 9.5rem;
+            }
+            @include touch{
+                width: 10rem;
+                height: 4rem;
+            }
+            & > span{
+                font-family: $family-secondary;
+                font-weight: 600;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                padding: 0.5rem;
+                padding-left: 2rem;
+                display: inline-block;
+                width: 8rem;
+            }
+
+            &:before{
+                display: block;
+            }
+
+            &.fb-share-button {
+                margin-right: 1.5rem;
+                span {
+                    background: url(../img/facebook.png) no-repeat left center / 1.25rem auto; 
+                    @include touch{
+                        background-size: 0.85rem auto;
+                        width: 7rem;
+                        padding-left: 1.5rem;
+                    }                   
+                }
+            }
+            &.tw-share-button {
+                span {
+                    background: url(../img/twitter.png) no-repeat left center / 2.5rem auto;
+                    padding-left: 3rem;
+                       @include touch{
+                        background-size: 1.5rem auto;
+                        width: 8rem;
+                        padding-left: 2rem;
+                    }                   
+                }
+            }
+            &:hover{
+                opacity: .8;
+            }
+        }
+    }
+    .back-to-top{
+        position: absolute;
+        right: 0;
+        bottom: 28.5rem;
+        width: 23.6rem;
+        @include until($desktop){
+            display: none !important;
+        }
+    }
+}

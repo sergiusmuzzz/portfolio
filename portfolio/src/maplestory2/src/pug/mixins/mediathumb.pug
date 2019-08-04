@@ -1,0 +1,27 @@
+mixin mediathumb(data)
+  if data
+    a.mediabox(href="#", data-group=data.group, data-panel=data.panel, data-title=data.title, data-desc=data.desc, data-imgfull=data.imgfull, data-ytid=data.ytid, data-video=data.video, data-twitch=data.twitch)
+      if data.blips
+        +blips()
+      if data.thumb
+        .mediathumb(style="background-image: url(#{data.thumb})")
+      if data.title
+        .title !{data.title}
+      if data.video || data.ytid
+        .btn-video
+
+
+mixin mediathumb2(data, index)
+  if data
+    a.mediabox(href="#", data-index=index, data-group=data.group, data-panel=data.panel, data-title=data.title, data-desc=data.desc, data-imgfull=data.imgfull, data-ytid=data.ytid, data-video=data.video, data-twitch=data.twitch)
+      .media-item
+        if data.blips
+          +blips()
+        if data.thumb
+          .media-thumb(style="background-image: url(#{data.thumb})")
+        if data.title
+          .title !{data.title}
+        if data.video || data.ytid
+          .btn-video
+            
+    //- &nbsp;

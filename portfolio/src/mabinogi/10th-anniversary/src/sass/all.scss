@@ -1,0 +1,25 @@
+
+// Include Compass & Reset
+	@import "compass";				
+	@import "compass/reset";	
+
+// Foundation
+	@import "foundation/foundation/components/grid";
+
+// Base
+	@import "global/utility/_mixins-tool";
+	@import "global/components/_all";
+	@import "global/components/share";
+	@import "global/modules/_footer";
+
+// Global Page Modules
+
+@import "pages/home/_gnt";
+@import "pages/home/_game-launcher";
+
+@import "pages/all/_lightBox";
+@import "pages/home/owl.carousel";
+
+
+// Pages
+	@import "pages/main";

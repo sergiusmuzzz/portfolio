@@ -1,0 +1,71 @@
+
+
+.m-lightbox { width: 100%; height: 100%; opacity: 0; @include fixed( top 0 left 0 ); z-index: z("modal"); @include transition( opacity 5s ease); color: black; display: none; @extend %icon;
+  background: rgba(0,0,0,0.9);
+  
+  @media #{$small-only} { background: rgba(0,0,0,0.9); }
+  &.active { display:block;  @include animation('m-popup_active .3s ease'); @include animation-fill-mode(forwards);
+    .m-popup__container { @include animation-delay(0.7s); @include animation('m-popup__container_active 1.1s ease'); @include animation-fill-mode(forwards);  }
+    
+  }
+  &.disappear { display: block;  @include animation('m-popup_disappear .4s ease'); @include animation-fill-mode(forwards);
+    .m-popup__container { }
+  }
+  /* extra touch - fadein inner contents with slight delay */
+  @include keyframes(m-popup__container_active) {
+    0% { opacity: 0; }
+    45% { opacity: 0; }
+    95% { opacity: 100; }
+    100% { opacity: 100; }
+  }
+  
+  /* pop up disappear animation */
+  @include keyframes(m-popup_disappear) {
+    0% { opacity: 100; }
+    20% { opacity: 100; }
+    95% { opacity: 0; }
+    100% { display:none; opacity: 0; }
+  }
+  
+  /* pop up appear animation */
+  @include keyframes(m-popup_active) {
+    0% {  opacity: 0; }
+    10% { opacity: 0; }
+    95% { opacity: 100; }
+    100% { display:block; opacity: 100; }
+  }
+  
+  .container-wrapper { @include absolute( top 50% left 50% ); @include transform(translate( -50% , -50% )); max-width: 800px; width: 100%; z-index: z("modal")+1; text-align: center;
+    /*    @media #{$medium-only} { width: 85%; }*/
+    
+  }
+  .container { background: black; width: auto; height: 100%; margin-bottom: 2.0em; border: 2px solid white; @include transition( opacity 3s ease);
+    img { width: 100%; height: auto; }
+    @media #{$small-only} { border: none; }
+  }
+  
+  .video { position:relative; padding-bottom:56.25%; height:0; overflow:hidden;
+    iframe { z-index: z("modal"+1);
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+    }
+  }
+  
+  %m-lightbox-ui { display: inline-block; padding: 0.35em 0.116em 0.45em; border-radius: 50%;  font-size: 6em; color: white; border: 1px solid white; line-height: 0; color : white; cursor: pointer;
+    &:hover { color: #b8b9b9; border-color: #b8b9b9; }
+  }
+  .ui_close-icon { @include absolute(top 0.7em right 1em); @extend %m-lightbox-ui; padding: 0.62em 0.32em 0.65em; font-size: 3em; z-index: z("modal")+2;
+    @media #{$small-only} { font-size: 6em; top: 0.5em; right: 0.5em; }
+  }
+  .ui_left-arrow { @extend %m-lightbox-ui;
+    @media #{$small-only} { display:none; }
+  }
+  .ui_right-arrow { @extend .ui_left-arrow; margin-left: 20px; }
+}
+
+.light-box-active {
+  .m-home-bg, header, footer { @include filter(blur(5px)); }
+}

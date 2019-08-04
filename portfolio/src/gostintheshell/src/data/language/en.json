@@ -1,0 +1,109 @@
+callback_en({
+	"site": {
+		"head": {
+			"title": "FA: The Future is Now; Renewal | First Assault Official Website",
+			"description": "First Assault’s biggest episode yet brings an all-new look! Dive in and join SECTION 9 along with 3 new Operatives!"
+		},
+		"header": {
+			"link1": "RENEWAL",
+			"link2": "RECRUITS",
+			"link3": "GEAR",
+			"link4": "CLASSES",
+			"link5": "PATCH NOTES",
+			"link-to-main-site": "GO TO MAIN SITE",
+			"url-to-main-site": "http://firstassault.nexon.net/en",
+			"call-to-action": "Play free",
+		},
+		"footer": {
+			"link1_text": "PRIVACY POLICY",
+			"link1_url": "http://www.nexon.net/en/legal/privacy-policy/",
+			"link2_text": "Terms of Use",
+			"link2_url": "http://www.nexon.net/en/legal/terms-of-use/",
+			"link3_text": "VIEW SUPPORTED REGIONS",
+			"link3_url": "http://firstassault.nexoneu.com/en/news/4041/supported-regions",
+			"link4_text": "GET SUPPORT",
+			"link4_url": "https://support-firstassault.nexon.net/hc/en-us",
+			"legalNotice": "Copyright © 2017 NEOPLE INC. & NEXON America Inc. All Rights Reserved. <br>Based on the manga 'Ghost in the Shell' by Shirow Masamune originally serialized in the Weekly Young Magazine <br>Published by KODANSHA LTD. © Shirow Masamune • Production I.G/KODANSHA All Rights Reserved."
+		},
+		"renewal": {
+			"title": "THE FUTURE IS NOW: RENEWAL",
+			"p": "GitS: First Assault is undergoing a renewal and this update contains a wealth of new features.  Some of the new content includes a revamped UI, free operative rotation, new mode, maps, and much, much more!  Take some time to check out the changes, and log in to experience the all new First Assault.",
+			"image1": "<h4>Mode Updates</h4><p>Utilize teamwork and tactical gameplay with the updated Terminal Conquest mode. Try out the all-new Elimination mode and take on your enemies with only one life.</p>",
+			"image2": "<h4>New Operatives and Skill Revamp</h4><p>All Tier 1 and Tier 2 skills have been updated to maximize the Operative’s abilities.  Sitara, Azuma and Reiko join the ranks of Section 9. </p>",
+			"image3": "<h4>Dynamic Movement</h4><p>The future is now with new dynamic movement, including double jumps and slides to surprise and evade your enemies.</p>",
+			"image4": "<h4>Electronics Center</h4><p>Check out the new Demolition and Elimination map, Electronics Center.</p>",
+		},
+		"recruits": {
+			"title": "RECRUITS",
+			"char1": "REIKO",
+			"quote1": "“YOU WERE OUTPLAYED”",
+			"char2": "SITARA",
+			"quote2": "“KILL CONFIRMED”",
+			"char3": "AZUMA",
+			"quote3": "“DON’T MESS WITH MY TEAM”",
+		},
+		"gear": {
+			"title": "GEAR",
+			"p": "With the renewal of First Assault, comes all new outfits, weapon skins, and more content available through the Cyber Gate.  Make sure to collect your favorites, suit up, and eliminate your enemies in style.",
+			"call-to-action": "BUY GEAR",
+		},
+		"classes": {
+			"title": "CLASSES",
+			"class1title": "INFILTRATOR",
+			"class1p": "Highly cyberized and heavy damage make these Operatives dangerous in the hands of skilled players. Use speed, stealth or any other means to go deep behind enemy lines before they even know you are there. But be careful though, with lower health, if you are spotted the tides can turn quickly.",
+			"class1dt1": "Operatives:",
+			"class1dd1": "Motoko, Paz, Kuro, Maven, Reiko",
+			"class1dt2": "Weapons:",
+			"class1dd2": "Sub Machine Gun / Shotgun",
+			"class1dt3": "Dynamic Movement: ",
+			"class1dd3": "Slide",
+
+			"class2title": "SPECIALIST",
+			"class2p": "These operatives are balanced in speed and defense and employ abilities to track down enemies.  Specialist operatives provide much needed backup from the rear and flank.",
+			"class2dt1": "Operatives:",
+			"class2dd1": "Saito, Togusa, Sitara",
+			"class2dt2": "Weapons:",
+			"class2dd2": "Sniper Rifle / Personal Defense Weapon",
+			"class2dt3": "Dynamic Movement: ",
+			"class2dd3": "Double Jump",
+
+			"class3title": "ASSAULT",
+			"class3p": "Establishing the front line is key to any type of warfare.  The Assault class specializes on being there when the fight breaks out. With high health and defense capabilities, these Operatives can take heavy damage and quickly become the focal point of any opposing team. Be sure to keep the action in front of you though as their slower movements make them vulnerable from behind.",
+			"class3dt1": "Operatives:",
+			"class3dd1": "Batou, Borma, Ishikawa, Azuma",
+			"class3dt2": "Weapons:",
+			"class3dd2": "Assault Rifle / Machine Gun",
+			"class3dt3": "Dynamic Movement: ",
+			"class3dd3": "None",
+		},
+		"patchNotes": {
+			"title": "Patch Notes",
+			"section1Title": "User Interface",
+			"section1p1": "-The UI has undergone a complete overhaul.",
+			"section1p2": "We made some major updates and optimizations to the user experience and flow. Please check it out in game!",
+
+			"section2Title": "Operative Changes (Operative 2.0)",
+			"section2p1": "All of the Operatives have undergone major and minor changes, whether it be attached to their class assignment or more direct changes to their abilities.",
+
+			"section3Title": "Weapon Balance",
+			"section3p1": "	Nearly all weapon stats have been adjusted. Click here for detailed stat changes.",
+			"section3p2": "	Shotgun and Sniper Rifle damage has been increased to compensate for the overall HP increase for all Operatives.",
+
+			"section4Title": "Gameplay Changes",
+			"section4p1": "	Tier 1 abilities are now bound to the E key by default. They do not cost any Intel, and are on a low cooldown.",
+			"section4p2": "	Tier 2 abilities are bound to the Q key by default. They require Intel, but no longer have a cooldown. Tier 2 and Tier 1 abilities of the same name cannot be stacked.",
+
+			"readMore": "read more",
+			"readMoreUrl": "http://firstassault.nexon.net/en/news/23963/renewal",
+		},
+		"modal": {
+			"title": "Choose Your platform",
+			"play-on-steam": "Play On Steam",
+			"play-on-nexon-launcher": "Play On Nexon Launcher"
+		},
+		"mobile-menu": {
+			"link1": "GO TO MAIN SITE",
+			"link2": "PART 1 PERSONA"
+		}
+	}	
+})

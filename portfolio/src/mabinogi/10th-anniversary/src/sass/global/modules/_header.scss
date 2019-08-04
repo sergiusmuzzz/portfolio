@@ -1,0 +1,162 @@
+header {
+  position: relative;
+  width: 100%;
+  background:  no-repeat #1a1a24;
+  padding: 1.1em 0 1.1em;
+  text-align: center;
+
+  .logo {
+    margin-top: .15em;
+    vertical-align: top;
+    display: inline-block;
+  }
+
+  ul{
+    display: inline-block;
+    li{
+      display: inline-block;
+      a{
+        display: inline-block;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+
+  .button {
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid #b8a2f7;
+    border-radius: 2em;
+    width: 19.5em;
+    height: 4.4em;
+    text-transform: uppercase;
+    color: #fff;
+    padding: .8em 0;
+    margin-top: 2.5em;
+    font-family: Lora, serif;
+    &:hover{
+      background-color: #b8a2f7;
+    }
+    span{
+      display: block;
+    }
+
+    & span:nth-child(1){
+      font-size: 1.3em;
+    }
+
+    & span:nth-child(2){
+
+    }
+
+    @media #{$small-only} {
+      width: 21.1em;
+      margin-top: .4em;
+    }
+
+  }
+
+  @media #{$large-up} {
+    &:before, &:after{
+      content: "";
+      display: block;
+      background: url('../img/header/header-bg.jpg') no-repeat;
+      background-size: cover;
+      width: 24.6em;
+      height: 100%;
+      position: absolute;
+      top: 0;
+    }
+
+    &:before{
+      background-position: left top;
+      left: 0;
+    }
+
+    &:after{
+      background-position: right top;
+      right: 0;
+    }
+  }
+
+  @media #{$medium-up} {
+    .logo {
+      width: 13.45em;
+      margin-right: 4.4em;
+    }
+
+    ul{
+      margin-right: 2.2em;
+      li{
+        margin-right: 2.9em;
+        a{
+          width: 9.4em;
+          height: 9.5em;
+        }
+
+      }
+    }
+  }
+
+  @media #{$small-only} {
+    padding-bottom: 2em;
+    &:before{
+      content: "";
+      display: block;
+      background: url('../img/header/header-mobile-bg.jpg') no-repeat;
+      background-size: cover;
+      width: 24.7em;
+      height: 8.25em;
+      position: absolute;
+      top: 0;
+    }
+
+    &:before{
+      background-position: left top;
+      left: 0;
+    }
+
+    .logo {
+      width: 14em;
+      margin-left: 24em;
+      margin-right: 2em;
+    }
+
+    ul{
+      display: inline-block;
+      margin-right: 0;
+      li{
+        display: inline-block;
+        margin-right: 1em;
+        a{
+          display: inline-block;
+          width: 13.2em;
+          height: 13.4em;
+        }
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  
+  .desktop {
+    display: none;
+    @media #{$medium-up} {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+
+  .mobile {
+    display: none;
+    @media #{$small-only} {
+      display: inline-block;
+    }
+  }
+
+}

@@ -1,0 +1,31 @@
+block header
+    header
+        a(class="logo", href="/")
+            img(src="img/header/logo.png")
+        .mobile
+            a(href="javascript:void(0)", class="button j-play-free")
+                span
+                    | PLAY FOR FREE
+                span
+                    | ON YOUR PC
+        ul
+            li
+                a(class = currentPage != 'music-composition' ? "" : "current", href="music-composition.html")
+                    img(src="/img/header/mc-link.png")
+            li
+                a(class = currentPage != 'renown-system' ? "" : "current", href="renown-system.html")
+                    img(src="/img/header/rn-link.png")
+            li
+                a(class = currentPage != 'jam-band' ? "" : "current", href="jam-band.html")
+                    img(src="/img/header/jb-link.png")
+            li
+                a(class = currentPage != 'musical-math' ? "" : "current", href="musical-math.html")
+                    img(src="/img/header/md-link.png")
+        a(href="javascript:void(0)", class="button desktop j-play-free")
+            span
+                | PLAY FOR FREE
+            span
+                | ON YOUR PC
+
+
+// END: Header

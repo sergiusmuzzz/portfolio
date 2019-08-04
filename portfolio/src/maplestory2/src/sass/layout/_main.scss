@@ -1,0 +1,55 @@
+html{
+
+    @include desktop{
+        font-size: calc(5px + (10 - 5) * ((100vw - 1024px) / (1920 - 1024))) !important;
+    }
+
+    @include touch{
+        font-size: calc(10px + (10 - 5) * ((100vw - 1024px) / 640)) !important;
+    }
+
+}
+
+#site{
+    background-color: $bg-color;
+    height: 100%;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    @include touch{
+        text-align: center;
+    }
+}
+
+main{
+    min-height: 100%;
+    .content{
+        margin: auto;
+    }
+}
+
+.home-page{
+    main{
+        padding-top: 0;
+    }
+}
+
+.feature-video-desktop{
+    @include until($desktop){
+        display: none;
+    }
+}
+
+.feature-video-mobile{
+    background: no-repeat center top / cover;
+
+    @include from($desktop){
+        display: none;
+    }
+    @include touch{
+        background-image: url('../img/home/video-cover-mobile.jpg');
+        height: 106.5rem;
+    }
+}

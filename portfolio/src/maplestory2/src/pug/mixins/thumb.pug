@@ -1,0 +1,12 @@
+mixin thumb(data)
+  if data && data.url
+    a.thumb(href="#{data.url}")
+      if data.blips
+        +blips()
+      if data.thumb
+        img(src="#{data.thumb}")
+      if data.title
+        .title !{data.title}
+      if data.video || data.ytid
+        .btn-video
+

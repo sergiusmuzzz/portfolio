@@ -1,0 +1,12 @@
+mixin breadcrumb(data)
+  .breadcrumb
+    ul
+      each crumb in data
+        li
+          if crumb.url
+            a(href="#{crumb.url}", data-i18n="")
+              | #{crumb.title}
+            +icon('arrow-right')
+          else 
+            span #{crumb.title}
+

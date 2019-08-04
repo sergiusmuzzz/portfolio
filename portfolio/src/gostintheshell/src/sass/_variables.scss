@@ -1,0 +1,24 @@
+// Typography
+$family-primary: 'Roboto', sans-serif;
+$family-secondary: 'Iceland', cursive;
+
+// Text Colors
+$white: rgba(255, 255, 255, 1);
+$white-o-75: rgba(255, 255, 255, .85);
+$white-o-50: rgba(255, 255, 255, .5);
+$magenta: rgba(215, 78, 241, 1);
+$magenta-o-45: rgba(215, 78, 241, .45);
+$magenta-o-50: rgba(215, 78, 241, .5);
+$magenta-o-65: rgba(215, 78, 241, .65);
+$yellow-neon: rgba(199, 236, 42, 1);
+$deep-sky-blue: rgba(28, 163, 227, 1);
+$sky-blue: rgba(74, 132, 245, 1);
+$blue: rgba(13, 91, 243, 1);
+$light-red: rgba(255, 69, 92, 1);
+$yellow: rgba(255, 207, 64, 1);
+$yellow-o-45: rgba(255, 207, 64, .45);
+$yellow-o-50: rgba(255, 207, 64, .5);
+$yellow-o-65: rgba(255, 207, 64, .65);
+
+$link-color: $white-o-50;
+$link-color-hover: $magenta;

@@ -1,0 +1,17 @@
+//#gnt_center { display: none; }
+
+#gnt .top-bar .button-blue, #gnt .top-bar .button-green {
+  font-size: 13px !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  #gnt_center {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  #gnt_center {
+    display: block;
+  }
+}

@@ -1,0 +1,206 @@
+// Font Sizes
+$h1: 2.5em;
+$h2: 2.25em;
+$h3: 2em;
+$h4: 1.75em;
+$h5: 1.5em;
+$h6: 1.25em;
+$p: 1em;
+
+// Body
+$background: #979ea2;
+$color: #ffffff;
+$fontSize: 16px;
+$linkColor: #800000;
+
+// Language Selector
+$languageSelectorWidth: 8em;
+
+// Header
+$headerHeight: 3em;
+
+// Cards
+$mobile-CardHeight: 50em;
+$tablet-CardHeight: 45em;
+$desktop-CardHeight: 45em;
+
+// News
+$news-item-banner: "../../../img/news/news1.jpg";
+$news-item-gradiant: "../../../img/gradiants/news-item.png";
+$desktop-news-bg: "../../../img/bg/desktop-news-bg.jpg";
+$tablet-news-bg: "../../../img/bg/tablet-news-bg.jpg";
+$mobile-news-bg: "../../../img/bg/mobile-news-bg.jpg";
+
+// Forum Colors
+$adminColor: #cedd00;
+$modColor: #0b8fc6;
+$bossColor: #ff2a6e;
+
+/*-------------------*/
+
+$bg-main: '../img/bg-main.jpg';
+$bg-home: '../img/home/bg-home.jpg';
+$bg-news: '../img/news/bg-news.jpg';
+$bg-article: '../img/article/bg-article.jpg';
+$bg-article-touch: '../img/article/bg-article-touch.jpg';
+
+// Typography
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Viga');
+$family-primary: "Roboto" !default
+//$family-secondary: "Anton" !default
+$family-secondary: "Viga" !default
+$family-monospace: monospace !default
+$render-mode: optimizeLegibility !default
+
+//Font size numeric
+$size-1: 3rem !default
+$size-2: 2.5rem !default
+$size-3: 2rem !default
+$size-4: 1.5rem !default
+$size-5: 1.25rem !default
+$size-6: 1rem !default
+$size-7: 0.75rem !default
+
+//Font size named
+$size-small: $size-7 !default
+$size-normal: $size-6 !default
+$size-medium: $size-5 !default
+$size-large: $size-4 !default
+$weight-light: 300 !default
+$weight-normal: 400 !default
+$weight-semibold: 500 !default
+$weight-bold: 800 !default
+
+//Colors
+$dark-blue: hsl(248, 12%, 13%) !default;
+
+
+$black:             hsl(0, 0%, 4%) !default
+$black-bis:         hsl(0, 0%, 7%) !default
+$black-ter:         hsl(0, 0%, 14%) !default
+$black-o-70:        hsla(0, 0, 0, .7) !default;
+
+$grey-darker:       hsl(0, 0%, 20%) !default
+$grey-dark:         hsl(0, 0%, 29%) !default
+$grey:          hsl(0, 0%, 40%) !default
+$grey-light:      hsl(0, 0%, 57%) !default
+$grey-lighter:      hsl(0, 0%, 86%) !default
+
+$grey-blue-light:       hsl(201, 14%, 50%) !default
+
+$grey-blue:       hsl(250, 5%, 22%) !default
+
+$white-ter:         hsl(0, 0%, 96%) !default
+$white-bis:         hsl(0, 0%, 98%) !default
+$white:             hsl(0, 0%, 100%) !default
+$white-grey:      hsl(210, 20%, 98%) !default
+
+$orange:            hsl(14, 100%, 53%) !default
+$orange-lighter:        hsl(26, 100%, 50%)  !default
+$yellow:        hsl(40, 100%, 50%) !default
+$yellow-50:       hsla(40, 100%, 50%, .5) !default
+$yellow-darker:     hsl(48, 93%, 62%) !default
+$brown-yellow:        hsl(38, 87%, 52%) !default
+//$yellow:            hsl(48,  100%, 67%) !default
+$green:         hsl(100, 75%, 46%) !default
+$green-darker:      hsl(122, 43%, 48%) !default
+$turquoise:         hsl(171, 100%, 41%) !default
+$blue:          hsl(199, 100%, 48%) !default
+$blue-darker:       #304ffe !default
+$blue-lighter: #236bfe !default
+$blue-gray:       hsl(201, 44%, 17%) !default
+$purple:            hsl(244, 100%, 74%) !default
+$purple-lighter:    hsl(244, 34%, 17%) !default
+
+$purple-lighter-o-25:   hsla(244, 100%, 74%, .25) !default
+$purple-neutral:        hsl(244, 34%, 26%) !default
+$purple-darker:         hsl(244, 32%, 10%) !default
+$black-darker-o-85:   hsla(244, 32%, 10%, .85) !default;
+$red:           hsl(356, 85%, 59%) !default
+$red-darker:      hsl(0, 100%, 42%) !default
+$red-orange:      hsl(11, 100%, 38%) !default
+$red-bright: hsl(3, 100%, 50%) !default
+$red-brighter: #ff0000 !default
+
+
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+// 2. Primary colors
+
+$primary: $white !default
+
+$info: $blue !default
+$success: $green !default
+$warning: $yellow !default
+$danger: $red !default
+
+$light: $white-ter !default
+$dark: $grey-darker !default
+
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+
+$bg-color: $white-grey;
+$header-bg: $black-o-70;
+$footer-bg: $black;
+$footer-color: $yellow-50;
+
+
+$header-color: $dark-blue;
+
+// Category colors
+$updates: $blue !default
+$events: $purple !default;
+$sales: $red-darker !default;
+$maintenances: $orange-lighter !default;
+$announcements: $green-darker !default;
+
+// Links color
+$link: $primary;
+$link-hover: $purple;
+
+$link-article: $blue-darker;
+$link-article-hover: $blue-lighter;
+
+/*$link-invert: $primary-invert !default
+$link-visited: $purple !default*/
+
+// Border colors
+$border-color: $purple-lighter-o-25;
+$border-color-2: $blue;
+
+//Forms color
+$form-bg: $purple-darker;
+$form-bg-2: $purple-lighter;
+$form-color: $white-grey;
+
+// Other colors
+$table-tr-hover: $purple-lighter;
+$profile-box: $purple-lighter;
+$lederboard-box: $purple-lighter;
+$search-result-item: $purple-lighter;
+$poll: $purple-lighter;
+$tag-color: $blue;
+$reaction-counter-bg: $white-grey;
+$reaction-counter-color: $blue;
+$buttonbar-button: $white;
+$header-title: $purple-neutral;
+$search-matching: $purple;
+
+$fb: hsl(215, 65%, 48%) !default
+$tw: hsl(190, 82%, 43%) !default
+
+// Miscellaneous
+$easing: ease-out !default
+$radius-small: 2px !default
+$radius: 3px !default
+$radius-large: 5px !default
+$speed: 86ms !default
+
+//Mobile
+$mobile-menu-bg: $purple-lighter;
+$mobile-nav-icon-bg: $purple-lighter;
+$mobile-nav-accordion-bg: $black-bis;

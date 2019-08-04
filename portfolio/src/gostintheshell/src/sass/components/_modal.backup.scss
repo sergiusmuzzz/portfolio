@@ -1,0 +1,151 @@
+// ----------------------------------------- Modal Pupup -----------------------------------------
+
+.m-modal {
+  width: 100%;
+  height: 100%;
+  display: none;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(2,11,16,0.9);
+  z-index: 10;
+
+  &.active {
+    display:block;
+    @include animation('m-modal_active .3s ease');
+    @include animation-fill-mode(forwards);
+    .m-modal__container {
+      @include animation-delay(0.7s);
+      @include animation('m-modal__container_active .7s ease');
+      @include animation-fill-mode(forwards);
+    }
+
+  }
+  &.disappear {
+    display: block;
+    @include animation('m-modal_disappear .3s ease');
+    @include animation-fill-mode(forwards);
+    .m-modal__container { }
+  }
+  
+  /* pop up disappear animation */
+  @include keyframes(m-modal_disappear) {
+    0% { opacity: 1; }
+
+    10% { opacity: 1; }
+
+    95% { opacity: 0; }
+
+    100% { display:none; opacity: 0; }
+  }
+  
+  /* pop up appear animation */
+  @include keyframes(m-modal_active) {
+    0% {  opacity: 0; }
+
+    10% { opacity: 0; }
+
+    95% { opacity: 1; }
+
+    100% { display:block; opacity: 1; }
+  }
+
+  /* extra touch - fadein inner contents with slight delay */
+  @include keyframes(m-modal__container_active) {
+    0% { opacity: 0; }
+
+    35% { opacity: 0; }
+
+    95% { opacity: 1; }
+
+    100% { opacity: 1; }
+  }
+
+}
+
+.m-modal__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50% , -50% );
+  max-width: 1200px;
+  width: 100%;
+  min-height: 300px;
+  padding: 0 2.0em;
+}
+.m-modal__close-icon {
+  position: absolute;
+  top: 0.6em;
+  right: 0.6em;
+  font-size: 4.4em;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.5s ease;
+  z-index: z("modal")+1;
+  @include desktop{
+    font-size: 38px;
+  }
+  &:hover {
+    color: rgba(255, 207, 64, 1);
+  }
+}
+
+
+
+// ----------------------------------------- Language Menu in Modal -----------------------------------------
+
+.m-modal.play { 
+  .play__title{
+   /* @extend %font-title-4;
+    @extend %hover-effect-font;*/
+    text-transform: uppercase;
+  }
+}
+
+
+// ----------------------------------------- Language Menu in Modal -----------------------------------------
+
+.m-modal.menu { 
+  ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  a {
+    color: #fff;
+    font-size: 3.6em;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    @include mobile{
+      font-size: 3.2em;
+    }
+    &:hover {
+      color: rgba(255, 207, 64, 1);
+      text-shadow: none;
+    }
+  }
+  .menu__title {
+    /*@extend %font-title-4;
+    @extend %hover-effect-font;*/
+    text-transform: uppercase;
+  }
+  .menu__link { }
+  .menu__devide-lines {
+    width: 100%;
+    max-width: 550px;
+    margin: 1.5em auto 1.7em;
+  }
+  .menu__devide-lines__1 {
+    background: rgba(255,255,255,0.3);
+    height: 1px;
+  }
+  .menu__devide-lines__2 {
+    background: rgba(255,255,255,0.3);
+    height: 2px; margin: 2px 0;
+  }
+}
+ 

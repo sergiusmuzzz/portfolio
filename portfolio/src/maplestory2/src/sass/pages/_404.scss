@@ -1,0 +1,26 @@
+.error-404{
+  main{
+	@include desktop {
+	  height: 100%;
+	  padding-bottom: 0;
+	}
+	@include until($desktop){
+	  height: 100%;
+	}
+	section{
+	  text-align: center;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  flex-flow: column;
+	  @include desktop{
+		font-size: 2.5rem;
+		height: 100%;
+	  }
+	  @include until($desktop){
+		font-size: 2rem;
+		height: 60%;
+	  }
+	}
+  }
+}

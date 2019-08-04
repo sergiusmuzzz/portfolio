@@ -1,0 +1,14 @@
+mixin button(data, index)
+  if data.class && data.class == "mediabox"
+    +mediathumb2(data, index)
+
+  else 
+    a.btn(href="#{data.url}", class=data.class, data-index=index, data-group=data.group, data-panel=data.panel, data-title=data.title, data-desc=data.desc, data-imgfull=data.imgfull, data-ytid=data.ytid, data-twitch=data.twitch, data-video=data.video)
+      .btn-bg
+      if data.icon
+        .btn-icon
+          +icon(data.icon)
+      if data.title
+        .btn-text
+          | !{data.title}
+

@@ -1,0 +1,46 @@
+.news-pagination
+    ul
+        li.first
+            a(href="#")
+                i.icon-arrow-thin-left
+                i.icon-arrow-thin-left
+        li.prev
+            a(href="#")
+                ii.icon-arrow-thin-left
+        li
+            a(href="/en/news/all/1") 1
+        li.active
+            a(href="/en/news/all/2") 2
+        li
+            a(href="/en/news/all/3") 3
+        li
+            a(href="/en/news/all/4") 4
+        li
+            a(href="/en/news/all/5") 5
+        li
+            a(href="/en/news/all/6") 6
+        li
+            a(href="/en/news/all/7") 7
+        li
+            a(href="/en/news/all/8") 8
+        li
+            a(href="/en/news/all/7") 9
+        li
+            | . . .
+        li
+            a(href="#") 20
+
+        li.prev
+            a(href="#")
+                i.icon-arrow-thin-right
+        li.last
+            a(href="#")
+                i.icon-arrow-thin-right
+                i.icon-arrow-thin-right
+
+.news-pagination-mobile.clearfix
+
+a.loadmore.news-load-more(href="#", data-item="a.news-link", data-cont=".news-all .news-grid")
+    span
+        | Load More
+    i.icon-arrow-down

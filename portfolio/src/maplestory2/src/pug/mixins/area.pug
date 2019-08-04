@@ -1,0 +1,42 @@
+mixin area(data)
+  .area.center
+    if data.image
+      if data.image.mobile
+        div.card.card-mobile(style="background-image: url(#{data.image.mobile})")
+      if data.image.tablet
+        div.card.card-tablet(style="background-image: url(#{data.image.tablet})")
+      if data.image.desktop
+        div.card.card-desktop(style="background-image: url(#{data.image.desktop})")
+    
+    if data && data.video
+      .card.card-video(data-video="#{data.video}")
+    if data && data.ytid
+      .card.card-video(data-ytid="#{data.ytid}")
+    
+    if data && data.pagination
+      if data.pagination.prev
+        a.btn.btn-prev(href="#{data.pagination.prev.url}")
+          +icon('arrow-left')
+          .label 
+            | Previous
+      if data.pagination.next
+        a.btn.btn-next(href="#{data.pagination.next.url}")
+          +icon('arrow-right')
+          .label 
+            | Next
+
+    if data && data.videoPopup
+      a.mediabox.mobile_ytid(data-ytid='#{data.videoPopup}')
+        .btn-video
+          i.icon.icon-arrow-right2
+    
+    if data && data.panel
+      +panel(data.panel)
+
+    if data.panels
+      each panel in data.panels
+        +panel(panel)
+
+    if data && data.carousel
+      +carousel(data.carousel)
+

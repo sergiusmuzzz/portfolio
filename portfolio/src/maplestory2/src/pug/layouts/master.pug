@@ -1,0 +1,95 @@
+doctype html
+html(lang="en", data-i18n="[lang]site.lang")
+
+    - var SiteName = seed.site.name
+    - var Keywords = seed.site.keywords
+    - var Description = seed.site.description
+    - var ogImg = seed.site.ogImg
+    - var Viewport = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'
+
+    block vars
+        - var bodyClass = 'border-box'
+        - var pageClass = ''
+        - var Title = seed.site.name + ' - ' + seed.site.title
+        - var Url = seed.site.url
+        - var Section = ""
+        - var page = ""
+
+    head
+
+        block title
+            title= Title
+
+        block meta
+            meta(charset="utf-8")
+            meta(http-equiv="X-UA-Compatible", content="IE=edge")
+            meta(name="description", content=Description)
+            meta(name="keywords", content=Keywords)
+            meta(name="viewport", content=Viewport)
+            meta(name="robots", content="index, follow")
+            meta(property="og:site_name", content=SiteName)
+            meta(property="og:type", content="website")
+            meta(property="og:url", content=Url)
+            meta(property="og:title", content=Title)
+            meta(property="og:image", content=ogImg)
+            meta(property="og:description", content=Description)
+            meta(name="twitter:card", content="summary_large_image")
+            meta(name="twitter:site", content="twitterSite")
+            meta(name="twitter:title", content=Title)
+            meta(name="twitter:description", content=Description)
+            meta(name="twitter:image", content="twitterImg")
+
+        block metaLinks
+            link(rel='shortcut icon', href=seed.site.favicon)
+            link(rel='canonical', href=Url)
+
+        block robotLinks
+
+        block css
+            link(href='../fonts/icon-font.css', rel='stylesheet')
+
+            include ../includes/gnt-css
+
+            link(href='../css/all.css', rel='stylesheet')
+
+            if page
+                link(href='../css/' + page + '/all.css', rel='stylesheet')
+
+        block css-page
+
+        //-include ../includes/google-analytics
+
+    body(class=bodyClass + ' ' + pageClass)
+
+        //-include ../includes/google-tagmanager.jade
+
+        #site
+            block header
+                include ../includes/header
+
+            block main
+                span Hello
+
+            block footer
+                include ../includes/footer
+
+            block mobile-nav
+
+                include ../includes/mobile-nav
+                include ../includes/video-popup
+
+
+
+        block js
+
+            script(type='text/javascript' src='../js/vendors.js')
+            include ../includes/gnt-js
+            script(type='text/javascript' src='../js/all.js')
+
+            if page
+                script(type='text/javascript' src='../js/'+page+'/all.js')
+
+            script(type='text/javascript' src='http://localhost:35729/livereload.js')
+
+        block js-bottom
+

@@ -1,0 +1,64 @@
+.share {
+  text-align: center;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #186dbc;
+    font-size: 1.75em;
+    font-family: Lora, serif;
+    font-weight: bold;
+    padding: .45em 1.25em;
+    border: 2px solid #186dbc;
+    border-radius: 2.5em;
+    text-transform: uppercase;
+    vertical-align: top;
+    width: 7.14em;
+    &:before{
+      color: #186dbc;
+    }
+    &:hover{
+      background: #186dbc;
+      color: #fff;
+      &:before{
+        color: #fff;
+      }
+    }
+    &:before{
+        font-size: .83em;
+    }
+    &.tweet{
+      margin: 0 .84em;
+    }
+    span{
+      margin-left: .4em;
+    }
+  }
+  @media #{$small-only} {
+    margin-bottom: 2.5em;
+  }
+  .button {
+    span {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+
+  @include desktop{
+    a{
+      font-size: 1.75em;
+    }
+  }
+
+  @include touch{
+    margin-bottom: 4em;
+    a{
+      font-size: 3.28em;
+    }
+  }
+
+}

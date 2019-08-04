@@ -1,0 +1,14 @@
+{
+  "name": "DragonNest-MicroSite-DarkAvengers-Lapsed",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "modernizr": "~2.8.2",
+    "foundation": "~5.1.0"
+  },
+  "devDependencies": {
+    "jquery-colorbox": "~1.6.1",
+    "jquery-touchswipe": "~1.6.9"
+  }
+}

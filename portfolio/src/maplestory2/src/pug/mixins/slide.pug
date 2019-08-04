@@ -1,0 +1,31 @@
+mixin slide(data)
+  if data.image
+    if data.image.mobile
+      div.card.card-mobile(data-img="#{data.image.mobile}")
+    if data.image.tablet
+      div.card.card-tablet(data-img="#{data.image.tablet}")
+    if data.image.desktop
+      div.card.card-desktop(data-img="#{data.image.desktop}")
+    if data.video
+      div.card.card-video(data-video="#{data.video}", class=data.className)
+    if data.videoGb
+      div.card.card-video(data-region="GB", data-video="#{data.videoGb}", class=data.className)
+    if data.ytid
+      div.card.card-video(data-ytid="#{data.ytid}")
+    div.card.card-gradiant
+    if data.panel
+      +panel(data.panel)
+    if data.panels
+      each panel in data.panels
+        +panel(panel)
+    if data.mobile_ytid
+      a.mediabox.mobile_ytid(data-ytid="#{data.mobile_ytid}", data-group="mobile")
+        .btn-video
+          +icon('arrow-right2')
+    if data.mobile_ytid_GB
+      a.mediabox.mobile_ytid(data-region="GB", data-ytid="#{data.mobile_ytid_GB}", data-group="mobile")
+        .btn-video
+          +icon('arrow-right2')
+
+
+

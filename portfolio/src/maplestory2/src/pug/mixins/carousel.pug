@@ -1,0 +1,26 @@
+mixin carousel(data)
+  .slick-carousel(data-fade=data.fade, data-desktop=data.desktop, data-tablet=data.tablet, data-mobile=data.mobile, data-index=data.index, class=data.class)
+    each slide in data.items
+      .carousel-slide(class=slide.className)
+        if slide.url
+          a(href="#{slide.url}")
+            +slide(slide)
+        else
+          +slide(slide)
+  if data.hero
+    .slick-carousel.little(data-fade=data.fade, data-desktop=5, data-tablet=5, data-mobile=5)
+      each slide in data.items
+        .carousel-slide
+          a(href="#")
+            if slide.image
+              if slide.image.tablet
+                div.card(data-img="#{slide.image.tablet}")
+                  div.circle
+              if slide.video
+                .btn-video
+                  +icon('arrow-right2')
+              if slide.title
+                h3.truncate #{slide.title}
+            
+
+

@@ -1,0 +1,51 @@
+extends ./../layouts/global.jade
+
+block main
+    .main
+        include ./../includes/header.jade
+        .content-wrapper
+            .content
+                section.carousel-container
+                    .loader
+                    .slider.center
+                        .clip.video-thumbnail-1(style="background-image: url('img/thumbnails/1.jpg')")
+                            //a.lightbox(href="img/images/1.jpg", data-rel="cards")
+                            a.lightbox.video-popup(href="https://www.youtube.com/embed/sXuD3EojFPQ?rel=0&autoplay=1", data-rel="cards")
+                        .clip(style="background-image: url('img/thumbnails/2.jpg')")
+                            a.lightbox(href="img/images/2.jpg", data-rel="cards")
+                        .clip(style="background-image: url('img/thumbnails/3.jpg')")
+                            a.lightbox(href="img/images/3.jpg", data-rel="cards")
+                        .clip(style="background-image: url('img/thumbnails/4.jpg')")
+                            a.lightbox(href="img/images/4.jpg", data-rel="cards")
+                        .clip(style="background-image: url('img/thumbnails/5.jpg')")
+                            a.lightbox(href="img/images/5.jpg", data-rel="cards")
+                        .clip(style="background-image: url('img/thumbnails/6.jpg')")
+                            a.lightbox(href="img/images/6.jpg", data-rel="cards")
+                        .clip(style="background-image: url('img/thumbnails/7.jpg')")
+                            a.lightbox(href="img/images/7.jpg", data-rel="cards")
+                        .clip(style="background-image: url('img/thumbnails/8.jpg')")
+                            a.lightbox(href="img/images/8.jpg", data-rel="cards")
+                        .clip(style="background-image: url('img/thumbnails/9.jpg')")
+                            a.lightbox(href="img/images/9.jpg", data-rel="cards")
+                        .clip(style="background-image: url('img/thumbnails/10.jpg')")
+                            a.lightbox(href="img/images/10.jpg", data-rel="cards")
+                        .clip(style="background-image: url('img/thumbnails/12.jpg')")
+                            a.lightbox(href="img/images/12.jpg", data-rel="cards")
+                        .clip(style="background-image: url('img/thumbnails/13.jpg')")
+                            a.lightbox(href="img/images/13.jpg", data-rel="cards")
+                        .clip(style="background-image: url('img/thumbnails/11.jpg')")
+                            a.lightbox(href="img/images/11.jpg", data-rel="cards")
+        include ./../includes/footer.jade
+
+
+block bottom
+    // build:js js/app.js
+    script(type='text/javascript' src='js/modules/mod.owl.carousel.min.js')
+    script(type='text/javascript' src='js/modules/slick.min.js')
+    script(type='text/javascript' src='js/modules/mod.nav.js')
+    script(type='text/javascript' src='js/modules/mod.lightbox.js')
+    script(type='text/javascript' src='js/modules/event.js')
+    script(type='text/javascript' src='js/modules/google-analytics-tracking.js')
+    script(type='text/javascript' src='js/modules/share.js')
+    script(type='text/javascript' src='js/modules/main.js')
+    // endbuild

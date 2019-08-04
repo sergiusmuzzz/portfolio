@@ -1,0 +1,140 @@
+//$body-background: $white !default
+$body-size: 1rem;
+
+html{
+    //background-color: $body-background;
+    font-size: $body-size;
+    font-family: $family-primary !important;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    min-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section{
+    display: block;
+}
+
+body,
+button,
+input,
+select,
+textarea{
+    //font-family: $family-primary;
+}
+
+code,
+pre{
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: none;
+    //font-family: $family-code;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    //color: $text;
+    font-size: 1rem;
+    //font-weight: $weight-normal;
+    line-height: 1.5;
+}
+
+// Inline
+
+a{
+    color: $link;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+code{
+    /*background-color: $code-background;
+    color: $code;*/
+    font-size: 0.8em;
+    font-weight: normal;
+    padding: 0.25em 0.5em 0.25em;
+}
+
+hr{
+    //background-color: $border;
+    border: none;
+    display: block;
+    height: 1px;
+    margin: 1.5rem 0;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+    vertical-align: baseline;
+}
+
+small{
+    font-size: 0.8em;
+}
+
+span{
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+/*strong{
+  color: $text-strong;
+  font-weight: $weight-bold;
+}*/
+
+// Block
+
+pre{
+    /*background-color: $pre-background;
+    color: $pre;*/
+    font-size: 0.8em;
+    white-space: pre;
+    word-wrap: normal;
+}
+code{
+    background: none;
+    color: inherit;
+    display: block;
+    font-size: 1em;
+    overflow-x: auto;
+    padding: 1.25rem 1.5rem;
+}
+
+table{
+    width: 100%;
+    font-size: 1.8em;
+}
+td,
+th{
+    text-align: left;
+
+    border: 1px solid #fa0;
+    padding: .3em .5em;
+    //vertical-align: top;
+}
+
+td{
+    background-color: rgba(255, 255, 255, .5);
+}
+
+th{
+    //color: $text-strong;
+    background-color: #dd2c00;
+    color: #fff;
+    font-weight: bold;
+}

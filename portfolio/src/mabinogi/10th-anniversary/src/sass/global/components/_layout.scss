@@ -1,0 +1,245 @@
+$desktop: 1025px;
+@mixin touch{
+  @media screen and (max-width: $desktop - 1px){
+    @content
+  }
+}
+
+@mixin desktop{
+  @media screen and (min-width: $desktop) {
+    @content
+  }
+}
+
+@include touch{
+  .is-hidden-touch{
+    display: none !important;
+  }
+}
+
+@include desktop{
+  .is-hidden-desktop{
+    display: none !important;
+  }
+}
+// ----------------------------------------- global Layouts -----------------------------------------
+html, body{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    position: relative;
+    background: no-repeat fixed center top / cover;
+    -webkit-background-size: cover;
+    @include desktop{
+      background-image: url("../img/clouds.jpg");
+    }
+    @include touch{
+      background-image: url("../img/clouds-touch.jpg");
+    }
+}
+
+.content {
+    margin: 7.35em auto 0;
+    position: relative;
+    z-index: 1;
+
+    @include touch{
+      padding: 0 2.8em;
+    }
+    @include desktop{
+      //max-width: 101.5em;
+    }
+}
+
+img.website{
+    width: 100%;
+}
+
+.j-play-free, .learn-more{
+    color: #fff;
+    padding: .45em 1.25em;
+    border: 2px solid #f76175;
+    background: linear-gradient(to bottom, #f98998 0%,#f98998 50%,#f76175 51%,#f76175 100%);
+    border-radius: 2.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    &:hover{
+        background: linear-gradient(to bottom, #f66979 1%,#f66979 50%,#f34355 51%,#f34355 100%);
+    }
+
+    @include desktop{
+      font-size: 1.76em;
+    }
+    @include touch{
+      font-size: 3.287em;
+    }
+}
+
+.top-navigation{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1.4em;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 3;
+
+
+}
+
+.go-to-main-site{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #186dbc;
+  @include desktop{
+    font-size: 1.32em;
+    margin-right: 1.67em;
+    &:hover{
+      span{
+        position: relative;
+        &:after{
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          border-bottom: 0.1em solid;
+        }
+      }
+    }
+
+    &:before{
+      font-size: .78em;
+      margin-right: .1em;
+    }
+  }
+  @include touch{
+    font-size: 3.2em;
+    margin-bottom: 1.5em;
+    display: inline-block;
+    &:before{
+      font-size: .72em;
+      margin-right: .45em;
+    }
+  }
+}
+.sticky{
+  .top-navigation{
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%), linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  }
+}
+
+.side-navigation{
+    position: fixed;
+    right: 0;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 2;
+    width: 30%;
+    height: 100%;
+    .nav-gradient{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity .2s;
+    }
+    ul{
+      position: relative;
+      z-index: 1;
+      &:hover{
+        span{
+          opacity: 1;
+        }
+        &+.nav-gradient{
+          opacity: 1;
+          background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.65) 48%,rgba(255,255,255,1) 99%,rgba(255,255,255,1) 100%);
+        }
+      }
+    }
+    a{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 1.48em;
+      &:after{
+        content: "";
+        width: 1.48em;
+        height: 1.48em;
+        border: .148em solid #f66175;
+        border-radius: 50%;
+        display: block;
+      }
+
+      span{
+        color: #f76175;
+        font-family: Lora, serif;
+        font-weight: bold;
+        font-size: 1.32em;
+        margin-right: .45em;
+        position: relative;
+        opacity: 0;
+        transition: opacity .2s;
+      }
+
+      &.active, &:hover{
+        &:after {
+          background: #f66175;
+        }
+        span{
+          &:after{
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            border-bottom: 2px solid;
+          }
+        }
+      }
+
+      &:active{
+        background: none !important;
+      }
+    }
+}
+
+.parallax{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  @include touch{
+    height: 9%;
+  }
+  div{
+    width: 26.69em;
+    background: repeat-y right top;
+    height: 124%;
+    @include desktop{
+      background-size: contain;
+    }
+    @include touch{
+      background-size: cover;
+    }
+    &.left-side{
+      background-image: url("../img/parallax/left-side.png");
+    }
+    &.right-side{
+      background-image: url("../img/parallax/right-side.png");
+    }
+  }
+}

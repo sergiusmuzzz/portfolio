@@ -1,0 +1,122 @@
+extends ./../layouts/master
+block vars
+    - var bodyClass = 'border-box'
+    - var pageClass = 'home-page'
+    - var Title = seed.site.name + ' - ' + seed.site.title
+    - var Url = seed.site.url
+    - var Section = "Home"
+    -var categories = ["Updates", "Sales", "Events", "Maintenance", "Announcements"]
+block main
+    main
+        //-section.screen.main-video-section
+            .feature-video-mobile
+                a.is-video-popup(href="https://www.youtube.com/embed/uBY3BIUMew8?rel=0&autoplay=1" data-rel="video" data-i18n='[html]site.section-3.playButton')
+            .feature-video-desktop.video
+                video.main-video(autoplay="" loop="" muted class="ui-unique-box__media-video")
+                    source(src="https://nxcache.nexon.net/hyperuniverse/engagement/images/home/video1.mp4" type="video/mp4")
+            .feature-video-content
+                a.logo.is-hidden-desktop(href="#")
+                    img(src="/img/logo/logo.png")
+                .feature-video-buttons
+                    .button-cta-container
+                        a.button.button-cta(href="#" title="Sign Up For Beta")
+                            span Sign Up For Beta
+                    a.check-status(href="#" title="Check your status")
+                        span.icon-right-arrow Check your status
+                a.play.icon-play-thin.is-video-popup(href="https://www.youtube.com/embed/uBY3BIUMew8?rel=0&autoplay=1" data-rel="video")
+                        span.is-hidden-touch Full Trailer
+        //-section.screen
+            img(src="img/home/USP-1.png", data-src="img/home/USP-1")
+        //-section.screen.usp-video.video
+            img.is-hidden-desktop(src="img/home/USP-2-touch.png")
+            .usp-content.is-hidden-touch
+                | Build Your <br> Dream World
+            video.is-hidden-touch(autoplay="" loop="" muted class="ui-unique-box__media-video")
+                source(src="https://test-nxcache.nexon.net/maplestory2/announcement/assets/video/usp-2.mp4" type="video/mp4")
+        //-section.screen
+            img(src="/img/home/USP-3.png", data-src="img/home/USP-3")        
+
+        .featured-news.slick
+            figure.news-item.featured-news-item
+                a(href="#").news-item-link
+                    .news-item-image(style="background-image:url('/img/news/article-1.jpg')")
+                    figcaption.news-item-info
+                        //-.publishing-info
+                            span.publishing-info-content
+                                time 11 Hours ago /
+                                span.news-category-tag.nc-updates Updates
+                        h2 Daily Deals HEADLINE
+                        .short-post-text Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+            figure.news-item.featured-news-item
+                a(href="#").news-item-link
+                    .news-item-image(style="background-image:url('/img/news/article-1.jpg')")
+                    figcaption.news-item-info
+                        //-.publishing-info
+                            span.publishing-info-content
+                                time 11 Hours ago /
+                                span.news-category-tag.nc-updates Updates
+                        h2 Daily Deals HEADLINE
+                        .short-post-text Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+
+
+        section.news-content
+            .row.news-list-title
+                h1 News
+            .news-list
+                figure.news-item
+                    a(href="#").news-item-link
+                        .news-item-image(style="background-image:url('/img/news/article-1.jpg')")
+                        figcaption.news-item-info
+                            .publishing-info
+                                span.publishing-info-content
+                                    time 11 Hours ago
+                                    | &nbsp;|&nbsp;
+                                    span.news-category-tag.nc-updates Updates
+                            h2 Ut Enim Ad Minim Veniam
+                            .short-post-text Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                figure.news-item
+                    a(href="#").news-item-link
+                        .news-item-image(style="background-image:url('/img/news/article-2.jpg')")
+                        figcaption.news-item-info
+                            .publishing-info
+                                span.publishing-info-content
+                                    time 11 Hours ago
+                                    | &nbsp;|&nbsp;
+                                    span.news-category-tag.nc-sales Sales
+                            h2 Ut Enim Ad Minim Veniam
+                            .short-post-text Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                figure.news-item
+                    a(href="#").news-item-link
+                        .news-item-image(style="background-image:url('/img/news/article-3.jpg')")
+                        figcaption.news-item-info
+                            .publishing-info
+                                span.publishing-info-content
+                                    time 11 Hours ago
+                                    | &nbsp;|&nbsp;
+                                    span.news-category-tag.nc-events Events
+                            h2 Ut Enim Ad Minim Veniam
+                            .short-post-text Unde omnis iste natus error sit voluptatem...
+                figure.news-item
+                    a(href="#").news-item-link
+                        .news-item-image(style="background-image:url('/img/news/article-4.jpg')")
+                        figcaption.news-item-info
+                            .publishing-info
+                                span.publishing-info-content
+                                    time 11 Hours ago
+                                    | &nbsp;|&nbsp;
+                                    span.news-category-tag.nc-maintenance Maintenance
+                            h2 Ut Enim Ad Minim Veniam
+                            .short-post-text Unde omnis iste natus error sit voluptatem...
+                figure.news-item
+                    a(href="#").news-item-link
+                        .news-item-image(style="background-image:url('/img/news/article-5.jpg')")
+                        .news-item-info
+                            .publishing-info
+                                span.publishing-info-content
+                                    time 11 Hours ago
+                                    | &nbsp;|&nbsp;
+                                    span.news-category-tag.nc-announcements Announcements
+                            h2 Ut Enim Ad Minim Veniam
+                            .short-post-text Unde omnis iste natus error sit voluptatem...
+            a.button.button-frame.show-more-btn(href="/en/news")
+                span Read More News

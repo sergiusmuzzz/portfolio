@@ -1,0 +1,226 @@
+html{
+    @include touch{
+        font-size: calc(3px + 7 * ((100vw - 320px) / 704))!important;
+    }
+}
+.classes-page{
+    #site{
+        background-color: transparent;
+    }
+
+    background: #e0eff9 no-repeat center top / cover;
+    @include desktop {
+        background-image: url("../../img/classes/bg.jpg");
+    }
+
+    @include touch {
+        background-image: url("../../img/classes/bg-touch.jpg");
+    }
+
+    .anchor{
+        position: absolute;
+        @include desktop{
+            top: -25rem
+        }
+        @include touch{
+            top: -31rem
+        }
+    }
+
+    main > .content{
+        h1{
+            text-align: center;
+
+        }
+        @include desktop{
+            max-width: 161rem;
+            padding-top: 17rem;
+            h1{
+                margin-bottom: 9rem;
+            }
+        }
+        @include touch{
+            padding-top: 15rem;
+            h1{
+                margin-bottom: 3rem;
+            }
+        }
+    }
+
+
+    .class-item{
+        position: relative;
+        display: flex;
+        color: #292929;
+        @include desktop{
+            &:first-of-type{
+                padding-top: 17.8rem;
+            }
+        }
+        @include touch{
+            &:first-of-type{
+                padding-top: 24rem;
+            }
+        }
+        &:not(:last-child) {
+            border-bottom: .5rem solid #68c8e3;
+        }
+
+        @include touch{
+            margin: 0 4rem;
+            &:last-child{
+                padding-bottom: 4rem;
+            }
+        }
+
+        .class-content{
+            @include desktop{
+                width: 120rem;
+                margin-left: 4rem;
+            }
+            padding-bottom: 3rem;
+            @include touch{
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+        blockquote{
+            font-family: $family-primary;
+            font-style: italic;
+            margin-bottom: 1.8rem;
+            @include desktop{
+                font-size: 1.8rem;
+            }
+            @include touch{
+                font-size: 3.8rem;
+                line-height: 1.2;
+            }
+        }
+        h2{
+            font-family: $family-secondary;
+            font-weight: normal;
+            @include desktop{
+                font-size: 4rem;
+                margin-bottom: .7rem;
+            }
+            @include touch{
+                font-size: 4.8rem;
+                margin: 4rem 0 3.5rem;
+            }
+            text-shadow: 1px 1px 0 #fff;
+            color: #292929;
+        }
+        .class-media{
+            @include touch{
+                position: relative;
+                margin-bottom: 1rem;
+                .class-image{
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+        .class-details{
+            display: flex;
+            @include touch{
+                flex-direction: column;
+            }
+        }
+        .class-video{
+            @include desktop{
+                width: 56.7rem;
+                height: 31.8rem;
+            }
+            @include touch{
+                width: 100%;
+                height: 53.1rem;
+            }
+            display: flex;
+            flex-shrink: 0;
+            margin-right: 2rem;
+            border: .2rem solid #fff;
+            position: relative;
+            &:hover{
+                &:after{
+                    opacity: 1;
+                }
+            }
+
+            &:after{
+                content: '';
+                opacity: .75;
+                transition: opacity .25s;
+                background: url('../../img/classes/play-button.png') no-repeat 0 0 / cover;
+                display: block;
+                transform: translate(-50%, -50%);
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 10.6rem;
+                height: 10.6rem;
+            }
+        }
+
+        .class-description-container{
+            display: flex;
+            flex-flow: wrap column;
+            justify-content: space-between;
+            align-items: flex-start;
+            @include desktop{
+                width: 100%;
+            }
+        }
+
+
+        .class-description-text{
+            font-family: $family-primary;
+            font-weight: 300;
+            @include desktop{
+                font-size: 1.8rem;
+                width: 100%;
+            }
+            @include touch{
+                font-size: 3.4rem;
+            }
+
+            p{
+                margin-bottom: 2rem;
+                line-height: 1.4;
+            }
+
+        }
+
+        dl{
+            display: inline-block;
+            padding: 1.5rem 3rem 1.4rem;
+            background-color: #afe0ee;
+            @include desktop{
+                font-size: 1.6rem;
+            }
+            @include touch{
+                font-size: 3.2rem;
+            }
+
+            border-radius: 3rem;
+            dt{
+                font-weight: 500;
+            }
+            dt, dd{
+                display: inline;
+            }
+            dd + dt:before {
+                content: '\A';
+                white-space: pre;
+            }
+
+        }
+
+        .class-image{
+            width: 34rem;
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+}
+

@@ -1,0 +1,311 @@
+html {
+  @include desktop {
+    font-size: calc(5px + 5 * ((100vw - 960px) / (1920 - 960))) !important;
+
+    &.no-scrollbar{
+      font-size: calc(5px + 5 * ((100vw - 946px) / (1900 - 946))) !important;
+    }
+  }
+  @include touch {
+    font-size: calc(3px + 7 * ((100vw - 305px) / (1024 - 305))) !important;
+    /*font-size: calc(3px + 7 * ((100vw - 320px) / (1040 - 320))) !important;
+    &.no-scrollbar{
+      font-size: calc(3px + 7 * ((100vw - 305px) / (1024 - 305))) !important;
+    }*/
+  }
+}
+
+body {
+  min-height: 100%;
+  position: relative;
+  background: #1e100f no-repeat center top / cover;
+
+  background-image: url("../img/bg-top.jpg");
+  height: auto !important;
+}
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(black, 0.3);
+}
+
+.slick-track{
+
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 60%;
+  background-color: rgba(black, 0.3);
+}
+
+h2{
+  font-family:Pacifico;
+  font-size:36px;
+  margin:20px auto;
+  text-align:center;
+}
+
+.clip {
+  overflow: hidden;
+  bottom: 0;
+  @include desktop{
+    //height: 80rem !important;
+    height: 64rem !important;
+    .video-popup{
+      &:before,&:after{
+        content: "";
+        width: 10.6rem;
+        height: 10.6rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(.75);
+        background: no-repeat left top / cover;
+      }
+      &:before{
+        //content: none;
+        background-image: url("../img/play-button.png");
+      }
+      &:after{
+        opacity: 0;
+        background-image: url("../img/play-button-hover.png");
+        transition: opacity .3s;
+      }
+      &:hover{
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  @include touch{
+    height: 66rem !important;
+    .video-popup{
+      &:before,&:after{
+        content: "";
+        width: 10.6rem;
+        height: 10.6rem;
+        position: absolute;
+        left: 50%;
+        top: 47%;
+        transform: translate(-50%, -50%) scale(.75);
+        background: no-repeat left top / cover;
+      }
+      &:before{
+        //content: none;
+        background-image: url("../img/play-button.png");
+      }
+      &:after{
+        opacity: 0;
+        background-image: url("../img/play-button-hover.png");
+        transition: opacity .3s;
+      }
+      &:hover{
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  background: no-repeat center / cover;
+  a{
+    display: block;
+    height: 100%;
+  }
+}
+.center .slick-slide {
+  height: 400px;
+}
+.slick-list,.slick-track{
+  @include desktop{
+    //height: 86.3rem;
+    height: 69rem;
+  }
+  @include touch{
+    height: 69.3rem;
+  }
+}
+
+.carousel-container{
+  //display: flex;
+  position: relative;
+  .loader{
+    background: url('../img/ajax-loader.gif') center center no-repeat / cover;
+    width: 6.4rem;
+    height: 6.4rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include desktop {
+      top: 55%;
+    }
+    @include touch {
+      top: 60%;
+    }
+  }
+  @include desktop {
+    background: url("../img/carousel-background.png") no-repeat center top / contain;
+    //width: 182.6rem;
+    width: 150rem;
+    height: 112.3rem;
+    margin: 20rem auto 15rem;
+    //padding: 36rem 8rem 5rem;
+    padding: 30rem 8rem 5rem;
+  }
+  @include touch {
+    background: url("../img/carousel-background-touch.png") no-repeat center top / contain;
+    margin: 27rem 2rem 17rem;
+    padding: 45rem 5.5rem 5rem;
+  }
+
+}
+
+.slider{
+  opacity: 0;
+  transition: opacity .3s;
+  padding-top: 5.3rem;
+  background: no-repeat center top / 100% 5.3rem;
+
+  @include desktop {
+    background-image: url("../img/arrow-area.png");
+    height: auto !important;
+  }
+
+ @include touch {
+    background-image: url("../img/arrow-area-touch.png");
+  }
+
+  .slick-prev, .slick-next{
+    &:before, &:after{
+      content: "";
+      width: 12.1rem;
+      height: 9.2rem;
+      transition: opacity .3s;
+      display: block;
+      position: absolute;
+      top: 0;
+    }
+    @include desktop{
+      top: -3.2rem;
+    }
+    @include touch{
+      top: -1.75rem;
+    }
+    &:after{
+    }
+  }
+  .slick-next{
+    @include desktop{
+      right: 9.5rem;
+    }
+    @include until(768){
+      right: 6.5rem;
+    }
+    @include touch{
+      right: 8.75rem;
+    }
+    &:before{
+      background: url("../img/arrow-right.png") no-repeat center / contain;
+      opacity: 1;
+    }
+    &:after{
+      background: url("../img/arrow-right-hover.png") no-repeat center / contain;
+      opacity: 0;
+      top: -0.1rem;
+    }
+    &:hover{
+      &:before{
+        opacity: 0;
+      }
+      &:after{
+        opacity: 1;
+      }
+    }
+  }
+  .slick-prev{
+    left: -.5rem;
+    &:before{
+      background: url("../img/arrow-left.png") no-repeat center / contain;
+      opacity: 1;
+    }
+    &:after{
+      background: url("../img/arrow-left-hover.png") no-repeat center / contain;
+      opacity: 0;
+      top: 0.1rem;
+    }
+    &:hover{
+      &:before{
+        opacity: 0;
+      }
+      &:after{
+        opacity: 1;
+      }
+    }
+  }
+  .slick-slide{
+    transform: scale(1);
+    transition: transform .7s, margin .7s;
+    pointer-events: none;
+    height: 100%;
+    a{
+      background-color: rgba(0, 0, 0, .35);
+      transition: background-color .7s;
+    }
+  }
+  .slick-center{
+    margin-top: 8rem;
+    a{
+      background-color: rgba(0, 0, 0, 0);
+    }
+    @include desktop{
+      transform: scale(1.4);
+      &.video-thumbnail-1{
+        margin-top: 3rem !important;
+      }
+    }
+    @include touch{
+      transform: scale(2);
+      &.video-thumbnail-1{
+        margin-top: 3rem !important;
+      }
+    }
+
+    @include until(768){
+      &.video-thumbnail-1 {
+        margin-top: 0 !important;
+      }
+    }
+
+    @include until(480){
+      transform: scale(1);
+      margin-top: 0;
+
+      .video-popup{
+        &:before,&:after{
+          width: 25rem;
+          height: 25rem;
+        }
+      }
+    }
+    position: relative;
+    z-index: 1;
+    pointer-events: auto;
+  }
+}
+
+.main {
+  overflow: hidden;
+  @include desktop{
+    position: relative;
+  }
+  @include touch{
+  }
+}
+.content-wrapper{
+  @include desktop {
+    .content{
+    }
+  }
+}

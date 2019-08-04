@@ -1,0 +1,19 @@
+.parallax{
+  background: repeat-y left top / contain;
+  position: absolute;
+  height: 100%;
+  top: 55%;
+  @include touch{
+    display: none;
+  }
+  &.sparks-1{
+    width: 53.3rem;
+    background-image: url("../img/parallax/left-sparks.png");
+    left: 0;
+  }
+  &.sparks-2{
+    width: 59.3rem;
+    background-image: url("../img/parallax/right-sparks.png");
+    right: 0;
+  }
+}

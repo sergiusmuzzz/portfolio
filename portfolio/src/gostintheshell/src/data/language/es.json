@@ -1,0 +1,109 @@
+callback_es({
+	"site": {
+		"head": {
+			"title": "FA: The Future is Now; Renewal | Sitio Oficial de First Assault",
+			"description": "¡El episdio más grande de First Assault hasta los momentos trae una nueva vista! ¡Sumérgete y únete a la SECTION 9 junto con 3 nuevos Operativos!"
+		},
+		"header": {
+			"link1": "RENOVACIÓN",
+			"link2": "RECLUTAS",
+			"link3": "EQUIPAMIENTO",
+			"link4": "CLASES",
+			"link5": "NOTAS DEL PARCHE",
+			"link-to-main-site": "IR AL SITIO PRINCIPAL",
+			"url-to-main-site": "http://firstassault.nexon.net/es",
+			"call-to-action": "JUEGA GRATIS ",
+		},
+		"footer": {
+			"link1_text": "POLÍTICA DE PRIVACIDAD",
+			"link1_url": "http://www.nexon.net/es/legal/privacy-policy/",
+			"link2_text": "TÉRMINOS DE USO",
+			"link2_url": "http://www.nexon.net/es/legal/terms-of-use/",
+			"link3_text": "VER REGIONES SOPORTADAS",
+			"link3_url": "http://firstassault.nexoneu.com/es/news/4041/supported-regions",
+			"link4_text": "OBTÉN SOPORTE",
+			"link4_url": "https://support-firstassault.nexon.net/hc/en-us",
+			"legalNotice": "DERECHOS DE AUTOR © 2017 NEOPLE INC. Y NEXON AMERICA INC. TODOS DERECHOS RESERVADOS. <br>BASADO EN LAMANGA 'THE GHOST IN THE SHELL' POR SHIROW MASAMUNE ORIGINALMENTE PUBLICADA POR YOUNG MAGAZINE <br>PUBLICADA POR KODANSHA LTD. © SHIROW MASAMUNE • PRODUCTION I.G/KODANSHA TODOS LOS DERECHOS RESERVADOS."
+		},
+		"renewal": {
+			"title": "EL FUTURO ES AHORA: RENOVACIÓN",
+			"p": "GitS: First Assault está experimentando una renovación y esta actualización contiene una gran cantidad de características nuevas.  Algunos de los nuevos contenidos incluyen una interfaz de usuario renovada, rotación de operativos gratis, nuevo modo, mapas, ¡y mucho, mucho más!  Tómate tu tiempo para revisar los cambios e inicia sesión para experimentar el nuevo First Assault.",
+			"image1": "<h4>Actualizaciones de Modos</h4><p>Utiliza el trabajo en equipo y el juego táctico con el modo Conquista de Terminal actualizado. Prueba - el nuevo modo de Eliminación y enfrenta a tus enemigos con una sola vida.</p>",
+			"image2": "<h4>Nuevos Operativos y Habilidades Renovad</h4><p>Todas las habilidades de Grado 1 y Grado 2 se han actualizado para maximizar las habilidades del Operativo.  Sitara, Azuma y Reiko se unen a las filas de la Section 9. </p>",
+			"image3": "<h4>Movimiento Dinámico</h4><p>El futuro es ahora con un nuevo movimiento dinámico, incluyendo saltos dobles y deslizamientos para sorprender y evadir a tus enemigos.</p>",
+			"image4": "<h4>Electronics Center</h4><p>Echa un vistazo al nuevo mapa de demolición y eliminación, Electronics Center.</p>",
+		},
+		"recruits": {
+			"title": "RECLUTAS",
+			"char1": "REIKO",
+			"quote1": "\"HAN SIDO SUPERADOS\"",
+			"char2": "SITARA",
+			"quote2": "\"ASESINATO CONFIRMADO\"",
+			"char3": "AZUMA",
+			"quote3": "\"NO TE METAS CON MI EQUIPO\"",
+		},
+		"gear": {
+			"title": "EQUIPAMIENTO",
+			"p": "Con la renovación de First Assault, vienen todos los nuevos trajes, skins de armas y más contenido disponible a través de la Puerta Ciber.  Asegúrate de recoger tus favoritos, prepárate y elimina a tus enemigos con estilo.",
+			"call-to-action": "COMPRAR EQUIPO",
+		},
+		"classes": {
+			"title": "CLASES",
+			"class1title": "INFILTRACIÓN",
+			"class1p": "Los daños altamente cibernéticos y pesados hacen que estos Operativos sean peligrosos en manos de jugadores expertos. Utiliza velocidad, sigilo o cualquier otro medio para profundizar detrás de las líneas enemigas antes de que incluso sepan que estás allí. Pero tenga cuidado porque con una salud más baja, si te ubican, las mareas pueden dar vuelta rápidamente.",
+			"class1dt1": "Operativos:",
+			"class1dd1": "Motoko, Paz, Kuro, Maven, Reiko",
+			"class1dt2": "Armas:",
+			"class1dd2": "Sub-ametralladora / Escopeta",
+			"class1dt3": "Movimiento Dinámico: ",
+			"class1dd3": "Deslizado",
+
+			"class2title": "ESPECIALISTA",
+			"class2p": "Estos operativos están equilibrados en velocidad y defensa y emplean habilidades para rastrear enemigos.  Los operativos Especialistas proporcionan el apoyo necesario desde la parte trasera y los flancos.",
+			"class2dt1": "Operativos:",
+			"class2dd1": "Saito, Togusa, Sitara",
+			"class2dt2": "Armas:",
+			"class2dd2": "Rifle de Francotirador / Arma de Defensa Personal",
+			"class2dt3": "Movimiento Dinámico: ",
+			"class2dd3": "Salto Doble",
+
+			"class3title": "ASALTO",
+			"class3p": "Establecer la línea de frente es clave para cualquier tipo de guerra.  La clase de asalto se especializa en estar allí cuando la pelea estalla. Con altas capacidades de salud y defensa, estos Operativos pueden sufrir grandes daños y convertirse rápidamente en el punto focal de cualquier equipo contrario. Asegúrate de mantener la acción delante de ti, aunque sus movimientos más lentos los hacen vulnerables por detrás.",
+			"class3dt1": "Operativos:",
+			"class3dd1": "Batou, Borma, Ishikawa, Azuma",
+			"class3dt2": "Armas:",
+			"class3dd2": "Rifle de Asalto / Ametralladora",
+			"class3dt3": "Movimiento Dinámico: ",
+			"class3dd3": "Ninguno",
+		},
+		"patchNotes": {
+			"title": "Actualizaciones",
+			"section1Title": "Interfaz de Usuario",
+			"section1p1": "-La interfaz de usuario ha pasado por una revisión completa.",
+			"section1p2": "Realizamos algunas actualizaciones y optimizaciones importantes para mejorar la experiencia y el flujo de usuario. ¡Compruebalo en el juego!",
+
+			"section2Title": "Cambios en los Operativos (Operativos 2.0)",
+			"section2p1": "Todos los Operativos han tenido cambios mayores y menores, ya sea que estén unidos a su asignación de clase o cambios más directos a sus habilidades.",
+
+			"section3Title": "Balance de Armas",
+			"section3p1": "Casi todas las estadísticas de las armas han sido ajustadas. Haga clic aquí para ver los cambios detallados en las estadísticas.",
+			"section3p2": "Se ha aumentado el daño de la escopeta y del rifle del francotirador para compensar el aumento total de HP para todos los operativos.",
+
+			"section4Title": "Cambios del Gameplay",
+			"section4p1": "Habilidades de Grado 1 ahora están disponibles en la tecla E por defecto. No cuestan nada de Intel y ahora tienen un enfriamiento bajo.",
+			"section4p2": "Habilidades de Grado 2 ahora están disponibles en la tecla Q por defecto. Requieren de Intel, pero ya no tienen enfriamiento. Habilidades de Grado 1 y 2 del mismo nombre no se pueden acumular",
+
+			"readMore": "¡Leer más!",
+			"readMoreUrl": "http://firstassault.nexon.net/es/news/23965/renewal",
+		},
+		"modal": {
+			"title": "Escoge tu Plataforma",
+			"play-on-steam": "JUGAR EN STEAM",
+			"play-on-nexon-launcher": "JUGAR EN NEXON LAUNCHER"
+		},
+		"mobile-menu": {
+			"link1": "GO TO MAIN SITE",
+			"link2": "PART 1 PERSONA"
+		}
+	}
+})

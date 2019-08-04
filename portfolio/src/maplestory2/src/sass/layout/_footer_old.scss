@@ -1,0 +1,108 @@
+footer{
+  width: 100%;
+  background-color: $footer-bg;
+
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: $footer-color;
+  font-size: 1.4rem;
+  .footer-info{
+  margin: 0 auto -.1rem 0;
+  line-height: 1;
+  }
+  .copyright{
+  line-height: 1;
+  a{
+      color: $footer-color;
+    &:hover{
+    text-decoration: underline;
+    }
+  }
+  a:not(:last-of-type):after{
+    content: "|";
+    display: inline-block;
+    margin: 0 1rem;
+    color: $footer-color;
+  }
+
+  span{
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+  }
+
+  .follow-us{
+  display: flex;
+  align-items: center;
+  a{
+        &:hover{
+            opacity: .8;
+        }
+        &:not(:last-of-type){
+          margin-right: 1rem;
+        }
+    }
+  }
+  @include mobile{
+    .language-selector {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+  }
+  @include desktop{
+    border-top: 2px solid $yellow-50;
+    height: 12.5rem;
+    padding: 0 7rem;
+    align-items: center;
+
+  .logo-footer{
+    margin-right: 2rem;
+    img {
+      font-size: 7rem;
+    }
+  }
+    .copyright{
+    margin: 0 auto -.1rem 0;
+  }
+  .follow-us{
+    img { width: 7rem; }
+    span{
+    margin-right: 2.6rem;
+    }
+  }
+  }
+
+  @include until($desktop){
+    border-top: 1px solid $yellow-50;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 3.5rem 3rem 5rem;
+  .logo-footer{
+    margin-bottom: 3rem;
+  }
+  .copyright{
+    text-align: center;
+    font-size: 2.1rem;
+    span{
+    line-height: 1.2;
+    }
+  }
+  .follow-us{
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    order: -1;
+    margin-bottom: 4.5rem;
+    span{
+    font-size: 2.7rem;
+    margin-bottom: 1.5rem;
+    flex: 100%;
+    }
+  }
+  }
+}

@@ -1,0 +1,102 @@
+.modal-launcher {
+    background: #008fb9 none repeat scroll 0 0;
+    border: 1px solid #363634;
+    display: block;
+    font-family: "Klavika","Monda",Arial,Helvetica,sans-serif !important;
+    height: 340px;
+    line-height: 18px;
+    overflow: hidden;
+    position: relative;
+    width: 645px;
+    z-index: 10000;
+}
+.modal-launcher * {
+    line-height: 18px;
+}
+.mb_launcher_popup {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+}
+.mb_launcher_popup #gnt_popup_close {
+    background-color: transparent;
+    background-image: url("http://nxcache.nexon.net/all/img/mb/gnp_close_white.png");
+    z-index: 10000;
+}
+.modal-launcher-title, .modal-launcher-info, .modal-launcher-button, .modal-launcher-button-ghost, .modal-launcher-instructions {
+    text-align: center;
+}
+.modal-launcher-title {
+    color: #ffa900;
+    font-size: 28px;
+    margin: 48px auto 21px;
+}
+.modal-launcher-info {
+    color: #fefefe;
+    font-size: 16px !important;
+    margin: 0 auto;
+}
+.modal-launcher-buttons {
+    display: block;
+    height: 66px;
+    list-style: outside none none;
+    margin: 35px auto 40px;
+    padding: 0;
+    width: 550px;
+}
+.modal-launcher-button-left, .modal-launcher-button-right {
+    position: relative;
+}
+.modal-launcher-button-left {
+    float: left;
+}
+.modal-launcher-button-right {
+    float: right;
+}
+.modal-launcher-button, .modal-launcher-button-ghost, .modal-launcher-button:hover, .modal-launcher-button-ghost:hover {
+    background: #ffa900 none repeat scroll 0 0;
+    border: 2px solid #ffa900;
+    border-radius: 2px;
+    color: #003c4e !important;
+    cursor: pointer !important;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    height: 66px;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    width: 260px;
+}
+.modal-launcher-button:hover {
+    background: #febc3c none repeat scroll 0 0;
+    border-color: #febc3c;
+}
+.modal-launcher-button-ghost, .modal-launcher-button-ghost:hover {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+.modal-launcher-button-ghost {
+    color: #ffa900 !important;
+}
+.modal-launcher-button-ghost:hover {
+    border-color: #febc3c;
+    color: #febc3c !important;
+}
+.modal-launcher-button span, .modal-launcher-button-ghost span {
+    position: relative;
+    top: 13px;
+}
+.modal-launcher-instructions {
+    clear: both;
+    color: #fefefe;
+    font-size: 14px !important;
+    line-height: 16px;
+}
+#gnt_popup #protocol, #gnt_popup #hiddenIframe, #gnt_popup #hiddenLink {
+    background: transparent none repeat scroll 0 0;
+    border: 0 none;
+    display: block;
+    float: left;
+    height: 1px;
+    margin: 0;
+    opacity: 0.01;
+    padding: 0;
+    width: 1px;
+}

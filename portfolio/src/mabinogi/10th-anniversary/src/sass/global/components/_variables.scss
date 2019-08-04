@@ -1,0 +1,51 @@
+/*
+  Needs following foundation setting on in foudnation/_settings
+  - media query variables
+  - primary-color ( optional )
+*/
+
+
+// ----------------------------------------- Theme Colors -----------------------------------------
+
+$font-color: #fff;
+/* primary-color and secondary-color are in setting.scss of foundation. */
+$link-color: $primary-color;
+$link-color-hover: lighten($primary-color, 16%);
+
+
+// ----------------------------------------- Fonts -----------------------------------------
+/* These fonts style are extends. So that they can be extended throughout other sass files. ( @import this _variables  )*/
+/* Actual Classes are created in _fonts */
+
+
+// -------- Font Type
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,200,100);
+@import url(https://fonts.googleapis.com/css?family=Cinzel:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=Lora:400,300);
+%font1 { font-family: 'Lora' }
+%font2 { font-family: 'Cinzel', Arial, sans-serif; }
+%icon { font-family: 'Lato' }
+%font-body { @extend %font1; line-height: 1.1em; }
+%font-header { @extend %font2; font-weight: 400; line-height: 1.1em; letter-spacing: 0.04em; }
+
+
+// -------- Font Size
+
+/* This is body text. extend this for general paragraph. */
+$font-body-size: 16px;
+
+
+// General Header Tag
+
+$font-header: (h1, 36px), (h2, 30px), (h3, 24px), (h4, 18px), (h5, 16px), (h6, 16px);
+
+@each $place-holder, $size in $font-header {
+    %#{$place-holder} {
+      @extend %font-header;
+      font-size: $size;
+      line-height: 1.1em;
+    }
+}
+

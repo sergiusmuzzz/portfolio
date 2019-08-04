@@ -1,0 +1,22 @@
+.popup.mobile-menu-popup
+    a.close.icon-close(href="#" data-ga="Close Window")
+    .container
+        .content
+            //a(href="#" data-ga="Go to Main Site" data-i18n="[html]site.header.link-to-main-site") GO TO MAIN SITE
+            a.is-active(href="/" data-i18n="[html]site.header.link1") Home
+            a(href="/news" data-i18n="[html]site.header.link2") News
+            .item-dropdown-mobile.is-toggle
+                span.icon-up-arrow Game
+                .nav-dropdown
+                    a(href="http://maplestory2.nexon.net/game/about")
+                        span What is MapleStory 2?
+                    a(href="http://maplestory2.nexon.net/game/getStarted")
+                        span How to Get Started
+                    a(href="http://maplestory2.nexon.net/game/classes")
+                        span Classes
+                    a(href="http://maplestory2.nexon.net/game/activities")
+                        span MapleStory 2 Activities
+            a(href="http://forums.maplestory2.nexon.net/" data-i18n="[html]site.header.link3") Forums
+            a(href="https://maplestory2.gamepedia.com/MapleStory_2_Wiki" data-ga="Part 3 Offensive" data-i18n="[html]site.header.link4") Wiki
+            a(href="https://support-maplestory2.zendesk.com" data-i18n="[html]site.header.link4") Support
+            a(href="/shop/maplestory2/founders-pack" class="button button-cta nav-cta") Buy Founder's Pack

@@ -1,0 +1,17 @@
+extends ./../layouts/master
+
+block css-page
+  link(href='/assets/css/pages/error/error.css', rel='stylesheet')
+
+block vars
+  - var bodyClass = 'border-box'
+  - var pageClass = 'error-404'
+  - var Title = seed.site.name + ' - ' + seed.site.title
+  - var Url = seed.site.url
+  - var Section = "Error"
+
+block main
+  main
+    section
+      //h1(data-i18n="site.error.title") #{site.error.title}
+      //p(data-i18n="site.error.desc") #{site.error.desc}

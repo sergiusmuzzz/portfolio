@@ -1,0 +1,156 @@
+footer {
+  padding:  0 0 3em;
+  text-align: center;
+
+
+  position: relative;
+  z-index: 2;
+
+  @media #{$small-only} {
+    padding: 5em 0;
+  }
+
+  .icon-nexon{
+    margin: .325em .5em 0 0;
+    color: rgba(24, 109, 188, 1);
+    transition: color .2s;
+    &:hover{
+      color: rgba(24, 109, 188, .85);
+    }
+    @include desktop{
+      font-size: 1.7em;
+    }
+    @include touch{
+      font-size: 5.48em;
+    }
+  }
+  
+  .copyright{
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media #{$large-up} {
+      margin-right: 4em;
+    }
+    @media #{$small-only} {
+      font-size: 1em;
+    }
+  }
+  
+  .copyright span, .footer-links {
+    font-weight: bold;
+    display: block;
+    color: #186dbc;
+    font-family: 'Lora', serif;
+    @include touch{
+      font-size: 3.1em;
+    }
+  }
+
+  .to-main-site{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    display: inline-block;
+    width: 13.75em;
+    height: 3.16em;
+    line-height: 3.4em;
+    border-radius: 2em;
+    letter-spacing: .11em;
+    margin: 0 2.2em;
+    box-shadow: 0 .2em 0 rgba(0, 0, 0, .15);
+    &:hover{
+      background: rgb(121,109,209);
+    }
+  }
+
+  .footer-links{
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a{
+      font-weight: bold;
+      font-family: 'Lora', serif;
+      color: #186dbc;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    span.separator{
+      vertical-align: text-bottom;
+      display: inline-block;
+      margin: 0 .75em;
+    }
+  }
+
+
+
+  .social {
+    margin: 0 0 0 2.5em;
+    vertical-align: top;
+    display: flex;
+    justify-content: center;
+    a{
+      background-size: 9.1em;
+      font-size: 1.83em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 2em;
+      height: 2em;
+      border: 2px solid;
+      color: #186dbc;
+      border-radius: 100%;
+      &:not(:last-child) {
+        margin-right: .8em;
+      }
+      &:before{
+        color: #186dbc;
+      }
+      &:hover {
+        color: #186dbc;
+        background: #186dbc;
+        &:before{
+          color: #fff;
+        }
+      }
+
+    }
+  }
+
+
+  @include desktop{
+    .footer-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .copyright , .copyright span, .footer-links, .social{
+      color: #186dbc;
+      display: flex;
+    }
+  }
+
+  @include touch{
+    .copyright{
+      margin-bottom: 2em;
+    }
+    .footer-links{
+      margin-bottom: 1.32em;
+    }
+
+    .social {
+      a{
+        font-size: 3.42em;
+        width: 2.1em;
+        height: 2.1em;
+        &:not(:last-child){
+          margin-right: .8em;
+        }
+      }
+    }
+  }
+}

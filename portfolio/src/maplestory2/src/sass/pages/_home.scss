@@ -1,0 +1,361 @@
+
+// https://css-tricks.com/clipping-masking-css/
+.featured-news.slick {
+
+    //                 top left,  top right,   bottom right corner,                         bottom left corner
+    //clip-path: polygon( 0% 0%,     100% 0%,    100% 80%, 98% 97%, 97.5% 99%, 88% 110%,      12% 110%,  2.5% 99%,  2% 97%,  0% 80%);
+}
+
+.news-block{
+    padding-bottom: 34rem;
+    padding-top: 3.5rem;
+    position: relative;
+    h3{
+        text-transform: uppercase;
+        text-align: center;
+        color: $header-color;
+        margin-bottom: 4.5rem;
+        font-size: 4.8rem;
+        font-weight: normal;
+    }
+}
+
+.home-page{
+    main{
+        background: #A6E4F9;
+        @include touch{
+            background: #B3E5FC;
+        }
+    }
+    .featured-news {
+        z-index: 10;
+        @include desktop{
+            margin-bottom: -13rem;
+        }
+        .news-item-link { border: 0; }
+    }
+    .news-content {
+        position: relative;
+
+        @include desktop{
+            background: url($bg-home) no-repeat center top / 100% auto;
+            padding: 22rem 0 91em;
+        }
+        @include touch{
+            background: url(../img/home/bg-home-top.jpg) no-repeat center top / 100% auto,
+                        url(../img/home/bg-home-bot.jpg) no-repeat center bottom / 100% auto;
+            padding: 8rem 0 46rem;
+        }
+    }
+    .news-list-title{
+        padding: 0;
+        h1 { margin: 0; }
+    }
+    .news-list{
+        @include desktop{
+            padding: 4rem 7rem 3rem;
+            min-height: 100rem;
+        }
+        @include touch{
+            padding: 0 1rem 4rem;
+        }
+    }
+    .news-block{
+        @include desktop{
+            margin-bottom: -28.5rem;
+        }
+        @include tablet-only{
+            margin-bottom: -18.5rem;
+        }
+        @include mobile{
+            margin-bottom: -19.1rem;
+        }
+    }
+}
+
+.button{
+    //background: url('../img/button.png') no-repeat center top / 100% 18.3rem;
+    background: url('../img/button.png') no-repeat center top / 100% 18.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 3.6rem;
+    font-family: $family-secondary;
+    color: #373006;
+    text-transform: uppercase;
+    &.show-more-btn{
+        height: 9.1rem;
+        width: 38.6rem;
+        &:hover{
+            background-position: center bottom;
+            span{
+                color: #dd2c00 ;
+
+            }
+        }
+        @include until($desktop){
+            //margin-top: 4rem;
+        }
+    }
+
+    &.button-frame{
+        //background: url('../img/button-frame.png') no-repeat center top;
+        background: url('../img/button-frame-regular.png') no-repeat left top / cover;
+        position: relative;
+
+        &:hover{
+            background: none;
+            span:after{
+                opacity: 1;
+            }
+        }
+        span{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            &:after{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: url('../img/button-frame-hover.png') no-repeat left top / cover;
+                opacity: 0;
+            }
+        }
+
+        &, span:after{
+            @include desktop{
+                //background-size: 100% 9.4rem;
+                height: 4.7rem;
+                width: 29.2rem;
+                font-size: 2.6rem;
+            }
+            @include touch{
+                //background-size: 100% 18.9rem;
+                height: 7.4rem;
+                width: 47.9rem;
+                font-size: 4rem;
+            }
+        }
+    }
+}
+.check-status{
+    position: relative;
+    text-transform: uppercase;
+    font-family: $family-secondary;
+    .icon-right-arrow:before{
+        position: absolute;
+        right: 0;
+        top: 47%;
+        transform: translateY(-50%);
+        font-size: 1.3rem;
+    }
+    &:hover{
+        color: #f9e202;
+    }
+}
+
+.main-video-section{
+    position: relative;
+    @include desktop{
+        &:after{
+            content: "";
+            position: absolute;
+            top: 40%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: -webkit-gradient(linear,left top,left bottom,from(transparent),to(#000));
+            background: linear-gradient(180deg,transparent 0,#000);
+        }
+    }
+    .logo{
+        @include touch {
+            max-width: 39.5rem;
+            margin-bottom: 13rem;
+        }
+    }
+    .feature-video-buttons{
+        text-align: center;
+        @include touch{
+            order: 1;
+            .check-status{
+                font-size: 3rem;
+            }
+        }
+    }
+    .button-cta-container{
+        margin-bottom: 3rem;
+    }
+
+    .check-status{
+        span{
+            position: relative;
+            padding-right: 3.6rem;
+            &:before{
+                font-size: 2.2rem;
+            }
+        }
+        @include desktop{
+            font-size: 3rem;
+        }
+    }
+    .button-cta{
+        background: no-repeat center top;
+        background-image: url('../img/cta-in-video.png');
+        &:hover{
+            background-position: center bottom;
+        }
+        span{
+            display: block;
+            font-family: $family-secondary;
+            color: #373006;
+            text-transform: uppercase;
+            padding-top: .4rem;
+            @include desktop{
+                font-size: 4rem;
+            }
+        }
+        @include until($desktop){
+            width: 100%;
+        }
+        @include desktop{
+            display: inline-block;
+            margin: 0 2rem 0 0;
+            min-width: 45.5rem;
+            height: 6.8rem;
+            background-size: 100% 13.6rem;
+        }
+        @include touch{
+            background-size: 100% 15.2rem;
+            width: 50rem;
+            height: 7.6rem;
+            font-size: 4.5rem;
+            margin-bottom: 4.2rem;
+        }
+    }
+
+
+    position: relative;
+    .feature-video-content{
+        z-index: 1;
+        position: absolute;
+        @include until($desktop){
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            width: 36rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @include touch{
+            width: 70rem;
+            top: 11.5rem;
+        }
+        @include desktop{
+            width: 100%;
+            top: 37vw;
+        }
+    }
+
+
+    .play{
+        @include desktop{
+            position: absolute;
+            right: 12rem;
+            bottom: 0;
+            font-size: 5.3rem;
+        }
+        @include touch{
+
+            font-size: 16rem;
+            margin-bottom: 17rem;
+        }
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        &:hover{
+            color: #f9e202;
+        }
+        span{
+            margin-left: 1.2rem;
+            font-family: $family-secondary;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.feature-video-desktop{
+    position: relative;
+    video{
+        display: block;
+        width: 100%;
+    }
+}
+
+.screen{
+    position: relative;
+    z-index: 10;
+    &:last-of-type{
+        margin-bottom: -4rem;
+    }
+}
+
+.usp-video{
+    z-index: 1;
+    @include desktop{
+        margin: -7.5rem 0 -15.5rem;
+    }
+    .usp-content{
+        text-shadow: 0 0 15rem $black;
+        position: absolute;
+        top: 6.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff600;
+        font-size: 7.5rem;
+        font-family: $family-secondary;
+        text-align: center;
+        line-height: 1.05;
+    }
+    video{
+        width: 100%;
+    }
+}
+
+.ducky{
+    position: absolute;
+    right: 45rem;
+    bottom: 17rem;
+    width: 23.4rem;
+    .ducky-gif{
+        position: relative;
+    }
+    .footsteps{
+        position: absolute;
+        left: 8.25rem;
+        bottom: 2rem;
+    }
+    @include until($desktop){
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 414px){
+    #site header{
+        &.sticky-header .button {
+            min-width: 172px;
+            height: 36px;
+            background: url(../img/cta-sticky.png) no-repeat top/100% 72px;
+        }
+    }
+    .button.button-frame, .button.button-frame span:after{
+        height: 40px;
+        width: 250px;
+    }
+}

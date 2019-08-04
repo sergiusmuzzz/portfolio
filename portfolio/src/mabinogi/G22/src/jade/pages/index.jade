@@ -1,0 +1,237 @@
+extends ./../layouts/global.jade
+
+block main
+    .main
+
+        div.parallax.sparks-1(data-parallaxer="enabled" data-parallaxer-speed="0.4")
+        div.parallax.sparks-2(data-parallaxer="enabled" data-parallaxer-speed="0.4")
+        include ./../includes/header.jade
+        .content-wrapper
+            .content
+                section.section-1#section-1
+                    a.main-video.lightbox.video-popup(href="https://www.youtube.com/embed/sXuD3EojFPQ?rel=0&autoplay=1")
+                        .movie-border.is-hidden-touch
+                        img.video-cover(src="img/section-1/video-cover.png", data-src="img/section-1/video-cover")
+                section.section-2#section-2
+                    h2 Story
+                    p New chaos emerges from the shadows. As a new unidentified group appears, so do new trials. Face this new faction who worships Hymerark, the god once known across Erinn as the god of freedom, as they attempt to revive the Forgotten King.
+                    img.hr(src="img/hr.png", data-src="img/hr")
+                section.section-3#section-3
+                    h2 New Technique System
+                    .qa-section
+                        h4 What is a Technique?
+                        p Techniques allows us to overcome our limitations that normally can’t be exceeded.
+                        h4 How to gain Techniques
+                        p You can use the new Technique System as you progress through the G22 questline. Each Technique has conditions that must be met before being able to activate it. Once met, you can exert the corresponding effect. Up to five Techniques can be activated at a time, and each combination of Techniques can be saved as a set.
+                        img.bar(src="img/section-3/bar.jpg")
+                    .qa-section.columns
+                        .column
+                            h4 Cultivating Techniques
+                            p When acquiring the first Technique, it starts at level 1. Techniques can be raised up to level 10. The higher the level of the Technique, the more powerful it becomes.
+                            h4 Obtaining Briogh
+                            p Briogh comes in three different types, Achievement, Discipline, and Challenge. Each type of Briogh has different obtain methods. If you have extra AP, the desired Briogh can be obtained by consuming AP. You can inject 10 AP per day, but once consumed, AP can’t be refunded or distributed to a different Briogh. Each Briogh can only be injected with 1,500 AP per week.
+                            //.explanation *Special items to level up Specialties <br class="is-hidden-touch"> will be released in the 2nd update.
+                        .column
+                            h4 Leveling Techniques
+                            p Techniques require special experience known as Briogh to level up. AP is consumed when leveling up your Technique. Once the Technique is level 4 and above, an extra item will be required to level up your Technique.
+                            ul.diamonds
+                                li
+                                    img(src="img/section-3/diamond-red.png")
+                                    .diamond-title Briogh of <br> Achievement
+                                    .diamond-description Acquired every time you gain a character level.
+                                li
+                                    img(src="img/section-3/diamond-green.png")
+                                    .diamond-title Briogh of <br> Challenge
+                                    .diamond-description Acquired every time you clear dungeons or missions.
+                                li
+                                    img(src="img/section-3/diamond-blue.png")
+                                    .diamond-title Briogh of Discipline <br> Communication
+                                    .diamond-description Acquired every time you complete daily quests.
+                    .cards-container
+                        ul.set-1.cards.owl-carousel
+                            li
+                                a.lightbox(href="img/section-3/cards/01/popup/01.png", data-rel="cards")
+                                    img(src="img/section-3/cards/01/01.png")
+                                .card-title Iron Will
+                            li
+                                a.lightbox(href="img/section-3/cards/01/popup/02.png", data-rel="cards")
+                                    img(src="img/section-3/cards/01/02.png")
+                                .card-title Blunting Field
+                            li
+                                a.lightbox(href="img/section-3/cards/01/popup/03.png", data-rel="cards")
+                                    img(src="img/section-3/cards/01/03.png")
+                                .card-title Vital Surge
+                            li
+                                a.lightbox(href="img/section-3/cards/01/popup/04.png", data-rel="cards")
+                                    img(src="img/section-3/cards/01/04.png")
+                                .card-title Dampen Shock
+                            li
+                                a.lightbox(href="img/section-3/cards/01/popup/05.png", data-rel="cards")
+                                    img(src="img/section-3/cards/01/05.png")
+                                .card-title Defiance
+                    .cards-container
+                        ul.set-2.cards.owl-carousel
+                            li
+                                a.lightbox(href="img/section-3/cards/02/popup/01.png", data-rel="cards-2")
+                                    img(src="img/section-3/cards/02/01.png")
+                                .card-title Time Shift
+                            li
+                                a.lightbox(href="img/section-3/cards/02/popup/02.png", data-rel="cards-2")
+                                    img(src="img/section-3/cards/02/02.png")
+                                .card-title Elemental Attunement
+                            li
+                                a.lightbox(href="img/section-3/cards/02/popup/03.png", data-rel="cards-2")
+                                    img(src="img/section-3/cards/02/03.png")
+                                .card-title Redoubled Offensive
+                            li
+                                a.lightbox(href="img/section-3/cards/02/popup/04.png", data-rel="cards-2")
+                                    img(src="img/section-3/cards/02/04.png")
+                                .card-title Exploit Weakness
+                            li
+                                a.lightbox(href="img/section-3/cards/02/popup/05.png", data-rel="cards-2")
+                                    img(src="img/section-3/cards/02/05.png")
+                                .card-title Relentless Assault
+                    .guide-board
+                        img(src="img/section-3/guide-board/guide-board.png", data-src="img/section-3/guide-board/guide-board")
+                        .tip.tip-1(data-description="Access your different Technique sets here.")
+                        .tip.tip-2(data-description="You can apply the Techniques here.")
+                        .tip.tip-3(data-description="If the requirements are met, then the Technique Effect icon is displayed here.")
+                        .tip.tip-4(data-description="You can save any changes applied to your Technique Sets here.")
+                        .tip.tip-5(data-description="Select this box to toggle specified information of the Technique Effect that will be applied.")
+                        .tip.tip-6(data-description="You can select the Specialties to apply, by clicking their icon.")
+                        .tip.tip-7(data-description="You can add a name to your Technique Sets here.")
+                        .tip.tip-8(data-description="Click here to activate the currently selected Technique Set.")
+                        .tip.tip-9(data-description="Specified information for the Technique Set Effect that is being applied will be listed here.")
+                        .tip.tip-10(data-description="Apply Briogh to specific Techniques here.")
+                        .tip.tip-11(data-description="The current amount of Briogh for each type is listed here. You can apply AP to receive more Briogh by clicking the button below each Briogh Icon.")
+                        .bubble.tooltip
+                            .bubble-content
+                    ul.guide-board-list.is-hidden-desktop
+                        li Access your different Technique sets here.
+                        li You can apply the Techniques here.
+                        li If the requirements are met, then the Technique Effect icon is displayed here.
+                        li You can save any changes applied to your Technique Sets here.
+                        li Select this box to toggle specified information of the Technique Effect that will be applied.
+                        li You can select the Specialties to apply, by clicking their icon.
+                        li You can add a name to your Technique Sets here.
+                        li Click here to activate the currently selected Technique Set.
+                        li Specified information for the Technique Set Effect that is being applied will be listed here.
+                        li Apply Briogh to specific Techniques here.
+                        li The current amount of Briogh for each type is listed here. You can apply AP to receive more Briogh by clicking the button below each Briogh Icon.
+                section.section-4#section-4
+                    h2 New Missions
+                    p To reveal the identity of those who went to Tech Duinn, Queen Eirawen ordered an investigation to be done. Unfortunately, due to the sudden dispatch of the royal forces, it is too much to send forces for this mission. You have been ordered to investigate Tech Duinn instead.
+                    img.hr(src="img/hr.png", data-src="img/hr")
+                    .character
+                        img(src="img/section-4/character.png")
+                    h3.z-1.p-relative How to join Tech Duinn Missions
+                    p.z-1.p-relative You can locate the altar of Tech Duinn by entering the ruins located in Sen Mag Plains. Select the area you want to investigate to enter the mission.
+                    h3 Tech Duinn Mission Types
+                    h4 Revived Illusion
+                    p Deep within the ancient ruins, a ceremony is taking place to revive the Fallen King. Stop the revival of Balor by defeating the Vagabonds, but be careful because they will constantly revive each other.
+                    h4 Mission Guide
+                    p Use Techniques that increase combat speed to make it easier to attack.
+                    .carousel.carousel-1.owl-carousel
+                        img(src="img/section-4/carousel/01/01.jpg")
+                        img(src="img/section-4/carousel/01/02.jpg")
+                        img(src="img/section-4/carousel/01/03.jpg")
+                        img(src="img/section-4/carousel/01/04.jpg")
+                    h3 Feth Fiada
+                    p A space resembling Sen Mag Plains before the Battle of Mag Tuireadh is enveloped in a mysterious fog. Escape this time-lapsed fantasy to find Tech Duinn Geata.
+                    h4 Mission Guide
+                    p Within 20 minutes, release all of traps within the mysterious mist. You can save time by using Techniques that increase combat speed and attack power.
+                    .carousel.carousel-2.owl-carousel
+                        img(src="img/section-4/carousel/02/01.jpg")
+                        img(src="img/section-4/carousel/02/02.jpg")
+                        img(src="img/section-4/carousel/02/03.jpg")
+                        img(src="img/section-4/carousel/02/04.jpg")
+                    h3 Mission Clear Rewards
+                    p.text-center Required items to level up Techniques
+                    .crystals-img.content-img
+                        img(src="img/section-4/crystals.png")
+                    h3 New Enchant Scrolls
+                    .scrolls-img.content-img
+                        img(src="img/section-4/scrolls.png")
+                    h3 Tech Duinn Mission Event
+                    .tech-img.content-img
+                        img(src="img/section-4/tech-mission.png", data-src="img/section-4/tech-mission")
+                    h3 Items needed to level up Techniques
+                    .items-img.content-img
+                        img(src="img/section-4/crystals.png")
+                    img.hr(src="img/hr.png", data-src="img/hr")
+                section.section-5#section-5
+                    h2 Seven Nightmares
+                    p The last Tech Duinn Mission, the Seven Nightmares, has been added. Now you can enjoy all three of the Tech Duinn Missions!
+                    p With the help from Queen Eirawen, the activity of the investigation has increased. However, some soldiers that were exploring the fog reported seeing a stone statue of a person. They claimed it was like a horrific nightmare.
+                    p Beyond the magic fog of Tech Duinn there is a mysterious being who keeps interfering with the search for the soldiers. Marleid requests the Milletians help in this predicament.
+                    h4 Mission Guide
+                    p Destroy the stone statues in the nightmare that keeps interfering with the exploration of Tech Duinn. Using techniques that increase combat speed and attack power is suggested.
+
+                    .carousel.carousel-3.owl-carousel
+                        img(src="img/section-5/carousel/01.jpg")
+                        img(src="img/section-5/carousel/02.jpg")
+                        img(src="img/section-5/carousel/03.jpg")
+                        img(src="img/section-5/carousel/04.jpg")
+
+                    h3 New Difficulty for Tech Duinn Missions
+                    .new-difficulty-img.content-img
+                        img(src="img/section-5/new-difficulty.png", data-src="img/section-5/new-difficulty")
+
+                    h3 Tech Duinn Elite Mission Rewards
+                    p.text-center The following are some of the rewards that are given at random for completing any Tech Duinn Mission on Elite.
+
+                    h3 Enchant Scrolls
+                    ul.enchant-scrolls
+                        li Spiraling
+                        li Supernova
+                        li Meteoroid
+                        li Clashing
+                        li Resistance
+                        li Long-lasting
+                    h3 Required Materials to level up Techniques
+                    .levelup-img.content-img
+                        img(src="img/section-5/levelup.png", data-src="img/section-5/levelup")
+                    h3 Geas Equipment Materials
+                    .gear-equipment-mats-img.content-img
+                        img(src="img/section-5/crystals.png", data-src="img/section-5/crystals")
+                    h3 Other Rewards
+                    table.table-chart
+                        thead
+                            tr
+                                th Category
+                                th Item
+                        tr
+                            td Technique Upgrade Materials
+                            td Briogh of Achievement, Briogh of Challenge, Briogh of Discipline
+                            tr
+                                td Geas Equipment Materials
+                                td Geas Core, Geas Edge Crystal, Geas Devastation Crystal, Eroded Mineral Chunk Battleworn Covering, Leather Scrap, Faded Fragment
+                            tr
+                                td Other
+                                td Sandglass Enchant Scroll, Fortification Enchant Scroll, Tech Duinn Mission Pass - Revived Illusion (Elite), Tech Duinn Mission Pass - Feth Fiada (Elite), Tech Duinn Mission Pass - Seven Nightmares (Elite)
+                    h3 Geas Armor
+                    p Use materials earned from the Tech Duinn Elite Missions to create pieces of the Geas Edge and Devastation Sets! The Geas Devastation Set can be crafted by using rank 3 Magic Craft, and Geas Edge can be crafted by using rank 3 Hillwen Engineering. These armors also contain set effects that affect the new Techniques! The set effect is applied only when the sum of the set effect values of the equipped items is 10 or more. Up to three set effects can be applied when wearing all part of the Geas equipment.
+                    .characters-both-img.content-img
+                        img(src="img/section-5/characters-both.png", data-src="img/section-5/characters-both")
+        include ./../includes/footer.jade
+
+
+block bottom
+    // build:js js/app.js
+    script(type='text/javascript' src='js/modules/hasScrollBar.js')
+    script(type='text/javascript' src='js/modules/mod.owl.carousel.min.js')
+    script(type='text/javascript' src='js/modules/mod.redirect.js')
+    script(type='text/javascript' src='js/modules/mod.lightbox.js')
+    script(type='text/javascript' src='js/modules/mod.tooltip.js')
+    script(type='text/javascript' src='js/modules/event.js')
+    script(type='text/javascript' src='js/modules/google-analytics-tracking.js')
+    script(type='text/javascript' src='js/modules/share.js')
+    script(type='text/javascript' src='js/modules/mod.nav.js')
+    script(type='text/javascript' src='js/modules/mod.redirect.js')
+    script(type='text/javascript' src='js/modules/main.js')
+    //script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js")
+    //script(type='text/javascript' src='js/modules/mod.modernizr.js')
+    script(type='text/javascript' src="js/modules/mod.animations.js")
+    script(type='text/javascript' src="js/modules/mod.initialize.js")
+    script(src="https://js.gleam.io/e.js")
+    // endbuild

@@ -1,0 +1,10 @@
+callback_dev({
+    "site": {        
+        "lang": "en",
+        "language": "English",
+        "languages": [
+            {"id":"de", "name": "Deutsch" },
+            {"id":"fr", "name": "Français" }
+        ]       
+    }
+})

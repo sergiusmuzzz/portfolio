@@ -1,0 +1,116 @@
+.button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-width: 7em;
+
+  align-items: center;
+
+  font-size: 3em;
+  font-family: $family-secondary;
+  text-transform: uppercase;
+  padding: .26em .2em;
+  outline: 1px solid $magenta-o-65;
+
+  transition: box-shadow .3s, outline .3s;
+  &:before{
+	content: "\e90b";
+	font-family: "icomoon";
+	position: absolute;
+	top: 2px;
+	bottom: 2px;
+	left: 2px;
+	right: 2px;
+	border: .2rem solid;
+	font-size: .266em;
+	letter-spacing: -.3em; //removes gape between right edge of icon and right parent's border
+	line-height: .85; //removes gape between bottom edge of icon and parent's bottom border
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	overflow: hidden;
+	//color: inherit;
+	color: black;
+  }
+  &.primary{
+	background-color: $magenta;
+	outline: 1px solid $magenta-o-65;
+	box-shadow: inset 0 0 0 2px $magenta;
+	border: 2px solid black;
+	color: $white;
+  }
+  &.secondary{
+	 background-color: black;
+	 border: 2px solid black;
+	 color: $magenta;
+   }
+
+  &:hover{
+
+	&.primary{
+	  outline: 1px solid $magenta-o-45;
+	  box-shadow: inset 0 0 0 2px $magenta, 0 0 .85em $magenta-o-65;
+	}
+
+	&.secondary{
+	  outline: 1px solid $magenta-o-45;
+	  box-shadow: 0 0 .85em $magenta-o-65;
+	}
+
+  }
+
+
+
+	/*&:after {
+	  content: "";
+	  border: 1px solid $yellow-o-65;
+	  position: absolute;
+	  right: -3px;
+	  bottom: -3px;
+	  left: -3px;
+	  top: -3px;
+	  transition: box-shadow .3s, border-color .3s;
+	}
+
+  span {
+	display: block;
+	padding: .55rem 3.4rem;
+	margin: 2px;
+	position: relative;
+	border: 2px solid #000;
+	overflow: hidden;
+
+	&:before {
+	  content: "\e90b";
+	  font-family: 'icomoon' !important;
+	  font-size: .333em;
+	  position: absolute;
+
+	  bottom: -1px;
+	  right: -1px;
+	}
+  }*/
+  &.play{
+	font-size: 4.7em;
+	margin: 0 auto;
+	@include desktop{
+	  max-width: 57rem;
+	}
+	@include tablet-only{
+	  max-width: 37.8rem;
+	}
+
+	&:after{
+	  content: "\e90d";
+	  display: inline-block;
+	  font-family: 'icomoon' !important;
+	  color: black;
+	  font-size: .5em;
+	  margin-left: 1.7rem;
+
+	}
+	@include mobile{
+	  margin: 0;
+	}
+  }
+}

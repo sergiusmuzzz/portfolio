@@ -1,0 +1,62 @@
+// ----------------------------------------- Body, link, a -----------------------------------------
+
+
+body {
+	background: #0c0d0f;
+	@media #{$small-only} {
+	  background: #080810;
+	}
+}
+
+html, body, p, a {
+	outline:none;
+	@extend %font-body;
+}
+
+p {
+	font-size: $font-body-size;
+}
+
+a {
+	font-size: inherit;
+}
+
+* , *:before , *:after {
+	@include box-sizing(border-box);
+}
+
+a {
+	color: $font-color;
+	text-decoration: none;
+	outline: none;
+}
+
+header{
+	ul li a{
+		opacity: .5;
+		&.current, &.current:hover{
+			opacity: 1;
+		}
+		&:hover{
+			opacity: .8;
+		}
+	}
+}
+
+.clearfix {
+	height: 1%;
+	display: block;
+	&:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+}
+
+
+
+ 
+
+ 

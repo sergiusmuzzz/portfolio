@@ -1,0 +1,15 @@
+{
+    "/build/css/all.css": "/build/css/all.css",
+    "/build/css/classes/all.css": "/build/css/classes/all.css",
+    "/build/css/info-page/all.css": "/build/css/info-page/all.css",
+    "/build/js/all.js": "/build/js/all.js",
+    "/build/js/classes/all.js": "/build/js/classes/all.js",
+    "/build/js/vendors.js": "/build/js/vendors.js",
+    "/build/404.html": "/build/404.html",
+    "/build/article.html": "/build/article.html",
+    "/build/classes.html": "/build/classes.html",
+    "/build/index.html": "/build/index.html",
+    "/build/info-page-draft.html": "/build/info-page-draft.html",
+    "/build/info-page-template.html": "/build/info-page-template.html",
+    "/build/news.html": "/build/news.html"
+}

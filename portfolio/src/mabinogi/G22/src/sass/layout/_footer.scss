@@ -1,0 +1,261 @@
+footer {
+
+  @include touch{
+    padding-bottom: 6em;
+  }
+  @include desktop{
+    padding-bottom: 3em;
+  }
+  text-align: center;
+
+  position: relative;
+  z-index: 2;
+
+  background: url("../img/footer/footer-bg.jpg") repeat-x center top / contain;
+  .footer-logo{
+    @include desktop{
+      margin-right: 2rem;
+      &.vive-logo{
+        width: 6.1rem;
+      }
+      &.sennheiser-logo{
+        width: 10.5rem;
+      }
+      &.gigabite-logo{
+        width: 8.8rem;
+      }
+    }
+
+    @include touch{
+      margin-right: 4rem;
+      &.vive-logo{
+        width: 10.5rem;
+      }
+      &.sennheiser-logo{
+        width: 17.5rem;
+      }
+      &.gigabite-logo{
+        width: 15rem;
+      }
+    }
+  }
+  .logo-deco{
+    @include desktop {
+      width: 13.3rem;
+      height: 13.3rem;
+      transform: translate(-50%, -10%)
+    }
+    @include touch{
+      width: 22rem;
+      height: 22rem;
+      transform: translate(-50% , -15%);
+    }
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+  }
+
+
+
+  .go-to-main-site, .go-to-main-site:after{
+    width: 24.7rem;
+    height: 6.9rem;
+  }
+
+  .go-to-main-site{
+    @include button;
+    background: url("../img/footer/go-to-main-site-btn.png") no-repeat center top / cover;
+
+    display: inline-block;
+    @include desktop{
+      margin-bottom: 3rem;
+      &:after{
+        background: url("../img/footer/go-to-main-site-btn-hover.png") no-repeat center top / cover;
+      }
+    }
+    @include touch{
+      width: 45rem;
+      height: 12.75rem;
+      display: inline-block;
+      margin-bottom: 8.5rem;
+      &:before{
+        font-size: 2.8rem;
+        margin-right: 1.4rem;
+      }
+    }
+  }
+
+  .icon-nexon{
+    color: #c83b40;
+    transition: color .2s;
+    &:hover{
+      color: #f7b317;
+    }
+    @include desktop{
+      font-size: 1.7em;
+      margin: .325em .25em 0 0;
+      transform: translateY(.1rem);
+    }
+    @include touch{
+      margin: 1.25rem .25em 0 0;
+      font-size: 4rem;
+    }
+  }
+
+  .footer-middle{
+    @include touch{
+      flex-direction: column;
+      order: -1;
+      .footer-logos{
+        margin: 1rem 0 2rem;
+      }
+    }
+  }
+
+  .copyright, .footer-logos,.footer-middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include desktop {
+    }
+    @include touch {
+      font-size: 1em;
+    }
+  }
+  
+  .copyright, .footer-links a{
+    font-size: 1.6rem;
+    display: block;
+    color: #c83b40;
+    font-family: $family-primary;
+    @include touch{
+      font-size: 2.5rem;
+    }
+  }
+
+  .to-main-site{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    display: inline-block;
+    width: 13.75em;
+    height: 3.16em;
+    line-height: 3.4em;
+    border-radius: 2em;
+    letter-spacing: .11em;
+    margin: 0 2.2em;
+    box-shadow: 0 .2em 0 rgba(0, 0, 0, .15);
+    &:hover{
+      background: rgb(121,109,209);
+    }
+  }
+
+  .footer-links{
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a{
+      &:hover{
+        color: #f7b317;
+      }
+    }
+    span.separator{
+      vertical-align: text-bottom;
+      display: inline-block;
+      margin: 0 .75em;
+      color: #c83b40;
+      @include touch{
+        font-size: 3rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+
+
+  .social {
+    vertical-align: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include desktop {
+      margin-bottom: 2.5rem;
+    }
+    span{
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      @include desktop{
+        margin-right: 3rem;
+      }
+    }
+    a{
+      font-size: 2.9rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #c83b40;
+      &:not(:last-child) {
+        margin-right: 2.5rem;
+      }
+      &:before{
+        margin-top: .25rem;
+        color: #c83b40;
+      }
+      &:hover {
+        color: #f7b317;
+        &:before{
+          color: #f7b317;
+        }
+      }
+
+    }
+  }
+
+
+  @include desktop{
+    .footer-content {
+    }
+    .copyright , .copyright span, .footer-links, .social{
+      color: #c83b40;
+      display: flex;
+    }
+    .footer-bottom{
+        display: flex;
+        justify-content: center;
+    }
+  }
+
+  @include touch{
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+    }
+    .copyright{
+      display: flex;
+      margin-bottom: 1.5rem;
+    }
+    .footer-links{
+      margin-bottom: 2rem;
+    }
+
+    .social {
+      color: #c83b40;
+      margin-bottom: 2rem;
+      span{
+        font-size: 2.2rem;
+        margin-right: 2rem;
+      }
+      a{
+        font-size: 5rem;
+        width: 10rem;
+        height: 10rem;
+        &:not(:last-child){
+          margin-right: .5rem;
+        }
+      }
+    }
+  }
+}

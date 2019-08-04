@@ -1,0 +1,126 @@
+extends ./../layouts/global.jade
+
+block main
+    .main
+        .parallax
+            div.left-side(data-parallaxer="enabled" data-parallaxer-speed="0.3")
+            div.right-side(data-parallaxer="enabled" data-parallaxer-speed="0.3")
+        nav.top-navigation
+            a(href="https://www.youtube.com/embed/xCAMdIOM7aw", class="go-to-main-site icon-arrow is-hidden-touch")
+                span Go to main site
+            a(href="javascript:void(0)", class="button j-play-free")
+                span
+                    | PLAY FREE NOW
+        nav.side-navigation.is-hidden-touch
+            ul
+                li
+                    a.active(href="#section-1")
+                        span Introduction
+                li
+                    a(href="#section-2")
+                        span Weekend Hot Days
+                li
+                    a(href="#section-3")
+                        span 10 Days of Giveaways
+                li
+                    a(href="#section-4")
+                        span Troublemakers
+                li
+                    a(href="#section-5")
+                        span Cave of Trials
+                li
+                    a(href="#section-6")
+                        span Popularity Contest
+                li
+                    a(href="#section-7")
+                        span The Fattening
+                li
+                    a(href="#section-8")
+                        span Thank-you Notes
+                li
+                    a(href="#section-9")
+                        span Festia Instant Prize
+                li
+                    a(href="#section-10")
+                        span Mabi Coin Exchange
+                li
+                    a(href="#section-11")
+                        span Special Gift Box
+            .nav-gradient
+        img.char-1(src="/img/char-1.png")
+        .content
+            section.section-1#section-1
+                img.section-1-img-3.is-hidden-touch(src="/img/char-2.png")
+                .section-1-content
+                    img.section-1-img(src="/img/section-1-img.png")
+                    p Let’s all celebrate Mabinogi’s 10th Anniversary! Head on down to Festia to join the party, and participate in all of the events we have planned for this special occasion. Thank you for supporting us for 10 wonderful years.
+                    img.small-deco-img(src="img/deco-small.png")
+                    div March 8th to April 4th
+                img.section-1-img-2(src="/img/section-1-img-2.png")
+            section.section-2#section-2
+                h2 10<sup>th</sup> Anniversary <span>Weekend Hot Days</span>
+                p Log in for 36 minutes (real time) every day during the 10th Anniversary Event to receive Mabi Coins and Festia Instant Prize Coins up to 5 times per day. Also, receive amazing gifts when you log in for 36 minutes (real time) every weekend.
+                img.section-img(src="img/section-2-img.png", data-src="img/section-2-img")
+            section.section-3#section-3
+                h2 <span>10 Days</span> of Giveaways
+                p Log in each day to receive an item! Character must be level 30 or higher.
+                img.section-img(src="img/section-3-img.png", data-src="img/section-3-img")
+            section.section-4#section-4
+                h2 Festival <span>Troublemakers Event</span>
+                p Every day in Festia, these NPCs will appear and request help from people to find lost things.
+                img.section-img(src="img/section-4-img.png", data-src="img/section-4-img")
+            section.section-5#section-5
+                h2 Prove Yourself in the <span>Cave of Trials!</span>
+                p Obtain the new Title, The Final Trial Dominator, when you pass the 13th Trial!
+                img.section-img(src="img/section-5-img.png")
+            section.section-6#section-6
+                h2 <span>Popularity</span> Contest
+                p Participate in the Erinn Popularity Contest using the Popularity Contest Sticker that’s given out at 7 AM PST daily. You will be able to vote for new NPCs such as Enn, Kanna, Elsie, Logan, Dai, and Kaour.
+                img.section-img(src="img/section-6-img.png", data-src="img/section-6-img")
+            section.section-7#section-7
+                h2 The <span>Fattening</span>
+                p Help the Fattener make food for the Hungry Rose Wreath Spotted Deer to receive 3 Mabi Coins and 3 Festia Instant Prize Coins.
+                img.section-img(src="img/section-7-img.png", data-src="img/section-7-img")
+            section.section-8#section-8
+                h2 Developer’s <span>Thank-you Note</span>
+                p Complete the quest, The Suspicious Milletian, to obtain a Developer’s Weekend Work Kit, Rose Garden Swing, x20 Mabi Coins, and x20 Festia Instant Prize Coins!
+                img.section-img(src="img/section-8-img.png", data-src="img/section-8-img")
+            section.section-9#section-9
+                h2 Festia <span>Instant Prize Event</span>
+                p You can enter two different ways: Gold Entry / Festia Instant Prize Coin Entry
+                p <span>Gold Entry:</span> Entry can be submitted by the Main Character up to 20 times a day. <br> You will need 5,000 gold per entry. (Entry count will be reset at 7 AM PST every day)
+                p <span>Coin Entry:</span> Entry can be submitted using 1 Festia Instant Prize Coin. There is no entry limit.
+                p.extra *The Festia Instant Prize will take place from 3/8 – 4/4 <br> *There is a set number of 1<sup>st</sup>, 2<sup>nd</sup>, and 3<sup>rd</sup> place rewards. That count resets every Thursday at 7AM PST.
+                img.section-img(src="img/section-9-img.png", data-src="img/section-9-img")
+            section.section-10#section-10
+                h2 <span>Mabi Coin</span> Exchange Shop
+                p Go to Dero the Eventsman to exchange Mabi Coins for various gifts.
+                img.section-img(src="img/section-10-img.png", data-src="img/section-10-img")
+            section.section-11#section-11
+                h2 10th Anniversary <span>Special Gift Box</span>
+                p Use the 10th Anniversary Special Gift Box to obtain one of various gifts, including the items below.
+                img.section-img(src="img/section-11-img.png", data-src="img/section-11-img")
+
+            .button-continer
+                a(href="http://mabinogi.nexon.net/News/All/1/00J9H/", class="button learn-more")
+                    span
+                        | learn more about the event
+
+        include ./../includes/footer.jade
+
+    block bottom
+        // build:js js/app.js
+        //script(type='text/javascript' src='js/modules/mod.owl.carousel.js')
+        script(type='text/javascript' src='js/modules/mod.redirect.js')
+        script(type='text/javascript' src='js/modules/mod.lightbox.js')
+        script(type='text/javascript' src='js/modules/mod.modernizr.js')
+        script(type='text/javascript' src='js/modules/mod.responsive.font.js')
+        //script(type='text/javascript' src='js/modules/event.js')
+        //script(type='text/javascript' src='js/modules/google-analytics-tracking.js')
+        script(type='text/javascript' src='js/modules/share.js')
+        script(type='text/javascript' src='js/modules/mod.nav.js')
+        script(type='text/javascript' src='js/modules/mod.redirect.js')
+        script(type='text/javascript' src='js/modules/main.js')
+        script(type='text/javascript' src="js/modules/mod.animations.js")
+        script(type='text/javascript' src="js/modules/mod.initialize.js")
+        // endbuild

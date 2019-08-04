@@ -1,0 +1,37 @@
+mixin mediabox(data) 
+  section(class=data.section, data-sidenav=data.sidenav)
+    if data.viewmore
+      a.btn.btn-skew.all-maps(href='#')
+        .btn-bg
+        .btn-text
+          | !{site.cms.game.map.viewmore}
+    if data.gradiant
+      .section-gradiant(class=data.gradiant.className, data-parallaxer=data.gradiant.parallaxer, data-parallaxer-speed=data.gradiant.speed)
+    else
+      .section-gradiant
+    if data.circle
+      .section-circle(class=data.circle.className, data-parallaxer=data.circle.parallaxer, data-parallaxer-speed=data.circle.speed)
+    else
+      .section-circle
+    if data.left
+      .section-left(class=data.left.className, data-parallaxer=data.left.parallaxer, data-parallaxer-speed=data.left.speed)
+        if data.left.title
+          h2 #{data.left.title}
+    else
+      .section-left
+    if data.right
+      .section-right(class=data.right.className, data-parallaxer=data.right.parallaxer, data-parallaxer-speed=data.right.speed)
+        if data.right.title
+          h2 #{data.right.title}
+    else 
+      .section-right
+    if data.area && data.area.carousel
+      .mediabox.mediacarousel
+        if data.area
+          +area(data.area)
+    else 
+      .mediabox.mediaarea
+        if data.area
+          +area(data.area)
+        if data.carousel
+          +carousel(data.carousel)

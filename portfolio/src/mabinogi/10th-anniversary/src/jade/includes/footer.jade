@@ -1,0 +1,27 @@
+footer
+  //.container-to-main-site
+  a(href="https://www.youtube.com/embed/xCAMdIOM7aw" class="go-to-main-site icon-arrow is-hidden-desktop") Go to main site
+  if isShareable
+    include ./../includes/share.jade
+  .footer-content
+    .copyright
+      a.icon-nexon(href="http://www.nexon.net/")
+      span
+        | © 2018 NEXON Korea Corp. and NEXmmON America Inc. All Rights Reserved
+    .footer-links
+      a(href="https://accounts.nexon.net/account/login.html?return_url=https%3A%2F%2Faccounts.nexon.net%2Faccount%2Fauthorize%3Fclient_id%3D7567065592%26redirect_uri%3Dhttp%253A%252F%252Fwww.nexon.net%252Fapi%252Fv001%252Fmm%252Flogin%253FreturnURL%253Dhttp%2525253A%2525252F%2525252Fwww.nexon.net%2525252Faccount%2525252Faccount-settings%2525252F%26scope%3Dus.nexonnet.all%26state%3D%26response_type%3Dcode&amp;prod_id=10200&amp;id=", target="_blank" ) Your Account
+      <span class="separator">|</span>
+      a(href="https://support.nexon.net/hc/en-us" , target="_blank")
+        | Get Support
+      span.separator
+        ||
+      a(href="http://www.nexon.net/corporate/about-nexon/" , target="_blank")
+        |About Nexon
+      span.separator
+        ||
+      a(href="http://www.nexon.net/legal/privacy-policy/" , target="_blank")
+        | Privacy Policy
+    .social
+      a.icon-facebook(href="https://www.facebook.com/mabinogi", target="_blank")
+      a.icon-twitter(href="https://twitter.com/MabiOfficial", target="_blank")
+      a.icon-youtube(href="https://www.youtube.com/user/Mabinogi", target="_blank")

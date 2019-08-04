@@ -1,0 +1,268 @@
+.m-lightbox-active{
+  overflow: hidden;
+}
+.m-lightbox {
+  width: 100%;
+  position: fixed;
+  top: 0; left: 0; bottom:0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 10;
+  background: rgba(0, 0, 0, .95);
+  display: none;
+  // Itself
+
+  &.active {
+    display: block;
+    opacity: 1;
+  }
+  /* There is issue with Chrome youtube full screen with opacity if there is css animation in a class.  Removed this after some timeout function in js.*/
+
+  &.fadein {
+    @include animation('m-lightbox_active .4s ease');
+    @include animation-fill-mode(forwards);
+    .m-lightbox__container {
+      @include animation-delay(0.7s);
+      @include animation('m-lightbox__container_active 1.1s ease');
+      @include animation-fill-mode(forwards);
+    }
+  }
+  &.disappear {
+    display: block;
+    @include animation('m-lightbox_disappear .4s ease');
+    @include animation-fill-mode(forwards);
+    .m-lightbox__container {}
+  }
+  /* extra touch - fadein inner contents with slight delay */
+
+  @include keyframes(m-lightbox__container_active) {
+    0% {
+      opacity: 0;
+    }
+    45% {
+      opacity: 0;
+    }
+    95% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /* pop up disappear animation */
+
+  @include keyframes(m-lightbox_disappear) {
+    0% {
+      opacity: 1;
+    }
+    20% {
+      opacity: 1;
+    }
+    95% {
+      opacity: 0;
+    }
+    100% {
+      display: none;
+      opacity: 0;
+    }
+  }
+  /* pop up appear animation */
+
+  @include keyframes(m-lightbox_active) {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 0;
+    }
+    95% {
+      opacity: 1;
+    }
+    100% {
+      display: block;
+      opacity: 1;
+    }
+  }
+}
+// Slider
+.m-lightbox__slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  transition: transform 0.5s ease, left 0.2s ease;
+  &.leftSpring {
+    left: 80px;
+  }
+  &.rightSpring {
+    left: -80px;
+  }
+}
+/* Each Item */
+
+.m-lightbox__slide-item {
+  display: inline-block;
+  width: 100%;
+  height: 99%;
+  position: relative;
+  text-align: center;
+}
+.m-lightbox__inner-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+  @include until($desktop){
+    //display: flex;
+  }
+}
+.m-lightbox__media {
+  overflow: hidden;
+  @include mobile{
+    max-width: 90%;
+    margin: auto;
+  }
+  &.item-loading {
+    background: url('../img/loading.gif') center center no-repeat;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    /*max-height: 100%;
+max-width: 100%;
+margin: 0 auto;
+vertical-align: middle;
+width: auto;
+height: auto;
+display: block;*/
+  }
+}
+.m-lightbox__media-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  background: black;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+// UI Btns
+/* Buttons and info below media | m-lightbox__ui-bottom-wrapper top value will be determined by JS */
+
+.m-lightbox__ui-bottom-wrapper {
+  position: absolute;
+  top: 50% !important;
+  transform: translateX(-50%);
+  left: 50% !important;
+  margin-top: -7rem ;
+  padding: 3em 5em 2em;
+  width: 100%;
+  max-width: 1345px;
+  text-align: center;
+  font-size: 0.7em;
+  display: flex;
+  justify-content: space-between;
+  @include mobile{
+    padding: 1rem 3rem 0 !important;
+  }
+  @media (max-width: $tablet - 1px) and (orientation: landscape) {
+    top: auto !important;
+    bottom: 0;
+  }
+}
+.m-lightbox__ui-info {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 3em;
+  margin: 0.8em;
+  visibility: hidden;
+}
+/* Overide carousel styles from global design assets.*/
+
+.m-lightbox__ui-bottom_left-arrow {} .m-lightbox__ui-bottom_right-arrow {} .m-lightbox__ui-bottom-place-holder {}
+/* Close icon*/
+
+.m-lightbox__ui-close {
+  z-index: z("modal")+1;
+  position: absolute;
+  right: 3vmin;
+  top: 3vmin;
+  font-size: 4.4em;
+  color: $white;
+  cursor: pointer;
+  transition: color 0.5s ease;
+  filter: drop-shadow(1px 1px 3px black);
+  -ms-filter: drop-shadow(0 0 12px $magenta-o-50 );
+  @include desktop{
+    font-size: 38px;
+  }
+  &:hover {
+    color: $link-color-hover;
+  }
+}
+/*.m-lightbox__ui-bottom-place-holder { display: none; }*/
+/* Overide carousel styles from global design assets.*/
+/* hidden side buttons all the time except mobile phone landscape mode */
+
+.m-lightbox__ui-side_left-arrow {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: -0.3em;
+  transform: translate(0, -50%);
+  border-left: none;
+}
+.m-lightbox__ui-side_right-arrow {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: -0.3em;
+  transform: translate(0, -50%);
+  border-right: none;
+}
+body.landscape {
+  @include until(700px) {
+    /* show side buttons */
+
+    .m-lightbox__ui-side_left-arrow {
+      display: block;
+    }
+    .m-lightbox__ui-side_right-arrow {
+      display: block;
+    }
+    /* hide place holder */
+
+    .m-lightbox__ui-bottom-place-holder {
+      display: none;
+    }
+    /* ui button bottom*/
+
+    .m-lightbox__ui-bottom-wrapper {
+      display: none;
+    }
+  }
+}
+/*
+.m-lightbox-active {
+  .l-page-container, header, footer { @include filter(blur(5px)); }
+}
+*/
+
+.ui-carousel-arrow{
+  cursor: pointer;
+  transition: color .3s;
+  color: $white;
+  font-size: 4.5rem;
+  filter: drop-shadow(0 0 3px $magenta-o-65) drop-shadow(0 0 3px $magenta-o-65);
+  -ms-filter: drop-shadow(0 0 3px $magenta-o-65) drop-shadow(0 0 3px $magenta-o-65);
+  &:hover{
+    color: $magenta;
+  }
+}

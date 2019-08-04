@@ -1,0 +1,180 @@
+// Font Sizes
+$h1: 2.5em;
+$h2: 2.25em;
+$h3: 2em;
+$h4: 1.75em;
+$h5: 1.5em;
+$h6: 1.25em;
+$p: 1em;
+
+// Body
+$background: #979ea2;
+$color: #ffffff;
+$fontSize: 16px;
+$linkColor: #800000;
+
+/*-------------------*/
+
+$bg-main: '../img/bg-main.jpg';
+$bg-home: '../img/home/bg-home.jpg';
+$bg-news: '../img/news/bg-news.jpg';
+$bg-article: '../img/article/bg-article.jpg';
+$bg-article-touch: '../img/article/bg-article-touch.jpg';
+
+// Typography
+
+@import url('https://fonts.googleapis.com/css?family=Bungee|Titillium+Web:400,600,700');
+$family-primary: "Titillium Web", sans-serif;
+$family-secondary: "Bungee", cursive;
+$family-monospace: monospace;
+$render-mode: optimizeLegibility;
+
+//Font size numeric
+$size-1: 3rem;
+$size-2: 2.5rem;
+$size-3: 2rem;
+$size-4: 1.5rem;
+$size-5: 1.25rem;
+$size-6: 1rem;
+$size-7: 0.75rem;
+
+//Font size named
+$size-small: $size-7;
+$size-normal: $size-6;
+$size-medium: $size-5;
+$size-large: $size-4;
+$weight-light: 300;
+$weight-normal: 400;
+$weight-semibold: 500;
+$weight-bold: 800;
+
+//Colors
+$dark-blue: hsl(248, 12%, 13%);;
+
+
+$black:             hsl(0, 0%, 4%);
+$black-bis:         hsl(0, 0%, 7%);
+$black-ter:         hsl(0, 0%, 14%);
+$black-o-70:        hsla(0, 0, 0, .7);;
+
+$grey-darker:       hsl(0, 0%, 20%);
+$grey-dark:         hsl(0, 0%, 29%);
+$grey:          hsl(0, 0%, 40%);
+$grey-light:      hsl(0, 0%, 57%);
+$grey-lighter:      hsl(0, 0%, 86%);
+
+$grey-blue-light:       hsl(201, 14%, 50%);
+
+$grey-blue:       hsl(250, 5%, 22%);
+
+$white-ter:         hsl(0, 0%, 96%);
+$white-bis:         hsl(0, 0%, 98%);
+$white:             hsl(0, 0%, 100%);
+$white-grey:      hsl(210, 20%, 98%);
+
+$orange:            hsl(14, 100%, 53%);
+$orange-lighter:        hsl(26, 100%, 50%) ;
+$yellow:        hsl(40, 100%, 50%);
+$yellow-50:       hsla(40, 100%, 50%, .5);
+$yellow-darker:     hsl(48, 93%, 62%);
+$brown-yellow:        hsl(38, 87%, 52%);
+//$yellow:            hsl(48,  100%, 67%);
+$green:         hsl(100, 75%, 46%);
+$green-darker:      hsl(122, 43%, 48%);
+$turquoise:         hsl(171, 100%, 41%);
+$blue:          hsl(199, 100%, 48%);
+$blue-darker:       #304ffe;
+$blue-lighter: #236bfe;
+$blue-gray:       hsl(201, 44%, 17%);
+$purple:            hsl(244, 100%, 74%);
+$purple-lighter:    hsl(244, 34%, 17%);
+
+$purple-lighter-o-25:   hsla(244, 100%, 74%, .25);
+$purple-neutral:        hsl(244, 34%, 26%);
+$purple-darker:         hsl(244, 32%, 10%);
+$black-darker-o-85:   hsla(244, 32%, 10%, .85);;
+$red:           hsl(356, 85%, 59%);
+$red-darker:      hsl(0, 100%, 42%);
+$red-orange:      hsl(11, 100%, 38%);
+$red-bright: hsl(3, 100%, 50%);
+$red-brighter: #ff0000;
+
+
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+// 2. Primary colors
+
+$primary: $white;
+
+$info: $blue;
+$success: $green;
+$warning: $yellow;
+$danger: $red;
+
+$light: $white-ter;
+$dark: $grey-darker;
+
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+
+$bg-color: $white-grey;
+$header-bg: $black-o-70;
+$footer-bg: $black;
+$footer-color: $yellow-50;
+
+
+$header-color: $dark-blue;
+
+// Category colors
+$updates: $blue;
+$events: $purple;;
+$sales: $red-darker;;
+$maintenances: $orange-lighter;;
+$announcements: $green-darker;;
+
+// Links color
+$link: $primary;
+$link-hover: $purple;
+
+$link-article: $blue-darker;
+$link-article-hover: $blue-lighter;
+
+/*$link-invert: $primary-invert;
+$link-visited: $purple;*/
+
+// Border colors
+$border-color: $purple-lighter-o-25;
+$border-color-2: $blue;
+
+//Forms color
+$form-bg: $purple-darker;
+$form-bg-2: $purple-lighter;
+$form-color: $white-grey;
+
+// Other colors
+$table-tr-hover: $purple-lighter;
+$profile-box: $purple-lighter;
+$lederboard-box: $purple-lighter;
+$search-result-item: $purple-lighter;
+$poll: $purple-lighter;
+$tag-color: $blue;
+$reaction-counter-bg: $white-grey;
+$reaction-counter-color: $blue;
+$buttonbar-button: $white;
+$header-title: $purple-neutral;
+$search-matching: $purple;
+
+$fb: hsl(215, 65%, 48%);
+$tw: hsl(190, 82%, 43%);
+
+// Miscellaneous
+$easing: ease-out;
+$radius-small: 2px;
+$radius: 3px;
+$radius-large: 5px;
+$speed: 86ms;
+
+//Mobile
+$mobile-menu-bg: $purple-lighter;
+$mobile-nav-icon-bg: $purple-lighter;
+$mobile-nav-accordion-bg: $black-bis;

@@ -1,0 +1,241 @@
+extends ./../layouts/master
+
+block css-page
+block vars
+    - var bodyClass = 'border-box'
+    - var pageClass = 'classes-page'
+    - var Title = seed.site.name + ' - ' + seed.site.title
+    - var Url = seed.site.url
+    - var Section = "Classes"
+    - var page = "classes"
+
+block main
+    main
+        .content
+            h1 Classes
+            .slick.classes-carousel
+                a.slick-item(href="#archer")
+                    .class-label.label-new New
+                    img(src="/img/classes/thumbs/archer.png")
+                    .class-title Archer
+                a.slick-item(href="#assassin")
+                    img(src="/img/classes/thumbs/assasin.png")
+                    .class-title Assassin
+                a.slick-item(href="#berserker")
+                    img(src="/img/classes/thumbs/berserker.png")
+                    .class-title Berserker
+                a.slick-item(href="#heavy-gunner")
+                    img(src="/img/classes/thumbs/heavy-gunner.png")
+                    .class-title Heavy Gunner
+                a.slick-item(href="#knight")
+                    img(src="/img/classes/thumbs/knight.png")
+                    .class-title Knight
+                a.slick-item(href="#priest")
+                    img(src="/img/classes/thumbs/priest.png")
+                    .class-title Priest
+                a.slick-item(href="#thief")
+                    img(src="/img/classes/thumbs/thief.png")
+                    .class-title Thief
+                a.slick-item(href="#wizard")
+                    img(src="/img/classes/thumbs/wizard.png")
+                    .class-title Wizard
+            section.class-item
+                #archer.anchor
+                .class-content
+                    .class-intro
+                        h2 Archer
+                        blockquote "Shoot an apple off your head? Sure, I've done that trick a few times. It usually works out fine, and when it doesn't, well, he was thinking about getting that ear pierced anyway."
+                    .class-details
+                        .class-media
+                            a.class-video.is-video-popup(href="https://www.youtube.com/embed/JMHznxiLpvE?rel=0&autoplay=1")
+                                img(src="/img/classes/archer/video-cover.jpg")
+                            .class-image.is-hidden-desktop
+                                img(src="/img/classes/archer/character-touch.png")
+                        .class-description-container
+                            .class-description-text
+                                p Why fight up close where the slimes can get you messy? The Archer takes the smart path to fighting as he defends the woods as part of the Green Hoods, firing arrows from afar while his pet eagle does the messy stuff!
+                                p The Archer's pinnacle of marksmanship is the <strong>Screwdriver Shot</strong>. The longer the Archer can spend charging the shot up, the more damage it does as it spins through the air, cutting through anything in its way!
+                            dl.class-description-summary
+                                dt Primary Attribute:
+                                dd  Agility (AGI)
+                                dt Primary Weapon:
+                                dd  Bow and Arrow
+                                dt Difficulty:
+                                dd  Moderate
+                .class-image.is-hidden-touch
+                    img(src="/img/classes/archer/character.png")
+            section.class-item
+                #assassin.anchor
+                .class-content
+                    .class-intro
+                        h2 Assassin
+                        blockquote "No, I don't know if we've met. Yes, I really can't remember anything. No, I'm pretty sure I don't owe you 50 Mesos. Yes, someone else already tried that."
+                    .class-details
+                        .class-media
+                            a.class-video.is-video-popup(href="#")
+                                img(src="/img/classes/assassin/video-cover.jpg")
+                            .class-image.is-hidden-desktop
+                                img(src="/img/classes/assassin/character-touch.png")
+                        .class-description-container
+                            .class-description-text
+                                p The Assassin might not know who she is, but she knows what she is: Loyal, smart and the deadliest thing around. As she searches to discover her past and visit vengeance on those that exploited her abilities, the forces of darkness will regret getting in her way.
+                                p Her mix of magic and throwing knives is best shown with her Shadow Burst attack: Five knives, imbued with dark magic and flung at the enemies in front of her, causing explosions on any foes careless enough to have been marked beforehand.
+                            dl.class-description-summary
+                                dt Primary Attribute:
+                                dd  Luck (LUK)
+                                dt Primary Weapon:
+                                dd  Throwing Knives
+                                dt Difficulty:
+                                dd  Easy
+                .class-image.is-hidden-touch
+                    img(src="/img/classes/assassin/character.png")
+            section.class-item
+                #berserker.anchor
+                .class-content
+                    .class-intro
+                        h2 Berserker
+                        blockquote "My kind of Anger Management is thinking of some things before I jump into battle. My friends getting hurt, bullies insulting me, people that talk at a show..."
+                    .class-details
+                        .class-media
+                            a.class-video.is-video-popup(href="#")
+                                img(src="/img/classes/berserker/video-cover.jpg")
+                            .class-image.is-hidden-desktop
+                                img(src="/img/classes/berserker/character-touch.png")
+                        .class-description-container
+                            .class-description-text
+                                p There's no need for finesse or subtlety when you're carrying a sword as tall as you are! While the Berserker must learn to control the rage that fuels every swing, the forces of darkness will make letting off some steam easier than ever!
+                                p The Berserker can use his incredible might and massive weapon to even create an <strong>Earthquake</strong>, stunning the monsters surrounding him as they're shaken apart and left defenseless.
+                            dl.class-description-summary
+                                dt Primary Attribute:
+                                dd  Strength (STR)
+                                dt Primary Weapon:
+                                dd  Strength (STR)
+                                dt Difficulty:
+                                dd  Easy
+                .class-image.is-hidden-touch
+                    img(src="/img/classes/berserker/character.png")
+            section.class-item
+                #heavy-gunner.anchor
+                .class-content
+                    .class-intro
+                        h2 Heavy Gunner
+                        blockquote "The hardest part is knowing when to stop firing. Some people stop when they see the Mushroom drop. Others, when it stops moving. But I like grilled mushrooms, soooo..."
+                    .class-details
+                        .class-media
+                            a.class-video.is-video-popup(href="#")
+                                img(src="/img/classes/heavy-gunner/video-cover.jpg")
+                            .class-image.is-hidden-desktop
+                                img(src="/img/classes/heavy-gunner/character-touch.png")
+                        .class-description-container
+                            .class-description-text
+                                p Anyone can grab a big gun and fire it off, it takes a genius to create that gun in the first place! The Heavy Gunner's greatest invention was sabotaged by the forces of darkness, and he's itching to use his other greatest inventions to make up for it!
+                                p His favorite of the lot is the <strong>Suborbital Bombardment</strong> ability, for when you just have to be sure. A Satellite flies overhead and fires its array of lasers at the monster closest to its creator as the brilliant inventor enjoys the show!
+                            dl.class-description-summary
+                                dt Primary Attribute:
+                                dd  Agility (AGI)
+                                dt Primary Weapon:
+                                dd  Cannon
+                                dt Difficulty:
+                                dd  Moderate
+                .class-image.is-hidden-touch
+                    img(src="/img/classes/heavy-gunner/character.png")
+            section.class-item
+                #knight.anchor
+                .class-content
+                    .class-intro
+                        h2 Knight
+                        blockquote "Stand fast, heroes, an enemy approaches! It looks like a... small wolf. With adorable eyes. No, stand fast! Do not approach- no, don't coo at the beast. Just... please stop petting it."
+                    .class-details
+                        .class-media
+                            a.class-video.is-video-popup(href="#")
+                                img(src="/img/classes/knight/video-cover.jpg")
+                            .class-image.is-hidden-desktop
+                                img(src="/img/classes/knight/character-touch.png")
+                        .class-description-container
+                            .class-description-text
+                                p The Knight charges into battle with a sword and shield as sturdy as her conviction! As the darkness grows around her, she will carry Maple World on her shoulders and never abandon others to the fight.
+                                p The Knight's powerful abilities include <strong>Defender of the Faith</strong>, where the Knight races towards her nearest ally and creates a nigh-impenetrable shield, safeguarding herself and three others from harm.
+                            dl.class-description-summary
+                                dt Primary Attribute:
+                                dd  Strength (STR)
+                                dt Primary Weapon:
+                                dd  Sword and Shield
+                                dt Difficulty:
+                                dd  Moderate
+                .class-image.is-hidden-touch
+                    img(src="/img/classes/knight/character.png")
+            section.class-item
+                #priest.anchor
+                .class-content
+                    .class-intro
+                        h2 Priest
+                        blockquote "Okay everyone, remember! Don't get too far away from me, follow the Knight's lead and please stay out of the fire. Stay out of the fire. Stay out of the fire! GET OUT OF THE F-"
+                    .class-details
+                        .class-media
+                            a.class-video.is-video-popup(href="#")
+                                img(src="/img/classes/priest/video-cover.jpg")
+                            .class-image.is-hidden-desktop
+                                img(src="/img/classes/priest/character-touch.png")
+                        .class-description-container
+                            .class-description-text
+                                p It was once said that all the grand battles were won and done with, but when the Darkness does return, the Priest will not set his duty aside, and will bring down his Holy might on any that threaten Maple World.
+                                p The Priest's Holy powers are just as beneficial to his allies as they are deadly to his enemies. The majestic <strong>Angelic Ray</strong> is a pure example of this, summoning a pure beam of Holy light, burning any enemies it touches while mending the wounds of his allies with ease.
+                            dl.class-description-summary
+                                dt Primary Attribute:
+                                dd  Intelligence (INT)
+                                dt Primary Weapon:
+                                dd  Scepter and Spellbook
+                                dt Difficulty:
+                                dd  Hard
+                .class-image.is-hidden-touch
+                    img(src="/img/classes/priest/character.png")
+            section.class-item
+                #thief.anchor
+                .class-content
+                    .class-intro
+                        h2 Thief
+                        blockquote "I rob from the rich and give to the poor! Most of it goes to the poor, anyway. After expenses, I mean, who doesn't have expenses, I need to be able to rob from the rich tomorrow too!"
+                    .class-details
+                        .class-media
+                            a.class-video.is-video-popup(href="#")
+                                img(src="/img/classes/thief/video-cover.jpg")
+                            .class-image.is-hidden-desktop
+                                img(src="/img/classes/thief/character-touch.png")
+                        .class-description-container
+                            .class-description-text
+                                p The Thief might seem like an average brigand, but there's a kind heart behind that cunning mind. While he'd prefer to stick to robbing banks and running from the law, someone's gotta save the world, and you might as well get paid for it!
+                                p The Thief keeps things close to the enemy, using poison, daggers and expert reflexes to tear the enemy a new one! He particularly enjoys unleashing a <strong>Surprise Attack</strong>, stabbing the enemies in front of him and dealing extra damage to the enemies he's poisoned.
+                            dl.class-description-summary
+                                dt Primary Attribute:
+                                dd  Luck (LUK)
+                                dt Primary Weapon:
+                                dd  Daggers
+                                dt Difficulty:
+                                dd  Hard
+                .class-image.is-hidden-touch
+                    img(src="/img/classes/thief/character.png")
+            section.class-item
+                #wizard.anchor
+                .class-content
+                    .class-intro
+                        h2 Wizard
+                        blockquote "I mean, technically everything is flammable eventually. Also, sorry about the drapes. And the rug. And the couch. And I'm pretty sure those eyebrows will grow back soon!"
+                    .class-details
+                        .class-media
+                            a.class-video.is-video-popup(href="#")
+                                img(src="/img/classes/wizard/video-cover.jpg")
+                            .class-image.is-hidden-desktop
+                                img(src="/img/classes/wizard/character-touch.png")
+                        .class-description-container
+                            .class-description-text
+                                p The Wizard possesses nearly limitless power, supreme mystical insight and the impulse control of a particularly excitable puppy! As she continues on her path to become a mighty Archmage, she'll have plenty of time to refine her spells on the enemies of Maple World!
+                                p The Wizard wields spells of fire, ice and lightning, including the massive <strong>Flame Tornado</strong>, a maelstrom of heat and flames that burns even the most flame resistant objects around!
+                            dl.class-description-summary
+                                dt Primary Attribute:
+                                dd  Intelligence (INT)
+                                dt Primary Weapon:
+                                dd  Staff
+                                dt Difficulty:
+                                dd  Moderate
+                .class-image.is-hidden-touch
+                    img(src="/img/classes/wizard/character.png")

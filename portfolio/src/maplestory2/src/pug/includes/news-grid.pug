@@ -1,0 +1,159 @@
+-var categories = ["Updates", "Sales", "Events", "Maintenance", "Announcements"]
+block main
+    //-.featured-news.slick
+        figure.news-item.featured-news-item
+            a(href="#").news-item-link
+                .news-item-image(style="background-image:url('/img/news/article-1.jpg')")
+                figcaption.news-item-info
+                    .publishing-info
+                        span.publishing-info-content
+                            time 11 Hours ago /
+                            span.news-category-tag.nc-updates Updates
+                    h2 Daily Deals HEADLINE
+                    .short-post-text FEATURED
+        figure.news-item.featured-news-item
+            a(href="#").news-item-link
+                .news-item-image(style="background-image:url('/img/news/article-1.jpg')")
+                figcaption.news-item-info
+                    .publishing-info
+                        span.publishing-info-content
+                            time 11 Hours ago /
+                            span.news-category-tag.nc-updates Updates
+                    h2 Daily Deals HEADLINE
+                    .short-post-text FEATURED
+    section.content
+        .row.news-list-title
+            h1 News
+            .dropdown.dropdown-cat
+                span Filter by:
+                .dropdown-inner
+                    button.dropbtn.icon-down-arrow All
+                    .dropdown-content
+                        each category in categories
+                            a(href="#", class=  category.toLowerCase()) #{category}
+        .news-list
+            figure.news-item
+                a(href="#").news-item-link
+                    .news-item-image(style="background-image:url('/img/news/article-1.jpg')")
+                    figcaption.news-item-info
+                        .publishing-info
+                            span.publishing-info-content
+                                time 11 Hours ago
+                                | &nbsp;|&nbsp;
+                                span.news-category-tag.nc-updates Updates
+                        h2 Ut Enim Ad Minim Veniam
+                        .short-post-text Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+            figure.news-item
+                a(href="#").news-item-link
+                    .news-item-image(style="background-image:url('/img/news/article-2.jpg')")
+                    figcaption.news-item-info
+                        .publishing-info
+                            span.publishing-info-content
+                                time 11 Hours ago
+                                | &nbsp;|&nbsp;
+                                span.news-category-tag.nc-sales Sales
+                        h2 Ut Enim Ad Minim Veniam
+                        .short-post-text Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+            figure.news-item
+                a(href="#").news-item-link
+                    .news-item-image(style="background-image:url('/img/news/article-3.jpg')")
+                    figcaption.news-item-info
+                        .publishing-info
+                            span.publishing-info-content
+                                time 11 Hours ago
+                                | &nbsp;|&nbsp;
+                                span.news-category-tag.nc-events Events
+                        h2 Ut Enim Ad Minim Veniam
+                        .short-post-text Unde omnis iste natus error sit voluptatem...
+            figure.news-item
+                a(href="#").news-item-link
+                    .news-item-image(style="background-image:url('/img/news/article-4.jpg')")
+                    figcaption.news-item-info
+                        .publishing-info
+                            span.publishing-info-content
+                                time 11 Hours ago
+                                | &nbsp;|&nbsp;
+                                span.news-category-tag.nc-maintenance Maintenance
+                        h2 Ut Enim Ad Minim Veniam
+                        .short-post-text Unde omnis iste natus error sit voluptatem...
+            figure.news-item
+                a(href="#").news-item-link
+                    .news-item-image(style="background-image:url('/img/news/article-5.jpg')")
+                    .news-item-info
+                        .publishing-info
+                            span.publishing-info-content
+                                time 11 Hours ago
+                                | &nbsp;|&nbsp;
+                                span.news-category-tag.nc-announcements Announcements
+                        h2 Ut Enim Ad Minim Veniam
+                        .short-post-text Unde omnis iste natus error sit voluptatem...
+            figure.news-item
+                a(href="#").news-item-link
+                    .news-item-image(style="background-image:url('/img/news/article-3.jpg')")
+                    figcaption.news-item-info
+                        .publishing-info
+                            span.publishing-info-content
+                                time 11 Hours ago
+                                | &nbsp;|&nbsp;
+                                span.news-category-tag.nc-events Events
+                        h2 Ut Enim Ad Minim Veniam
+                        .short-post-text Unde omnis iste natus error sit voluptatem...
+            figure.news-item
+                a(href="#").news-item-link
+                    .news-item-image(style="background-image:url('/img/news/article-4.jpg')")
+                    figcaption.news-item-info
+                        .publishing-info
+                            span.publishing-info-content
+                                time 11 Hours ago
+                                | &nbsp;|&nbsp;
+                                span.news-category-tag.nc-maintenance Maintenance
+                        h2 Ut Enim Ad Minim Veniam
+                        .short-post-text Unde omnis iste natus error sit voluptatem...
+            figure.news-item
+                a(href="#").news-item-link
+                    .news-item-image(style="background-image:url('/img/news/article-5.jpg')")
+                    .news-item-info
+                        .publishing-info
+                            span.publishing-info-content
+                                time 11 Hours ago
+                                | &nbsp;|&nbsp;
+                                span.news-category-tag.nc-announcements Announcements
+                        h2 Ut Enim Ad Minim Veniam
+                        .short-post-text Unde omnis iste natus error sit voluptatem...
+            figure.news-item
+                a(href="#").news-item-link
+                    .news-item-image(style="background-image:url('/img/news/article-5.jpg')")
+                    .news-item-info
+                        .publishing-info
+                            span.publishing-info-content
+                                time 11 Hours ago
+                                | &nbsp;|&nbsp;
+                                span.news-category-tag.nc-announcements Announcements
+                        h2 Ut Enim Ad Minim Veniam
+                        .short-post-text Unde omnis iste natus error sit voluptatem...
+
+
+            ul.pagination.news-pagination.is-hidden-touch
+                li.first.inactive.icon-double-left-arrow
+                li.prev.inactive.icon-left-arrow
+                li.active.glow-text
+                    a(href="/en/news/all/1") 1
+                li.glow-text
+                    a(href="/en/news/all/2") 2
+                li.glow-text
+                    a(href="/en/news/all/3") 3
+                li.glow-text
+                    a(href="/en/news/all/4") 4
+                li.glow-text
+                    a(href="/en/news/all/5") 5
+                li . . .
+                li
+                    a(href="/en/news/all/6") 6
+                li.next
+                    a(href="/en/news/all/2").icon-right-arrow
+                li.last
+                    a(href="/en/news/all/6").icon-double-right-arrow
+
+            .load-more.button.show-more-btn.button-frame.is-hidden-desktop
+                a(href="/news.html", data-currentpage="1", data-lastpage="3", data-item=".news-item", data-cont=".news-list")
+                    span Load More

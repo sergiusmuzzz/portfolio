@@ -1,0 +1,109 @@
+callback_de({
+	"site": {
+		"head": {
+			"title": "FA: Die Zukunft ist heute; Erneuerung | First Assault Offizielle Webseite",
+			"description": "Die bislang größte Episode von First Assault bietet dir einen komplett neuen Look! Spring rein und trete SECTION 9 mit 3 neuen Agenten bei!"
+		},
+		"header": {
+			"link1": "ERNEUERUNG",
+			"link2": "REKRUTEN",
+			"link3": "RÜSTUNG",
+			"link4": "KLASSEN",
+			"link5": "PATCH-NOTIZEN",
+			"link-to-main-site": "ZUR HAUPTSEITE",
+			"url-to-main-site": "http://firstassault.nexon.net/de",
+			"call-to-action": "KOSTENLOS SPIELEN",
+		},
+		"footer": {
+			"link1_text": "DATENSCHUTZBESTIMMUNGEN",
+			"link1_url": "http://www.nexon.net/de/legal/privacy-policy/",
+			"link2_text": "NUTZUNGSBEDINGUNGEN",
+			"link2_url": "http://www.nexon.net/de/legal/terms-of-use/",
+			"link3_text": "WELCHE REGIONEN UNTERSTÜZT WERDEN",
+			"link3_url": "http://firstassault.nexoneu.com/de/news/4041/supported-regions",
+			"link4_text": "ERHALTE UNTERSTÜTZUNG",
+			"link4_url": "https://support-firstassault.nexon.net/hc/de",
+			"legalNotice": "COPYRIGHT © 2017 NEOPLE INC.& NEXON AMERICA INC. ALLE RECHTE VORBEHALTEN. <br>BASIEREND AUF DEM MANGA „THE GHOST IN THE SHELL“ VON SHIROW MASAMUNE IM ORIGINAL ALS SERIE ADAPTIERT IM WEEKLY YOUNG MAGAZINE <br>HERAUSGEGEBEN VON KODANSHA LTD.© SHIROW MASAMUNE • PRODUCTION I.G/KODANSHA ALLE RECHTE VORBEHALTEN."
+		},
+		"renewal": {
+			"title": "DIE ZUKUNFT BEGINNT JETZT: DIE ERNEUERUNG",
+			"p": "GitS: First Assault wird einer Erneuerung unterzogen - und dieses Update bietet eine Vielzahl an neuen Funktionen.  Einige neue Inhalte sind ein aufpoliertes Interface, kostenlose Agentenrotationen, neue Modi, neue Maps und noch vieles, vieles mehr!  Nehmt euch etwas Zeit, schaut euch die Veränderungen an und erlebt das völlig neue First Assault.",
+			"image1": "<h4>Modus-Updates</h4><p>Profitiert im aktualisierten Terminal Conquest-Modus von Teamwork und taktischem Gameplay. Probiert den brandneuen Eliminierungsmodus aus und stellt euch euren Gegnern mit nur einem Leben.</p>",
+			"image2": "<h4>Neue Agenten und überarbeitete Fähigkeiten</h4><p>Alle Stufe 1 und Stufe 2 Fähigkeiten wurden aktualisiert, um das Potential der Agenten voll auszuschöpfen.  Sitara, Azuma und Reiko schließen sich den Rängen der Section 9 an.</p>",
+			"image3": "<h4>Dynamische Fortbewegung</h4><p>Die Zukunft beginnt jetzt, mit der neuen dynamischen Fortbewegung, die Doppelsprünge und Rutschen zur Überwältigung eurer Feinde ermöglicht.</p>",
+			"image4": "<h4>Elektronik-Zentrum</h4><p>Schaut euch die neue Map für Zerstörung und Eliminierung an: Das Elektronik-Zentrum.</p>",
+		},
+		"recruits": {
+			"title": "REKRUTEN",
+			"char1": "REIKO",
+			"quote1": "„SCHACHMATT”",
+			"char2": "SITARA",
+			"quote2": "„ABSCHUSS BESTÄTIGT”",
+			"char3": "AZUMA",
+			"quote3": "„LEG DICH NICHT MIT MEINEM TEAM AN”",
+		},
+		"gear": {
+			"title": "RÜSTUNG",
+			"p": "Die Erneuerung von First Assault bringt brandneue Outfits, Waffen-Skins und weitere Inhalte, die über das Cyber-Gate verfügbar sein werden.  Schnappt euch unbedingt eure Favoriten, werft euch in Schale und schaltet eure Gegner mit Stil aus.",
+			"call-to-action": "RÜSTUNG KAUFEN",
+		},
+		"classes": {
+			"title": "KLASSEN",
+			"class1title": "INFILTRATOR",
+			"class1p": "Ihre starke Cyberisierung und ihre hohe Schadensverteilung macht diese Agenten in den Händen von erfahrenen Spielern sehr gefährlich. Nutzt Geschwindigkeit, Verstohlenheit oder andere Methoden, um euch weit hinter die gegnerische Front zu begeben, bevor diese überhaupt von eurer Existenz erfahren. Aber Vorsicht! Werdet ihr mit niedriger Gesundheit entdeckt, kann sich das Blatt schnell wenden.",
+			"class1dt1": "Agenten:",
+			"class1dd1": "Motoko, Paz, Kuro, Maven, Reiko",
+			"class1dt2": "Waffen:",
+			"class1dd2": "Maschinenpistole / Schrotflinte",
+			"class1dt3": "Dynamische Fortbewegung:",
+			"class1dd3": "Rutschen",
+
+			"class2title": "SPEZIALIST",
+			"class2p": "Diese Agenten haben eine ausgewogene Geschwindigkeit und Verteidigung und beherrschen Fähigkeiten, mit denen sie Feinde aufspüren können.  Spezialisten bieten wichtige Unterstützung von hinten und den Flanken.",
+			"class2dt1": "Agenten:",
+			"class2dd1": "Saito, Togusa, Sitara",
+			"class2dt2": "Weapons:",
+			"class2dd2": "Scharfschützengewehr / Persönliche Verteidigungswaffe",
+			"class2dt3": "Dynamische Fortbewegung: ",
+			"class2dd3": "Doppelsprung",
+
+			"class3title": "STÜRMER",
+			"class3p": "Die Aufstellung der Frontlinie ist der Schlüssel jeder Art von Kriegsführung.  Die Stürmerklasse spezialisiert sich auf den Einsatz dort, wo die Schlacht beginnt. Mit ihrer hohen Gesundheit und Verteidigung können diese Agenten großen Schaden einstecken und schnell zum Brennpunkt jedes feindlichen Teams werden. Achtet darauf, der Action nie den Rücken zuzukehren, da die langsamen Bewegungen der Stürmer sie von hinten anfällig machen. ",
+			"class3dt1": "Agenten:",
+			"class3dd1": "Batou, Borma, Ishikawa, Azuma",
+			"class3dt2": "Weapons:",
+			"class3dd2": "Sturmgewehr / Maschinengewehr",
+			"class3dt3": "Dynamische Fortbewegung: ",
+			"class3dd3": "Keine",
+		},
+		"patchNotes": {
+			"title": "Aktualisierungen",
+			"section1Title": "Benutzeroberfläche",
+			"section1p1": "- Die Benutzeroberfläche wurde komplett überarbeitet.",
+			"section1p2": "Wir haben einige gravierende Aktualisierungen und Optimierungen vorgenommen, für ein besseres Spielerlebnis und besseren Flow. Schaut es euch im Spiel an!",
+
+			"section2Title": "Änderungen an Agenten (Agent 2.0)",
+			"section2p1": "An allen Agenten wurden größere und kleinere Änderungen vorgenommen, wie Änderungen an ihrer Klassenzugehörigkeit oder direkte Änderungen an ihren Fähigkeiten.",
+
+			"section3Title": "Waffen-Balance",
+			"section3p1": "Nahezu alle Waffen-Stats wurden angepasst. Detaillierte Informationen zu den Änderungen an den Stats findet ihr hier.",
+			"section3p2": "Der Schaden von Schrotflinte und Scharfschützengewehr wurde erhöht, um den allgemeinen HP-Anstieg bei allen Agenten zu kompensieren.",
+
+			"section4Title": "Änderungen am Gameplay",
+			"section4p1": "Fähigkeiten der Stufe 1 sind nun standardmäßig der Taste „E“ zugewiesen. Sie kosten keine Informationen und haben kurze Abklingzeiten.",
+			"section4p2": "Fähigkeiten der Stufe 2 sind nun standardmäßig der Taste „Q“ zugewiesen. Um sie einzusetzen, sind Informationen erforderlich, aber sie haben keine Abklingzeiten mehr. Fähigkeiten der Stufe 2 und der Stufe 1 mit dem gleichen Namen können nicht gestapelt werden.",
+
+			"readMore": "Mehr lesen!",
+			"readMoreUrl": "http://firstassault.nexon.net/de/news/23964/renewal",
+		},
+		"modal": {
+			"title": "Wähle deine Plattform",
+			"play-on-steam": "AUF STEAM SPIELEN",
+			"play-on-nexon-launcher": "AUF DEM NEXON LAUNCHER SPIELEN"
+		},
+		"mobile-menu": {
+			"link1": "GO TO MAIN SITE",
+			"link2": "PART 1 PERSONA"
+		}
+	}
+})

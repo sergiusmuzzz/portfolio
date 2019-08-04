@@ -1,0 +1,18 @@
+body, .popup .container, .m-lightbox__slider, .m-lightbox__ui-bottom-wrapper{
+  opacity: 0;
+  animation: fade-in .5s ease;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  45% { opacity: 0; }
+  95% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+.popup .container{
+  opacity: 1;
+  transition: opacity .5s;
+}

@@ -1,0 +1,109 @@
+callback_fr({
+	"site": {
+		"head": {
+			"title": "FA : Renaissance – Le futur commence ici | Site officiel de First Assault",
+			"description": "Avec ce nouvel épisode, le plus conséquent, First Assault change de visage ! Rejoignez la SECTION 9 et plongez avec trois nouveaux agents !"
+		},
+		"header": {
+			"link1": "REVUE",
+			"link2": "RECRUES",
+			"link3": "ÉQUIPEMENT",
+			"link4": "CLASSES",
+			"link5": "NOTES DE PATCH",
+			"link-to-main-site": "VOIR LE SITE PRINCIPAL",
+			"url-to-main-site": "http://firstassault.nexon.net/fr",
+			"call-to-action": "JOUER GRATUITEMENT",
+		},
+		"footer": {
+			"link1_text": "POLITIQUE DE CONFIDENTIALITÉ",
+			"link1_url": "http://www.nexon.net/fr/legal/privacy-policy/",
+			"link2_text": "TERMES ET CONDITIONS",
+			"link2_url": "http://www.nexon.net/fr/legal/terms-of-use/",
+			"link3_text": "RÉGIONS SUPPORTÉES",
+			"link3_url": "http://firstassault.nexoneu.com/fr/news/4041/supported-regions",
+			"link4_text": "CONTACTER LE SUPPORT",
+			"link4_url": "https://support-firstassault.nexon.net/hc/fr",
+			"legalNotice": "COPYRIGHT © 2017 NEOPLE INC. & NEXON AMERICA INC. TOUS DROITS RÉSERVÉS. <br>BASÉ SUR LE MANGA « THE GHOST IN THE SHELL » DE SHIROW MASAMUNE PRÉPUBLIÉ INITIALEMENT DANS LE WEEKLY YOUNG MAGAZINE <br>PUBLIÉ PAR KODANSHA LTD. © SHIROW MASAMUNE • PRODUCTION I.G/KODANSHA TOUS DROITS RÉSERVÉS."
+		},
+		"renewal": {
+			"title": "LE FUTUR S'AMORCE DÈS MAINTENANT : REVUE",
+			"p": "GitS: First Assault est en cours de revue et cette mise à jour contient une masse d'informations sur les nouvelles caractéristiques du jeu.  Parmi les modifications que nous apportons, citons une nouvelle IU améliorée, une rotation d'agents gratuite, un nouveau mode, des cartes inédites et bien plus encore !  Prenez quelques minutes pour découvrir les changements et connectez-vous pour essayer par vous-même notre tout nouveau First Assaut.",
+			"image1": "<h4>Mises à jour des modes</h4><p>Utilisez les forces de votre équipe et planifiez une tactique ensemble pour remporter une partie en mode Conquête du Terminal, maintenant mis à jour. Essayez le tout nouveau mode Élimination et tentez de vaincre vos ennemis en n'ayant qu'une seule vie.</p>",
+			"image2": "<h4>Nouveaux agents et revue des compétences</h4><p>Toutes les compétences de niveau 1 et niveau 2 ont été mises à jour pour améliorer le potentiel des agents.  En outre, Sitara, Azuma et Reiko grossissent les rangs de la Section 9.</p>",
+			"image3": "<h4>Déplacement dynamique</h4><p>Le futur s'amorce dès maintenant avec de nouveaux déplacements dynamiques, notamment des doubles sauts et des glissades qui vous permettront de surprendre ou d'esquiver vos ennemis.</p>",
+			"image4": "<h4>Centre électronique</h4><p>Découvrez les nouvelles cartes Démolition et Élimination, ainsi que le Centre électronique.</p>",
+		},
+		"recruits": {
+			"title": "RECRUES",
+			"char1": "REIKO",
+			"quote1": "« VOTRE PLAN A ÉCHOUÉ. »",
+			"char2": "SITARA",
+			"quote2": "« VICTIME CONFIRMÉE. »",
+			"char3": "AZUMA",
+			"quote3": "« PAS TOUCHE À MON ÉQUIPE. »",
+		},
+		"gear": {
+			"title": "ÉQUIPEMENT",
+			"p": "Avec la revue de First Assault vient toute une gamme de nouvelles tenues, de nouvelles apparences d'armes, et du contenu inédit offert par le Cyberportail.  Choisissez vos favoris, préparez-vous au combat et éliminez vos ennemis avec style !",
+			"call-to-action": "D'ÉQUIPEMENT",
+		},
+		"classes": {
+			"title": "CLASSES",
+			"class1title": "INFILTRATEUR",
+			"class1p": "Grâce à leur intégration cybernétique poussée et aux lourds dégâts qu'ils peuvent engendrer, ces agents peuvent devenir terriblement dangereux entre les mains de joueurs talentueux. Misez sur la vitesse, la furtivité ou d'autres moyens pour vous glisser derrière les lignes ennemies sans qu'ils ne se doutent de votre présence. Attention, toutefois : si vous êtes repéré, la situation risque de se retourner très rapidement contre vous.",
+			"class1dt1": "Agents :",
+			"class1dd1": "Motoko, Paz, Kuro, Maven, Reiko",
+			"class1dt2": "Armes :",
+			"class1dd2": "Pistolet-mitrailleur et fusil à pompe",
+			"class1dt3": "Déplacement dynamique : ",
+			"class1dd3": "Glissade",
+
+			"class2title": "SPÉCIALISTE",
+			"class2p": "Ces agents sont autant doués pour agir rapidement que pour se défendre, et ils mettent à votre disposition des compétences pour pister les ennemis.  Les agents spécialistes offrent des renforts particulièrement utiles en couvrant l'arrière et les flancs de l'équipe.",
+			"class2dt1": "Agents :",
+			"class2dd1": "Saito, Togusa, Sitara",
+			"class2dt2": "Armes :",
+			"class2dd2": "Fusils Sniper et arme de défense personnelle",
+			"class2dt3": "Déplacement dynamique : ",
+			"class2dd3": "Double saut",
+
+			"class3title": "ASSAULT",
+			"class3p": "Établir et tenir la ligne de front est essentielle à tous les types de guerres.  Les agents d'assaut sont ceux que vous voulez avoir là où le combat éclate. Ces agents ont une santé de fer et savent se défendre, ils peuvent encaisser les dégâts et s'assurer d'attirer et de retenir l'attention de l'ennemi. Assurez-vous que l'action est toujours devant vous, car leurs mouvements plus lents les rendent vulnérables lorsqu'ils sont attaqués à revers. ",
+			"class3dt1": "Agents :",
+			"class3dd1": "Batou, Borma, Ishikawa, Azuma",
+			"class3dt2": "Armes :",
+			"class3dd2": "Fusil d'assaut et pistolet mitrailleur",
+			"class3dt3": "Déplacement dynamique : ",
+			"class3dd3": "aucun",
+		},
+		"patchNotes": {
+			"title": "Mises à jour",
+			"section1Title": "User Interface",
+			"section1p1": "- L'interface a été totalement repensée.",
+			"section1p2": "Des mises à jour et des optimisations importantes ont été apportées à l'expérience de l'utilisateur et au flux. Allez vérifier dans le jeu !",
+
+			"section2Title": "Modifications des Operatives (Operatives 2.0)",
+			"section2p1": "Tous les Operatives ont subi des modifications, qu'elles soient mineures ou majeures, liées à leur attribution de classe ou, plus directement, à leurs capacités.",
+
+			"section3Title": "Équilibrage des armes",
+			"section3p1": "	Les stats de la quasi totalité des armes ont été ajustées. Cliquez ici pour consulter en détail les modifications des stats.",
+			"section3p2": "	Les dégâts infligés par les Fusils à pompe et les Fusils de Sniper ont été augmentés pour compenser la hausse des PV de tous les Operatives.",
+
+			"section4Title": "Modifications du gameplay",
+			"section4p1": "Les capacités de niveau 1 sont désormais associées par défaut à la touche E. Les utiliser ne nécessite pas d'intel, et se rechargent plus rapidement. ",
+			"section4p2": "Les capacités de niveau 2 sont associées par défaut à la touche Q. Les utiliser nécessite de l'intel mais elles n'ont plus de temps de recharge. Les capacités de niveau 1 ne peuvent pas être cumulées avec des capacités de niveau 2 qui porteraient le même nom.",
+
+			"readMore": "Lisez-en plus à ce sujet !",
+			"readMoreUrl": "http://firstassault.nexon.net/fr/news/23966/renewal",
+		},
+		"modal": {
+			"title": "Choisissez Votre Plate-forme",
+			"play-on-steam": "JOUER SUR STEAM",
+			"play-on-nexon-launcher": "JOUER DEPUIS LE LAUNCHER NEXON"
+		},
+		"mobile-menu": {
+			"link1": "GO TO MAIN SITE",
+			"link2": "PART 1 PERSONA"
+		}
+	}
+})

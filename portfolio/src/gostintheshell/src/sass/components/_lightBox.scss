@@ -1,0 +1,207 @@
+
+.lightbox-active {
+  overflow: hidden;
+}
+.lightbox {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: z("modal");
+  background: rgba(0,0,0,0.8);
+  display: none;
+
+  // Itself
+
+  &.active {
+    display:block;
+    opacity: 1;
+  }
+
+ 
+  /* There is issue with Chrome youtube full screen with opacity if there is css animation in a class.  Removed this after some timeout function in js.*/
+  &.fadein {
+    @include animation('m-lightbox_active .4s ease');
+    @include animation-fill-mode(forwards);
+      .m-lightbox__container {
+        @include animation-delay(0.7s);
+        @include animation('m-lightbox__container_active 1.1s ease');
+        @include animation-fill-mode(forwards);
+      }
+
+  }
+  &.disappear {
+    display: block;
+    @include animation('lightbox-disappear .4s ease');
+    @include animation-fill-mode(forwards);
+      .lightbox-container { }
+  }
+  /* extra touch - fadein inner contents with slight delay */
+  @include keyframes(lightbox-container-active) {
+    0% { opacity: 0; }
+    45% { opacity: 0; }
+    95% { opacity: 1; }
+    100% { opacity: 1; }
+  }
+
+  /* pop up disappear animation */
+  @include keyframes(lightbox-disappear) {
+    0% { opacity: 1; }
+    20% { opacity: 1; }
+    95% { opacity: 0; }
+    100% { display:none; opacity: 0; }
+  }
+  
+  /* pop up appear animation */
+  @include keyframes(lightbox-active) {
+    0% {  opacity: 0; }
+    10% { opacity: 0; }
+    95% { opacity: 1; }
+    100% { display:block; opacity: 1; }
+  }
+}
+
+// Slider
+
+.lightbox-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  @include transition( transform 0.5s ease, left 0.2s ease );
+  &.leftSpring { left: 80px; }
+  &.rightSpring { left: -80px; }
+}
+
+/* Each Item */
+
+.lightbox-slide-item {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.lightbox-inner-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include transform(translate( -50% , -50% ));
+}
+
+.lightbox-media {
+  overflow: hidden;
+  &.item-loading {
+    background: url('../img/loading.gif') center center no-repeat;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+.lightbox-media-video {
+  position:relative;
+  padding-bottom:56.25%;
+  height:0;
+  overflow:hidden;
+  background: black;
+  iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+}
+
+
+// UI Btns
+
+/* Buttons and info below media | m-lightbox__ui-bottom-wrapper top value will be determined by JS */
+.lightbox-ui-bottom-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 3em 0 2em;
+  width: 100%;
+  text-align: center;
+  font-size: 0.7em;
+}
+.lightbox-ui-info {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 3em;
+  margin: 0.8em;
+}
+
+/* Overide carousel styles from global design assets.*/
+.lightbox-ui-bottom-left-arrow { }
+.lightbox-ui-bottom-right-arrow { }
+
+.lightbox-ui-bottom-place-holder {   }
+
+/* Close icon*/
+.lightbox-ui-close{
+  z-index: z("modal")+1;
+  position: absolute;
+  top: .6em;
+  right: .6em;
+  background: rgba(0,0,0,0.4);
+  font-size: 4.4em;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.5s ease;
+  @include desktop{
+    font-size: 38px;
+  }
+  &:hover {
+    color: rgba(255, 207, 64, 1);
+  }
+}
+
+
+/* Overide carousel styles from global design assets.*/
+/* hidden side buttons all the time except mobile phone landscape mode */
+.lightbox-ui-side-left-arrow {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: -0.3em;
+  transform: translate(0, -50%);
+  border-left: none;
+}
+.lightbox-ui-side-right-arrow {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: -0.3em;
+  transform: translate(0, -50%);
+  border-right: none;
+}
+
+
+body.landscape { 
+  @include until(700px) {
+    /* show side buttons */
+    .lightbox-ui-side-left-arrow {
+      display: block;
+    }
+    .lightbox-ui-side-right-arrow {
+      display: block;
+    }
+    /* hide place holder */
+    .lightbox-ui-bottom-place-holder {
+      display: none;
+    }
+    /* ui button bottom*/
+    .lightbox-ui-bottom-wrapper {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,176 @@
+.mobile-menu-popup-is-on,
+.video-popup-is-on{
+    overflow: hidden;
+}
+
+.classes-page{
+    .popup{
+        z-index: 9999999;
+    }
+}
+
+.popup{
+    overflow-y: auto;
+    background-color: rgba(30, 29, 37, .99);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 20;
+
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+
+    .close{
+        color: $yellow;
+        font-size: 4rem;
+        position: absolute;
+        right: 3vmin;
+        top: 3vmin;
+        z-index: 1;
+    }
+
+    .container{
+        width: 110rem;
+        @include until($desktop){
+            max-width: 90%;
+        }
+        .content{
+            display: flex;
+            position: relative;
+            transition: transform .3s, opacity .3s;
+            opacity: 0;
+
+            & > div{
+                align-self: center;
+            }
+        }
+        img{
+            align-self: center;
+        }
+        iframe{
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        nav{
+            text-align: center;
+            margin-top: 5rem;
+            display: none;
+
+        }
+
+    }
+}
+
+.popup-is-on .popup,
+.play-buttons-popup-is-on .play-buttons-popup,
+.mobile-menu-popup-is-on .mobile-menu-popup,
+.video-popup-is-on .video-popup{
+    display: flex;
+    .content{
+        opacity: 1;
+    }
+}
+
+.play-buttons-popup{
+    .container{
+        max-width: 45rem;
+    }
+    .content {
+        flex-direction: column;
+        h1{
+            font-size: 4.1rem;
+            margin-bottom: 3rem;
+        }
+        .primary{
+            width: 100%;
+            font-size: 3.5rem;
+            letter-spacing: -0.25rem;
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+.mobile-menu-popup{
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    .container{
+        .content{
+            flex-direction: column;
+            padding-top: 25vmin;
+            .check-status{
+                margin-top: 3rem;
+                font-size: 3.5rem;
+                span{
+                    position: relative;
+                    display: inline-block;
+                    padding-right: 3.5rem;
+                    &:before{
+                        top: 42%;
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+            a, .item-dropdown-mobile > span{
+                text-transform: uppercase;
+                font-size: 4.4rem;
+                line-height: .8;
+                color: $yellow;
+                cursor: pointer;
+                margin-bottom: 5.5rem;
+                &:not(.button){
+                    font-weight: bold;
+                }
+                &.is-active, &:first-child, &:hover{
+                    //color: $magenta;
+                }
+            }
+
+            .item-dropdown-mobile{
+                margin-bottom: 3rem;
+                .nav-dropdown{
+                    display: none;
+                }
+                &.is-active{
+                    & > span{
+                        display: inline-block;
+                        position: relative;
+                        &:before{
+                            transform: rotate(0);
+                        }
+                    }
+                }
+                & > span{
+                    display: inline-block;
+                    position: relative;
+                    margin-bottom: 3rem;
+                    &:before{
+                        transition: transform .3s;
+                        font-size: 3rem;
+                        position: absolute;
+                        transform: rotate(180deg);
+                        left: 100%;
+                        margin-left: 2rem;
+                    }
+                }
+                a{
+                    display: block;
+                    font-size: 3rem;
+                    margin-bottom: 4rem;
+                }
+            }
+        }
+    }
+}
+
+.video-popup{
+    .content{
+        padding-bottom: 56.3%;
+    }
+}

@@ -1,0 +1,199 @@
+// Responsiveness
+
+$tablet: 740px !default;
+// 960px container + 40px
+$desktop: 1025px !default;
+// 1152px container + 40
+$widescreen: 1496px !default;
+// 960 and 1152 have been chosen because
+// they are divisible by both 12 and 16
+
+@mixin from($device){
+    @media screen and (min-width: $device){
+        @content
+    }
+}
+
+@mixin until($device){
+    @media screen and (max-width: $device - 1px){
+        @content
+    }
+}
+
+@mixin mobile{
+    @media screen and (max-width: $tablet - 1px){
+        @content
+    }
+}
+
+@mixin tablet{
+    @media screen and (min-width: $tablet){
+        @content
+    }
+}
+
+@mixin tablet-only{
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px){
+        @content
+    }
+}
+
+@mixin touch{
+    @media screen and (max-width: $desktop - 1px){
+        @content
+    }
+}
+
+@mixin desktop{
+    @media screen and (min-width: $desktop){
+        @content
+    }
+}
+
+@mixin desktop-only{
+    @media screen and (min-width: $desktop) and (max-width: $widescreen - 1px){
+        @content
+    }
+}
+
+@mixin widescreen{
+    @media screen and (min-width: $widescreen){
+        @content
+    }
+}
+
+// radial decorative border
+
+@mixin border-radial{
+    &:after{
+        content: "";
+        display: block;
+        height: 10px;
+        width: 100%;
+        background: radial-gradient(ellipse 52% 50%, $white, transparent) no-repeat center bottom / 100% 5px;
+        transform: translateY(25%);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        filter: drop-shadow(0 0 5px $white );
+        -ms-filter: drop-shadow(0 0 5px $white );
+    }
+}
+
+// Show
+
+@mixin show{
+    visibility: visible;
+    opacity: 1;
+}
+
+// Compact header
+
+@mixin header-compact{
+    background-color: $header-bg;
+    border-top: none;
+    border-bottom: 1px solid $yellow;
+    align-items: center;
+    z-index: 20;
+    @include desktop{
+        height: 6.92rem;
+    }
+    .logo {
+        max-width: 7.7rem;
+        margin: .2rem 0 .2rem 1.7rem;
+        @include desktop{
+            margin-left: 4.2rem;
+        }
+        .logo-img{
+            display: none;
+        }
+        .logo-small-img{
+            display: block;
+
+        }
+    }
+    nav{
+        background: none;
+        height: 100%;
+        margin-right: 2rem;
+        @include desktop {
+            margin-right: 2rem;
+        }
+        a, .item{
+            color: $yellow;
+            padding: 0;
+            background: none;
+            margin: 0 2rem;
+            &:not(:last-of-type){
+                &:after{
+                    //border-left: 1px solid #2b2a30;
+                    //border-right: 1px solid #463f39;
+                    margin: 0 2rem;
+                }
+            }
+            &:hover{
+                color: #fff;
+                &:before{
+                    content: "";
+                    width: 100%;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    border-bottom: 0.5rem solid #fff;
+                    margin-top: -0.4rem;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: -1.25rem;
+                    left: 50%;
+                    margin-left: -1.25rem;
+                    width: 0; 
+                    height: 0; 
+                    border-left: 1.25rem solid transparent;
+                    border-right: 1.25rem solid transparent;
+                    border-top: 1.25rem solid #fff;
+                }
+            }
+        }
+        &:before{
+            content: normal;
+        }
+        .item {
+            .nav-dropdown {
+                top: 6.75rem;
+            }
+        }
+    }
+    .button{
+        min-width: 33rem;
+        height: 7rem;
+
+        margin: 0 2rem 0 0;
+        &:hover{
+            background-position: center bottom;
+        }
+
+        span{
+            display: block;
+            font-size: 2.6rem;
+            font-family: $family-secondary;
+            text-transform: uppercase;
+            padding-top: .2rem;
+
+        }
+    }
+
+    .check-status{
+        .icon-right-arrow:before{
+            font-size: 1.3rem;
+        }
+    }
+
+    .button-cta {
+        color: #0a0a0a;
+        background: no-repeat center top / 100% 14rem;
+        background-image: url('../img/cta-sticky.png');
+    }
+}

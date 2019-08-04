@@ -1,0 +1,27 @@
+mixin panel(data)
+  if data
+    .panel(class="panel-#{data.position}")
+      if data.icon
+        .role-icon(style="background-image: url(#{data.icon});")
+      if data.label
+        .label
+          +blips()
+          | #{data.label}
+      if data.title
+        h2 !{data.title}
+      if data.copy
+        p !{data.copy}
+      if data.buttons
+        .buttons
+          each btn, index in data.buttons
+            +button(btn, index)
+      if data.videoBg
+        .buttons
+          a.mediabox(href='#', data-group='game-videos', data-ytid='C41fmiw7am8')
+            video.ui-unique-box__media-video(autoplay='', loop='', muted='')
+              source(src='/assets/videos/PAX_East_Trailer_Loop_08_12_16.mp4', type='video/mp4')
+              source(src='/assets/videos/PAX_East_Trailer_Loop_08_12_16.ogv', type='video/ogg')
+              source(src='/assets/videos/PAX_East_Trailer_Loop_08_12_16.webm', type='video/webm')
+            .btn-video
+            .video-frame
+

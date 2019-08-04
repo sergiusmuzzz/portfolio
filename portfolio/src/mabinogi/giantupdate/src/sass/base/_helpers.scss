@@ -1,0 +1,47 @@
+// Visibility
+
+.is-hidden {
+  display: none !important;
+}
+
+.is-hidden-mobile {
+  @include mobile {
+    display: none !important
+  }
+}
+
+.is-hidden-tablet {
+  @include tablet {
+    display: none !important;
+  }
+}
+
+.is-hidden-tablet-only {
+  @include tablet-only {
+    display: none !important
+  }
+}
+
+.is-hidden-touch {
+  @include touch {
+    display: none !important;
+  }
+}
+
+.is-hidden-desktop {
+  @include desktop {
+    display: none !important;
+  }
+}
+
+.is-hidden-desktop-only {
+  @include desktop-only {
+    display: none !important;
+  }
+}
+
+.is-hidden-widescreen {
+  @include widescreen {
+    display: none !important
+  }
+}

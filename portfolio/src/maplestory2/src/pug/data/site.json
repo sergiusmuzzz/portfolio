@@ -1,0 +1,44 @@
+{
+    "name": "MapleStory 2",
+    "title": "Official Website",
+    "keywords": "",
+    "description": "",
+    "ogImg": "",
+    "twitterImg": "",
+    "twitterSite": "@playmaple2",
+    "url": "http://maplestory2.nexon.net",
+    "favicon": "/img/favicon.ico",
+    "ga": "",
+    "gtm": "",
+    "cdn": "",
+    "lang": "en",
+    "language": "English",
+    "languages": [
+        {"id":"de", "name": "Deutsch" },
+        {"id":"fr", "name": "Français" }
+    ],  
+    "buttons": {
+        "cta": "Sign up for Beta",
+        "mainLink": "Go to main site",
+        "play": "Full Trailer"
+    },
+    "landing": {
+        "tab1": "Trailer",
+        "tab2": "Adventure",
+        "tab3": "Create",
+        "tab4": "Explore",
+        "usp1": "Claim Your Destiny<br>as an Epic Hero",
+        "usp2": "Build Your<br>Dream World",
+        "usp3": "Explore<br>a New Dimension<br>of MapleStory"
+    },     
+    "footer": { 
+        "legal": "© __year__ NEXON Korea Corporation and NEXON America Inc. All Rights Reserved",       
+        "account": "Your Account",
+        "support": "Get Support",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Use",
+        "ugc": "UGC Policy",
+        "about": "About Nexon",
+        "follow": "Follow Us:"
+    }
+}
