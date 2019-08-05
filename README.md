@@ -22,10 +22,10 @@
     </ul>
   </li>  
   <li>
-    <a href="https://sergiusmuzzz.github.io/portfolio/build/gostintheshell/index.html" >Gost In The Shell</a>
+    <a href="https://sergiusmuzzz.github.io/portfolio/build/gostintheshell/index.html" >Ghost In The Shell</a>
   </li>
 </ul>
 <p>Source code for all projects above is available <a href="https://github.com/sergiusmuzzz/sergiusmuzzz.github.io/tree/master/portfolio/src">here</a>
-<h2>Freindly Local Guides</p></h2>
+<h2>Friendly Local Guides</p></h2>
 <a href="http://friendlylocalguides.com/">Freindly Local Guides</a>
 <h2>Older Projects</h2>
