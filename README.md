@@ -25,6 +25,6 @@
     <a href="https://sergiusmuzzz.github.io/portfolio/live/ghostintheshell/index.html" >Ghost In The Shell</a>
   </li>
 </ul>
-<p>Source code for all projects above is available <a href="https://github.com/sergiusmuzzz/sergiusmuzzz.github.io/tree/master/portfolio/src">here</a>
+<p>Source code of frontend part for all projects above is available <a href="https://github.com/sergiusmuzzz/sergiusmuzzz.github.io/tree/master/portfolio/src">here</a>
 <h2>Friendly Local Guides</h2>
 <a href="http://friendlylocalguides.com/">Freindly Local Guides</a>
