@@ -25,6 +25,6 @@
     <a href="https://sergiusmuzzz.github.io/portfolio/build/gostintheshell/index.html" >Gost In The Shell</a>
   </li>
 </ul>
-<h3>Source code for all projects above is available <a href="https://github.com/sergiusmuzzz/sergiusmuzzz.github.io/tree/master/portfolio/src">here</a>
-<h2>Freindly Local Guides</h2>
+<p>Source code for all projects above is available <a href="https://github.com/sergiusmuzzz/sergiusmuzzz.github.io/tree/master/portfolio/src">here</a>
+<h2>Freindly Local Guides</p>
 <a href="http://friendlylocalguides.com/">Freindly Local Guides</a>
