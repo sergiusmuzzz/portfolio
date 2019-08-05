@@ -28,4 +28,3 @@
 <p>Source code for all projects above is available <a href="https://github.com/sergiusmuzzz/sergiusmuzzz.github.io/tree/master/portfolio/src">here</a>
 <h2>Friendly Local Guides</p></h2>
 <a href="http://friendlylocalguides.com/">Freindly Local Guides</a>
-<h2>Older Projects</h2>
