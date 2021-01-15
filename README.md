@@ -1,5 +1,5 @@
 # My Portfolio
-<h2>Nexon America (most recent projects)</h2> 
+<h2>Nexon America</h2> 
 <ul>
   <li>
     <a href="https://sergiusmuzzz.github.io/portfolio/live/maplestory2/index.html" >Maplestory 2</a>
